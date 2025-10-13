@@ -1,5 +1,7 @@
 ## Hi there 👋
 
+Repositori per poguer desenvolupar el projecte de l'assignatura M12 al IOC.
+
 <!--
 **bicifood/biciFood** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
