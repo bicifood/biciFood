@@ -1,0 +1,272 @@
+CREATE DATABASE IF NOT EXISTS `bicifood_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `bicifood_db`;
+
+-- MySQL dump 10.13 Distrib 8.0.43, for macos15 (arm64)
+-- Host: localhost    Database: bicifood_db
+-- ------------------------------------------------------
+-- Server version 9.4.0
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `categoria`
+--
+
+DROP TABLE IF EXISTS `categoria`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `categoria` (
+  `id_categoria` int NOT NULL AUTO_INCREMENT,
+  `nom_cat` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id_categoria`),
+  UNIQUE KEY `nom_cat` (`nom_cat`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `categoria`
+--
+
+LOCK TABLES `categoria` WRITE;
+/*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
+INSERT INTO `categoria` VALUES (2,'BEGUDES'),(1,'PLATS'),(3,'POSTRES');
+/*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `comanda`
+--
+
+DROP TABLE IF EXISTS `comanda`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `comanda` (
+  `id_comanda` int NOT NULL AUTO_INCREMENT,
+  `id_client` int NOT NULL,
+  `data_hora_comanda` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `import_total` decimal(6,2) NOT NULL,
+  `adreca_lliurament` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL, -- MODIFICACIÓ: Afegit
+  `cp_lliurament` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,    -- MODIFICACIÓ: Afegit
+  `id_estat` int NOT NULL,
+  PRIMARY KEY (`id_comanda`),
+  KEY `fk_comanda_client` (`id_client`),
+  KEY `fk_comanda_estat` (`id_estat`),
+  CONSTRAINT `fk_comanda_client` FOREIGN KEY (`id_client`) REFERENCES `usuari` (`id_usuari`),
+  CONSTRAINT `fk_comanda_estat` FOREIGN KEY (`id_estat`) REFERENCES `estat_comanda` (`id_estat`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `comanda`
+--
+
+LOCK TABLES `comanda` WRITE;
+/*!40000 ALTER TABLE `comanda` DISABLE KEYS */;
+/*!40000 ALTER TABLE `comanda` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `estat_comanda`
+--
+
+DROP TABLE IF EXISTS `estat_comanda`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `estat_comanda` (
+  `id_estat` int NOT NULL AUTO_INCREMENT,
+  `nom_estat` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id_estat`),
+  UNIQUE KEY `nom_estat` (`nom_estat`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `estat_comanda`
+--
+
+LOCK TABLES `estat_comanda` WRITE;
+/*!40000 ALTER TABLE `estat_comanda` DISABLE KEYS */;
+INSERT INTO `estat_comanda` VALUES (3,'EN RUTA'),(4,'LLIURADA'),(1,'PENDENT'),(2,'PREPARANT');
+/*!40000 ALTER TABLE `estat_comanda` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `linia_comanda`
+--
+
+DROP TABLE IF EXISTS `linia_comanda`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `linia_comanda` (
+  `id_linia` int NOT NULL AUTO_INCREMENT,
+  `id_comanda` int NOT NULL,
+  `id_producte` int NOT NULL,
+  `preu_unitari` decimal(5,2) NOT NULL, -- MODIFICACIÓ: Afegit
+  `quantitat` int NOT NULL,
+  `subtotal` decimal(6,2) NOT NULL,     -- MODIFICACIÓ: Afegit
+  PRIMARY KEY (`id_linia`),
+  KEY `fk_lc_comanda` (`id_comanda`),
+  KEY `fk_lc_producte` (`id_producte`),
+  CONSTRAINT `fk_lc_comanda` FOREIGN KEY (`id_comanda`) REFERENCES `comanda` (`id_comanda`),
+  CONSTRAINT `fk_lc_producte` FOREIGN KEY (`id_producte`) REFERENCES `producte` (`id_producte`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `linia_comanda`
+--
+
+LOCK TABLES `linia_comanda` WRITE;
+/*!40000 ALTER TABLE `linia_comanda` DISABLE KEYS */;
+/*!40000 ALTER TABLE `linia_comanda` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `lliurament`
+--
+
+DROP TABLE IF EXISTS `lliurament`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `lliurament` (
+  `id_lliurament` int NOT NULL AUTO_INCREMENT,
+  `id_comanda` int NOT NULL,
+  `id_repartidor` int DEFAULT NULL,
+  `data_hora_assignacio` timestamp DEFAULT CURRENT_TIMESTAMP, -- MODIFICACIÓ: Afegit
+  `data_hora_lliurament_real` timestamp DEFAULT NULL,         -- MODIFICACIÓ: Afegit
+  PRIMARY KEY (`id_lliurament`),
+  UNIQUE KEY `id_comanda` (`id_comanda`),
+  KEY `fk_lliurament_repartidor` (`id_repartidor`),
+  CONSTRAINT `fk_lliurament_comanda` FOREIGN KEY (`id_comanda`) REFERENCES `comanda` (`id_comanda`),
+  CONSTRAINT `fk_lliurament_repartidor` FOREIGN KEY (`id_repartidor`) REFERENCES `usuari` (`id_usuari`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `lliurament`
+--
+
+LOCK TABLES `lliurament` WRITE;
+/*!40000 ALTER TABLE `lliurament` DISABLE KEYS */;
+/*!40000 ALTER TABLE `lliurament` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `producte`
+--
+
+DROP TABLE IF EXISTS `producte`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `producte` (
+  `id_producte` int NOT NULL AUTO_INCREMENT,
+  `nom` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `preu` decimal(5,2) NOT NULL,
+  `imatge_path` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL, -- MODIFICACIÓ: Afegit
+  `stock` int NOT NULL DEFAULT 0,                                     -- MODIFICACIÓ: Afegit
+  `id_categoria` int NOT NULL,
+  `descripcio` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,    -- MODIFICACIÓ: Longitud augmentada
+  PRIMARY KEY (`id_producte`),
+  UNIQUE KEY `nom_producte_uq` (`nom`),                              -- MODIFICACIÓ: Afegit unique key
+  KEY `fk_producte_categoria` (`id_categoria`),
+  CONSTRAINT `fk_producte_categoria` FOREIGN KEY (`id_categoria`) REFERENCES `categoria` (`id_categoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `producte`
+--
+
+LOCK TABLES `producte` WRITE;
+/*!40000 ALTER TABLE `producte` DISABLE KEYS */;
+-- Dades del producte d'exemple T_001
+INSERT INTO `producte` (`id_producte`, `nom`, `preu`, `imatge_path`, `stock`, `id_categoria`, `descripcio`)
+VALUES (1, 'Vedella amb arròs de l''hort', 13.95, '/img/productes/t_001.jpg', 300, 1, 'Suculenta carn de vedella, feta al forn de pedra, amb arròs Basmati, acompanyat amb espàrrecs i tomàquets.');
+/*!40000 ALTER TABLE `producte` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `rol`
+--
+
+DROP TABLE IF EXISTS `rol`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `rol` (
+  `id_rol` int NOT NULL AUTO_INCREMENT,
+  `nom_rol` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id_rol`),
+  UNIQUE KEY `nom_rol` (`nom_rol`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rol`
+--
+
+LOCK TABLES `rol` WRITE;
+/*!40000 ALTER TABLE `rol` DISABLE KEYS */;
+INSERT INTO `rol` VALUES (1,'ADMIN'),(2,'CLIENT'),(3,'REPARTIDOR');
+/*!40000 ALTER TABLE `rol` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `usuari`
+--
+
+DROP TABLE IF EXISTS `usuari`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `usuari` (
+  `id_usuari` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password_hash` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id_rol` int NOT NULL,
+  `punts` int DEFAULT '0',
+  `Nom i cognoms` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `adreca` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,      -- MODIFICACIÓ: Afegit
+  `codi_postal` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL, -- MODIFICACIÓ: Afegit
+  `poblacio` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,   -- MODIFICACIÓ: Afegit
+  PRIMARY KEY (`id_usuari`),
+  UNIQUE KEY `email` (`email`),
+  KEY `fk_usuari_rol` (`id_rol`),
+  CONSTRAINT `fk_usuari_rol` FOREIGN KEY (`id_rol`) REFERENCES `rol` (`id_rol`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuari`
+--
+
+LOCK TABLES `usuari` WRITE;
+/*!40000 ALTER TABLE `usuari` DISABLE KEYS */;
+/*!40000 ALTER TABLE `usuari` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'bicifood_db'
+--
+
+--
+-- Dumping routines for database 'bicifood_db'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-10-17 11:10:03
