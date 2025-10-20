@@ -1,0 +1,71 @@
+/* Colors personalitzats */
+.bg-brown {
+  background-color: #6b5a3e; /* marró fosc del navbar */
+}
+
+.bg-lightbrown {
+  background-color: #f0e0b2; /* beix clar del footer */
+}
+
+/* Enllaços del navbar */
+.navbar .nav-link {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Barra de cerca al navbar */
+.navbar .form-control {
+  height: 30px;
+  font-size: 0.9rem;
+}
+
+.navbar .btn {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+.navbar .dropdown .btn {
+  width: auto; /* s'adapta al text i icona */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.footer img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Layout per footer a baix */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* ocupa l'espai restant */
+}
+.footer-text {
+  font-size: 0.8rem; /* mida petita */
+  color: #333;       /* opcional: canviar color */
+}
