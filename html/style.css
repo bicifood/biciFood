@@ -7,6 +7,16 @@
   background-color: #f0e0b2; /* beix clar del footer */
 }
 
+/* Navbar */
+.navbar {
+  height: 70px; /* Manté la mida fixa de la navbar */
+}
+
+.logo-navbar {
+  height: 60px; /* Amplia el logo */
+  margin-top: -5px; /* Ajust per centrar verticalment */
+}
+
 /* Enllaços del navbar */
 .navbar .nav-link {
   color: #fff;
@@ -35,7 +45,7 @@
 }
 
 .navbar .dropdown .btn {
-  width: auto; /* s'adapta al text i icona */
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,12 +70,17 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 main {
-  flex: 1; /* ocupa l'espai restant */
+  flex: 1;
 }
+
 .footer-text {
-  font-size: 0.8rem; /* mida petita */
-  color: #333;       /* opcional: canviar color */
+  font-size: 0.8rem;
+  color: #333;
 }
