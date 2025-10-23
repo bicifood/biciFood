@@ -1,0 +1,205 @@
+/* Colors personalitzats */
+.bg-brown {
+  background-color: #6b5a3e;
+}
+
+.bg-lightbrown {
+  background-color: #f0e0b2;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+}
+
+.logo-navbar {
+  height: 60px;
+  margin-top: -5px;
+}
+
+/* Enllaços del navbar */
+.navbar .nav-link {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Barra de cerca */
+.navbar .form-control {
+  height: 30px;
+  font-size: 0.9rem;
+}
+
+.navbar .btn {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+.navbar .dropdown .btn {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.footer img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Layout per footer a baix */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  flex: 1;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/* -----------------------------------------------------------------------------------
+   CATEGORIES - TARGETES I TÍTOL
+----------------------------------------------------------------------------------- */
+
+.category-card {
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Capa blanca semitransparent sobre la imatge */
+.category-card .card-body {
+  border-radius: 1rem;
+  transition: background 0.3s ease;
+}
+
+/* Quan passes el ratolí: desapareix el blanc */
+.category-card:hover .card-body {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* Text sempre blanc, més gran i amb millor contrast */
+.category-card h5 {
+  color: #fff;
+  /* Sempre blanc */
+  font-size: 1.5rem;
+  /* Més gran */
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  /* Millora contrast sobre fons */
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover h5 {
+  transform: scale(1.05);
+}
+
+/* Efecte de clic suau */
+.category-card:active {
+  transform: scale(0.98);
+}
+
+/* Elimina subratllat i hereta colors de text */
+a.text-decoration-none {
+  color: inherit;
+}
+
+/* Imatges específiques per categoria */
+.bg-carns {
+  background-image: url("imatges/Vedella Verdures.png");
+}
+
+.bg-peixos {
+  background-image: url("imatges/Lluç Verdures.png");
+}
+
+.bg-amanides {
+  background-image: url("imatges/Verdures Rustides.png");
+}
+
+.bg-arrossos {
+  background-image: url("imatges/Espaguetis carbonara.png");
+}
+
+.bg-begudes {
+  background-image: url("imatges/Vi Torremadrina.jpeg");
+}
+
+.bg-postres {
+  background-image: url("imatges/Coulant.png");
+}
+
+/* Títol central decoratiu */
+.section-title {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 3px;
+  background-color: #6b5a3e;
+  transform: translateY(-50%);
+}
+
+.section-title::before {
+  left: -60px;
+}
+
+.section-title::after {
+  right: -60px;
+}
