@@ -1,0 +1,236 @@
+/* Importar estilos base del detall_product */
+@import url('./versio-final-TEA3/detall_product_style.css');
+
+/* Colors personalitzats adicionals per la cistella */
+.btn-brown {
+  background-color: #6b5a3e;
+  border-color: #6b5a3e;
+  color: white;
+}
+
+.btn-brown:hover {
+  background-color: #5a4b36;
+  border-color: #5a4b36;
+  color: white;
+}
+
+.btn-outline-brown {
+  color: #6b5a3e;
+  border-color: #6b5a3e;
+}
+
+.btn-outline-brown:hover {
+  background-color: #6b5a3e;
+  border-color: #6b5a3e;
+  color: white;
+}
+
+/* Cistella específics */
+.active-cart {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.cistella-item {
+  transition: all 0.3s ease;
+  padding: 15px 0;
+}
+
+.cistella-item:hover {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 0 -15px;
+}
+
+.cistella-item img {
+  max-height: 80px;
+  object-fit: cover;
+}
+
+/* Quantitat controls */
+.input-group-sm .form-control {
+  max-width: 60px;
+}
+
+.input-group-sm .btn {
+  min-width: 35px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+  border: none;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Resum comanda */
+.card hr {
+  margin: 1rem 0;
+  border-color: #dee2e6;
+}
+
+/* Cistella buida */
+.empty-cart {
+  padding: 4rem 2rem;
+}
+
+.empty-cart i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* Animacions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cistella-item {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cistella-item .row {
+    text-align: center;
+  }
+  
+  .cistella-item .col-md-2,
+  .cistella-item .col-md-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .cistella-item img {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Efectes hover per botons */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-danger:hover {
+  transform: scale(1.05);
+}
+
+/* Estils per els inputs de quantitat */
+.input-group .form-control {
+  border: 1px solid #ced4da;
+  font-weight: 600;
+}
+
+.input-group .btn {
+  border: 1px solid #ced4da;
+  font-weight: 600;
+}
+
+.input-group .btn:hover {
+  background-color: #e9ecef;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Highlight per preus */
+.text-end strong {
+  color: #6b5a3e;
+  font-size: 1.1rem;
+}
+
+/* Informació adicional */
+.text-muted {
+  font-size: 0.9rem;
+}
+
+/* Millores visuals per la targeta de resum */
+.card .d-flex {
+  font-size: 0.95rem;
+}
+
+.card .d-flex strong {
+  font-size: 1.1rem;
+  color: #6b5a3e;
+}
+
+/* Codi promocional */
+.form-label {
+  font-weight: 600;
+  color: #6b5a3e;
+  margin-bottom: 0.5rem;
+}
+
+/* Icones */
+.bi {
+  vertical-align: -0.125em;
+}
+
+/* Hover effect per les imatges */
+.cistella-item img {
+  transition: transform 0.3s ease;
+}
+
+.cistella-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Estils per la informació d'enviament */
+.card:last-child .card-body {
+  padding: 1rem 1.5rem;
+}
+
+.card:last-child h6 {
+  color: #6b5a3e;
+  margin-bottom: 0.75rem;
+}
+
+/* Loading states (per futures implementacions) */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Alertes personalitzades */
+.alert-custom {
+  background-color: #f0e0b2;
+  border-color: #6b5a3e;
+  color: #6b5a3e;
+  border-radius: 8px;
+}
+
+/* Millores d'accessibilitat */
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(107, 90, 62, 0.25);
+}
+
+.form-control:focus {
+  border-color: #6b5a3e;
+  box-shadow: 0 0 0 0.25rem rgba(107, 90, 62, 0.25);
+}
