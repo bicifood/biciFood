@@ -1,0 +1,703 @@
+/* Colors personalitzats */
+.bg-brown {
+  background-color: #6b5a3e; /* marró fosc del navbar */
+}
+
+.bg-lightbrown {
+  background-color: #f0e0b2; /* beix clar del footer */
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+}
+
+.logo-navbar {
+  height: 60px;
+  margin-top: -5px;
+}
+
+/* Enllaços del navbar */
+.navbar .nav-link {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Barra de cerca al navbar */
+.navbar .form-control {
+  height: 30px;
+  font-size: 0.9rem;
+}
+
+.navbar .btn {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+.navbar .dropdown .btn {
+  width: auto; /* s'adapta al text i icona */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.footer img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Layout per footer a baix */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*body Sergi inicial {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}*/
+
+main {
+  flex: 1; /* ocupa l'espai restant */
+}
+
+.footer-text {
+  font-size: 0.8rem; /* mida petita */
+  color: #333; /* opcional: canviar color */
+}
+
+/*                           /\                                */
+/*---------------------------||------------------------------------------------------------------------------------------------------
+----------------------------ESTRUCTURA---------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*.........................NUEVO CODIGO...........................................................................................*/
+/*                           ||                               
+                             \/                   
+
+
+                             /*INDEX*/
+
+/* Fixa una mida consistent per a totes les imatges del carrousel */
+.carousel-item img {
+  height: 300px; /* pots ajustar a 300px, 500px, etc. */
+  object-fit: cover; /* manté la imatge centrada i retalla si cal */
+  object-position: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* Mapa leaflet */
+#map {
+  height: 300px;
+}
+
+/* (opcional) fa el carrousel responsive */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
+
+/*CARN*/
+
+.carn__imatge {
+  width: 200px;
+  height: 200px;
+}
+
+ul {
+  list-style: none;
+}
+
+.selector__ordre {
+  width: 100px;
+}
+
+.imatge__detall:hover {
+  transform: scale(1.2);
+}
+
+.carn__imatge:hover p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*CATEGORIES*/
+
+.category-card {
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Capa blanca semitransparent sobre la imatge */
+.category-card .card-body {
+  border-radius: 1rem;
+  transition: background 0.3s ease;
+}
+
+/* Quan passes el ratolí: desapareix el blanc */
+.category-card:hover .card-body {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* Text sempre blanc, més gran i amb millor contrast */
+.category-card h5 {
+  color: #fff;
+  /* Sempre blanc */
+  font-size: 1.5rem;
+  /* Més gran */
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  /* Millora contrast sobre fons */
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover h5 {
+  transform: scale(1.05);
+}
+
+/* Efecte de clic suau */
+.category-card:active {
+  transform: scale(0.98);
+}
+
+/* Elimina subratllat i hereta colors de text */
+a.text-decoration-none {
+  color: inherit;
+}
+
+/* Imatges específiques per categoria */
+.bg-carns {
+  background-image: url("imatges/Vedella Verdures.png");
+}
+
+.bg-peixos {
+  background-image: url("imatges/Lluç Verdures.png");
+}
+
+.bg-amanides {
+  background-image: url("imatges/Verdures Rustides.png");
+}
+
+.bg-arrossos {
+  background-image: url("imatges/Espaguetis carbonara.png");
+}
+
+.bg-begudes {
+  background-image: url("imatges/Vi Torremadrina.jpeg");
+}
+
+.bg-postres {
+  background-image: url("imatges/Coulant.png");
+}
+
+/* Títol central decoratiu */
+.section-title {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 3px;
+  background-color: #6b5a3e;
+  transform: translateY(-50%);
+}
+
+.section-title::before {
+  left: -60px;
+}
+
+.section-title::after {
+  right: -60px;
+}
+
+/*--------------------------------------------------CISTELLA-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Importar estils base del detall_product */
+@import url("./versio-final-TEA3/detall_product_style.css");
+
+/* Colors personalitzats adicionals per la cistella */
+.btn-brown {
+  background-color: #6b5a3e;
+  border-color: #6b5a3e;
+  color: white;
+}
+
+.btn-brown:hover {
+  background-color: #5a4b36;
+  border-color: #5a4b36;
+  color: white;
+}
+
+.btn-outline-brown {
+  color: #6b5a3e;
+  border-color: #6b5a3e;
+}
+
+.btn-outline-brown:hover {
+  background-color: #6b5a3e;
+  border-color: #6b5a3e;
+  color: white;
+}
+
+/* Cistella específics */
+.active-cart {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.cistella-item {
+  transition: all 0.3s ease;
+  padding: 15px 0;
+}
+
+.cistella-item:hover {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 0 -15px;
+}
+
+.cistella-item img {
+  max-height: 80px;
+  object-fit: cover;
+}
+
+/* Quantitat controls */
+.input-group-sm .form-control {
+  max-width: 60px;
+}
+
+.input-group-sm .btn {
+  min-width: 35px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+  border: none;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Resum comanda */
+.card hr {
+  margin: 1rem 0;
+  border-color: #dee2e6;
+}
+
+/* Cistella buida */
+.empty-cart {
+  padding: 4rem 2rem;
+}
+
+.empty-cart i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* Animacions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cistella-item {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cistella-item .row {
+    text-align: center;
+  }
+
+  .cistella-item .col-md-2,
+  .cistella-item .col-md-4 {
+    margin-bottom: 1rem;
+  }
+
+  .cistella-item img {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Efectes hover per botons */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-danger:hover {
+  transform: scale(1.05);
+}
+
+/* Estils per els inputs de quantitat */
+.input-group .form-control {
+  border: 1px solid #ced4da;
+  font-weight: 600;
+}
+
+.input-group .btn {
+  border: 1px solid #ced4da;
+  font-weight: 600;
+}
+
+.input-group .btn:hover {
+  background-color: #e9ecef;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Highlight per preus */
+.text-end strong {
+  color: #6b5a3e;
+  font-size: 1.1rem;
+}
+
+/* Informació adicional */
+.text-muted {
+  font-size: 0.9rem;
+}
+
+/* Millores visuals per la targeta de resum */
+.card .d-flex {
+  font-size: 0.95rem;
+}
+
+.card .d-flex strong {
+  font-size: 1.1rem;
+  color: #6b5a3e;
+}
+
+/* Codi promocional */
+.form-label {
+  font-weight: 600;
+  color: #6b5a3e;
+  margin-bottom: 0.5rem;
+}
+
+/* Icones */
+.bi {
+  vertical-align: -0.125em;
+}
+
+/* Hover effect per les imatges */
+.cistella-item img {
+  transition: transform 0.3s ease;
+}
+
+.cistella-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Estils per la informació d'enviament */
+.card:last-child .card-body {
+  padding: 1rem 1.5rem;
+}
+
+.card:last-child h6 {
+  color: #6b5a3e;
+  margin-bottom: 0.75rem;
+}
+
+/* Loading states (per futures implementacions) */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Alertes personalitzades */
+.alert-custom {
+  background-color: #f0e0b2;
+  border-color: #6b5a3e;
+  color: #6b5a3e;
+  border-radius: 8px;
+}
+
+/* Millores d'accessibilitat */
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(107, 90, 62, 0.25);
+}
+
+.form-control:focus {
+  border-color: #6b5a3e;
+  box-shadow: 0 0 0 0.25rem rgba(107, 90, 62, 0.25);
+}
+
+/*-----------------------------------------------------------CONTACTE-------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* --- Pàgina de contacte --- */
+
+form label {
+  font-weight: 500;
+  color: #333;
+}
+
+.btn-primary:hover {
+  background-color: #7da0d8;
+  border-color: #7da0d8;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Centrat mapa + text */
+
+.map-container {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Títol contacte més gran */
+
+.contact-title {
+  font-size: 1.6rem;
+}
+
+/* --- Formulari de contacte encerclat --- */
+
+.contact-form {
+  padding: 20px; /* espai intern */
+  border-radius: 8px; /* cantonades arrodonides */
+  background-color: #fff; /* destaca sobre el fons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* opcional: lleugera ombra */
+}
+
+/*--------------------------------------------------------DETALL PRODUCTE---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Section-1 */
+.container__section {
+  display: flex;
+  gap: 20px;
+}
+
+.product {
+  /**/
+  margin-top: 100px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product__titol_preu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container__section h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.preu {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.product__divisor {
+  border: 0;
+  height: 1px;
+  background: #999;
+  margin: 5px 0;
+}
+
+.imatge {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.imatge:hover {
+  transform: scale(1.2); /* hace zoom */
+}
+
+/* Section-2 */
+.relacionats__section {
+  margin-top: 20px;
+}
+
+.relacionats__section h4 {
+  font-weight: bold;
+}
+
+.relacionats__box {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.relacionats__imatge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*-----------------------------------------------------------LOGIN-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.form-box {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control {
+  height: 35px;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.text-center input[type="checkbox"] {
+  transform: scale(1.1);
+}
+
+.text-center button {
+  width: 60%;
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------------REGISTRAT------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.form-box {
+  border: 2px solid #333;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control {
+  height: 35px;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.text-center input[type="checkbox"] {
+  transform: scale(1.1);
+}
+
+.text-center button {
+  width: 60%;
+  font-weight: 500;
+}
+
+/*-------------------------------------------------------------RESULTAT RECERCA--------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------*/

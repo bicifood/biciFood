@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,141 +8,147 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="sergi_style.css">
 </head>
+
 <body>
-<header class="header bg-brown shadow-sm sticky-top">
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-brown py-3">
-    <div class="container d-flex align-items-center">
+  <header class="header bg-brown shadow-sm sticky-top">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brown py-3">
+      <div class="container d-flex align-items-center">
 
-      <!-- Botó hamburguesa Categories a l'esquerra -->
-      <div class="dropdown me-3">
-        <button class="btn btn-outline-light btn-sm" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="bi bi-list"></i> 
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="carns.html">Carns</a></li>
-          <li><a class="dropdown-item" href="#">Peixos</a></li>
-          <li><a class="dropdown-item" href="#">Amanides</a></li>
-          <li><a class="dropdown-item" href="#">Arròs i pasta</a></li>
-          <li><a class="dropdown-item" href="#">Postres</a></li>
-          <li><a class="dropdown-item" href="#">Begudes</a></li>
-        </ul>
-      </div>
-
-      <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center me-auto" href="#">
-        <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="BiciFood logo" width="30" class="me-2">
-        <span class="fw-semibold">BiciFood</span>
-      </a>
-
-      <!-- Links centrats del navbar -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Nosaltres</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacte</a></li>
-        </ul>
-      </div>
-
-      <!-- Icones a la dreta: cistella, cerca, perfil -->
-      <div class="d-flex align-items-center">
-        <form class="d-flex me-3" role="search">
-          <input class="form-control form-control-sm" type="search" placeholder="Cerca..." aria-label="Cerca">
-          <button class="btn btn-outline-light btn-sm ms-2" type="submit">
-            <i class="bi bi-search"></i>
+        <!-- Botó hamburguesa Categories a l'esquerra -->
+        <div class="dropdown me-3">
+          <button class="btn btn-outline-light btn-sm" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-list"></i>
           </button>
-        </form>
- <a href="cistella.html" class="text-white me-3"><i class="bi bi-cart-fill"></i></a>
-        <a href="#" class="text-white"><i class="bi bi-person-fill"></i></a>
-      </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="carns.html">Carns</a></li>
+            <li><a class="dropdown-item" href="#">Peixos</a></li>
+            <li><a class="dropdown-item" href="#">Amanides</a></li>
+            <li><a class="dropdown-item" href="#">Arròs i pasta</a></li>
+            <li><a class="dropdown-item" href="#">Postres</a></li>
+            <li><a class="dropdown-item" href="#">Begudes</a></li>
+          </ul>
+        </div>
 
-    </div>
-  </nav>
-</header>
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center me-auto" href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="BiciFood logo" width="30"
+            class="me-2">
+          <span class="fw-semibold">BiciFood</span>
+        </a>
+
+        <!-- Links centrats del navbar -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Nosaltres</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacte</a></li>
+          </ul>
+        </div>
+
+        <!-- Icones a la dreta: cistella, cerca, perfil -->
+        <div class="d-flex align-items-center">
+          <form class="d-flex me-3" role="search">
+            <input class="form-control form-control-sm" type="search" placeholder="Cerca..." aria-label="Cerca">
+            <button class="btn btn-outline-light btn-sm ms-2" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <a href="cistella.html" class="text-white me-3"><i class="bi bi-cart-fill"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-person-fill"></i></a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
 
   <!-- CONTINGUT CENTRAL (opcional) -->
-   <main class="container my-5 flex-grow-1">
-     
-        <!-- Imatge Logo / Capçalera de la Pàgina -->
+  <main class="container my-5 flex-grow-1">
+
+    <!-- Imatge Logo / Capçalera de la Pàgina -->
     <img src="../../images/logoTransparentTextless.png" class="d-block mb-5 mx-auto" width="20%">
-    
+
     <!-- CONTENIDOR ÚNIC ESTRET I CENTRAT PER A TOT EL TEXT DE LA PÀGINA -->
     <div class="row justify-content-center">
 
-        <!-- Columna mestre que marca els límits laterals per a tots els elements -->
-        <div class="col-12 col-lg-8 col-xl-6 mx-auto">
+      <!-- Columna mestre que marca els límits laterals per a tots els elements -->
+      <div class="col-12 col-lg-8 col-xl-6 mx-auto">
 
-            <!-- TÍTOL PRINCIPAL -->
-            <h1 class="text-center mb-5 fw-bold">Qui som?</h1>
+        <!-- TÍTOL PRINCIPAL -->
+        <h1 class="text-center mb-5 fw-bold">Qui som?</h1>
 
-            <!-- MISSIÓ I VALORS (Bloc Centrat) -->
-            <div class="mb-5"> 
-                <h3 class="text-center mb-4">Missió i valors</h3>
-                <p class="lead text-center">A Bicifood creiem que menjar bé no hauria de danyar el
-                    planeta.<br>
-                    Per això treballem amb productes ecològics i de proximitat, i
-                    fem els nostres repartiments exclusivament en bicicleta per
-                    reduir la petjada de carboni.
-                </p>
+        <!-- MISSIÓ I VALORS (Bloc Centrat) -->
+        <div class="mb-5">
+          <h3 class="text-center mb-4">Missió i valors</h3>
+          <p class="lead text-center">A Bicifood creiem que menjar bé no hauria de danyar el
+            planeta.<br>
+            Per això treballem amb productes ecològics i de proximitat, i
+            fem els nostres repartiments exclusivament en bicicleta per
+            reduir la petjada de carboni.
+          </p>
+        </div>
+
+        <!-- EL NOSTRE EQUIP (Contingut en dues columnes dins del contenidor estret) -->
+        <div class="mt-5 mb-5">
+          <h2 class="text-center mb-4">El nostre equip</h2>
+          <div class="row align-items-center">
+            <!-- Columna Esquerra: Imatge (Placeholder) -->
+            <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0">
+              <!-- Mida fixa per mantenir l'aparença de l'esquema -->
+              <img src="..\images\imatges Sergi\pagina nosatres\development team.png" class="img-fluid rounded-3 shadow"
+                style="max-width: 250px;" alt="Foto del equipo de BiciFood">
             </div>
-
-            <!-- EL NOSTRE EQUIP (Contingut en dues columnes dins del contenidor estret) -->
-            <div class="mt-5 mb-5">
-                <h2 class="text-center mb-4">El nostre equip</h2>
-                <div class="row align-items-center">
-                    <!-- Columna Esquerra: Imatge (Placeholder) -->
-                    <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0">
-                        <!-- Mida fixa per mantenir l'aparença de l'esquema -->
-                        <img src="..\images\imatges Sergi\pagina nosatres\development team.png" class="img-fluid rounded-3 shadow" style="max-width: 250px;" alt="Foto del equipo de BiciFood">
-                    </div>
-                    <!-- Columna Dreta: Text de l'equip -->
-                    <div class="col-12 col-md-6 d-flex align-items-center">
-                        <div class="text-start w-100 pt-3 pt-md-0">
-                            <p class="mb-1 fw-bold">Berta i Sergi: Front-end</p>
-                            <p class="text-muted">Especialistes en disseny d'interfícies i experiència d'usuari (UX).</p>
-                            <p class="mb-1 fw-bold mt-3">Jaime i Daniel: Back-end</p>
-                            <p class="text-muted">Arquitectes de sistemes i experts en gestió de bases de dades.</p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Columna Dreta: Text de l'equip -->
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <div class="text-start w-100 pt-3 pt-md-0">
+                <p class="mb-1 fw-bold">Berta i Sergi: Front-end</p>
+                <p class="text-muted">Especialistes en disseny d'interfícies i experiència d'usuari (UX).</p>
+                <p class="mb-1 fw-bold mt-3">Jaime i Daniel: Back-end</p>
+                <p class="text-muted">Arquitectes de sistemes i experts en gestió de bases de dades.</p>
+              </div>
             </div>
+          </div>
+        </div>
 
 
-            <!-- COMPROMÍS AMB EL MEDI AMBIENT (Contingut en dues columnes dins del contenidor estret) -->
-            <div class="mt-5 mb-5">
-                <h2 class="text-center mb-4">Compromís amb el medi ambient</h2>
-                <div class="row align-items-center">
-                    <!-- Columna Esquerra: Imatge (Placeholder) -->
-                    <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0 order-2 order-md-1">
-                         <!-- Mida fixa per mantenir l'aparença de l'esquema -->
-                        <img src= "..\images\imatges Sergi\pagina nosatres\compromis medi.png" class="img-fluid rounded-3 shadow" style="max-width: 250px;" alt="Compromís mediambiental">
-                    </div>
-                    <!-- Columna Dreta: Text/Llista -->
-                    <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-2">
-                        <ul>
-                            <li> Ús d'energia renovable.</li>
-                            <li> Envasos 100% biodegradables.</li>
-                            <li> Col·laboració amb productors locals.</li>
-                            <li>Repartiment 100% amb bicicleta.</li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- COMPROMÍS AMB EL MEDI AMBIENT (Contingut en dues columnes dins del contenidor estret) -->
+        <div class="mt-5 mb-5">
+          <h2 class="text-center mb-4">Compromís amb el medi ambient</h2>
+          <div class="row align-items-center">
+            <!-- Columna Esquerra: Imatge (Placeholder) -->
+            <div class="col-12 col-md-6 d-flex justify-content-center mb-3 mb-md-0 order-2 order-md-1">
+              <!-- Mida fixa per mantenir l'aparença de l'esquema -->
+              <img src="..\images\imatges Sergi\pagina nosatres\compromis medi.png" class="img-fluid rounded-3 shadow"
+                style="max-width: 250px;" alt="Compromís mediambiental">
             </div>
-            
-        </div> <!-- Fi de la columna mestre de contingut -->
+            <!-- Columna Dreta: Text/Llista -->
+            <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-2">
+              <ul>
+                <li> Ús d'energia renovable.</li>
+                <li> Envasos 100% biodegradables.</li>
+                <li> Col·laboració amb productors locals.</li>
+                <li>Repartiment 100% amb bicicleta.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- Fi de la columna mestre de contingut -->
     </div>
-</main>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer bg-lightbrown text-dark py-3 mt-auto">
     <div class="container d-flex justify-content-between align-items-center flex-wrap">
       <div class="d-flex align-items-center">
         <strong>BiciFood</strong>
-        </div>
-        <div class="footer-text">
+      </div>
+      <div class="footer-text">
         <span>&copy; 2025 BiciFood. Tots els drets reservats.</span>
       </div>
       <div>
@@ -153,4 +160,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </body>
+
 </html>

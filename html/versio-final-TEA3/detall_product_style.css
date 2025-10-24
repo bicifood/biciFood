@@ -161,20 +161,12 @@ main {
 .relacionats__section h4 {
   font-weight: bold;
 }
-/*.relacionats__quadricula {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}*/
+
 
 .relacionats__box {
   width: 150px;
   height: 100px;
   overflow: hidden;
-  /*margin-right: 20px;
-  border: 2px solid #999;
-  border-color: #eee;*/
 }
 
 .relacionats__imatge {
