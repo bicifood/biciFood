@@ -150,27 +150,27 @@ a.text-decoration-none {
 
 /* Imatges específiques per categoria */
 .bg-carns {
-  background-image: url("imatges/Vedella Verdures.png");
+  background-image: url("../../images/Vedella Verdures.png");
 }
 
 .bg-peixos {
-  background-image: url("imatges/Lluç Verdures.png");
+  background-image: url("../../images/Lluç Verdures.png");
 }
 
 .bg-amanides {
-  background-image: url("imatges/Verdures Rustides.png");
+  background-image: url("../../images/Verdures Rustides.png");
 }
 
 .bg-arrossos {
-  background-image: url("imatges/Espaguetis carbonara.png");
+  background-image: url("../../images/Espaguetis carbonara.png");
 }
 
 .bg-begudes {
-  background-image: url("imatges/Vi Torremadrina.jpeg");
+  background-image: url("../../images/Vi Torremadrina.jpeg");
 }
 
 .bg-postres {
-  background-image: url("imatges/Coulant.png");
+  background-image: url("../../images/Coulant.png");
 }
 
 /* Títol central decoratiu */
