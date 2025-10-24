@@ -13,7 +13,7 @@
   z-index: 1000;
 }
 
-/* Navbar s*/
+/* Navbar */
 .navbar {
   height: 70px;
 }
@@ -99,25 +99,36 @@ main {
 /*.........................NUEVO CODIGO...........................................................................................*/
 /*                           ||                               
                              \/                                            */
-
-.carn__imatge {
-  width: 200px;
-  height: 200px;
+.form-box {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-  list-style: none;
+h2 {
+  font-weight: 600;
 }
 
-.selector__ordre {
-  width: 100px;
+.form-label {
+  font-weight: 500;
 }
 
-.imatge__detall:hover {
-  transform: scale(1.2);
+.form-control {
+  height: 35px;
+  font-size: 0.95rem;
 }
 
-.carn__imatge:hover p {
-  font-weight: bold;
-  font-size: 30px;
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.text-center input[type="checkbox"] {
+  transform: scale(1.1);
+}
+
+.text-center button {
+  width: 60%;
+  font-weight: 500;
 }
