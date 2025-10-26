@@ -110,8 +110,8 @@ main {
 /*                           ||                               
                              \/                   
 
-
-                             /*INDEX*/
+/*------------------------------------------INDEX-------------------------------------------------------------------------------
+------------------------------------------------------------------*/
 
 /* Fixa una mida consistent per a totes les imatges del carrousel */
 .carousel-item img {
@@ -134,7 +134,41 @@ main {
   }
 }
 
-/*CARN*/
+/*-------------------------------------------------CARNS---------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------*/
+
+.category-card-carns {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.category-card-carns img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.category-card-carns:hover {
+  transform: scale(1.05);
+}
+
+.text-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.text-card h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
 
 .carn__imatge {
   width: 200px;
@@ -149,16 +183,13 @@ ul {
   width: 100px;
 }
 
-.imatge__detall:hover {
-  transform: scale(1.2);
-}
-
 .carn__imatge:hover p {
   font-weight: bold;
   font-size: 30px;
 }
 
-/*CATEGORIES*/
+/*--------------------------------------------CATEGORIES---------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
 
 .category-card {
   cursor: pointer;
