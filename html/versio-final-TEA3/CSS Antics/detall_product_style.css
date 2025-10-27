@@ -1,0 +1,176 @@
+/* Colors personalitzats */
+.bg-brown {
+  background-color: #6b5a3e;
+}
+
+.bg-lightbrown {
+  background-color: #f0e0b2;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+}
+
+.logo-navbar {
+  height: 60px;
+  margin-top: -5px;
+}
+
+/* Enllaços del navbar */
+.navbar .nav-link {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Barra de cerca */
+.navbar .form-control {
+  height: 30px;
+  font-size: 0.9rem;
+}
+
+.navbar .btn {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+.navbar .dropdown .btn {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Layout per footer a baix */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Main*/
+main {
+  flex: 1; /* ocupa l'espai restant */
+}
+
+/* Footer */
+.footer img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/*                           /\                                */
+/*---------------------------||------------------------------------------------------------------------------------------------------
+----------------------------ESTRUCTURA---------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*.........................NUEVO CODIGO...........................................................................................*/
+/*                           ||                               
+                             \/                                            */
+
+/* Section-1 */
+.container__section {
+  display: flex;
+  gap: 20px;
+}
+
+.product {
+  /**/
+  margin-top: 100px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product__titol_preu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container__section h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.preu {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.product__divisor {
+  border: 0;
+  height: 1px;
+  background: #999;
+  margin: 5px 0;
+}
+
+.imatge {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.imatge:hover {
+  transform: scale(1.2); /* hace zoom */
+}
+
+/* Section-2 */
+.relacionats__section {
+  margin-top: 20px;
+}
+
+.relacionats__section h4 {
+  font-weight: bold;
+}
+
+
+.relacionats__box {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.relacionats__imatge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

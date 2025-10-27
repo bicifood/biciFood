@@ -136,58 +136,62 @@ main {
 
 /*-------------------------------------------------CARNS---------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------*/
-
-.category-card-carns {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 1rem;
-}
-
-.category-card-carns img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.category-card-carns:hover {
-  transform: scale(1.05);
-}
-
-.text-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
-}
-
-.text-card h5 {
-  font-size: 1.5rem;
-  font-weight: 700;
+ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  overflow: visible;
 }
 
 .carn__imatge {
+  position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
   width: 200px;
-  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
-ul {
-  list-style: none;
+.carn__imatge img {
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.carn__imatge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.carn__imatge h5,
+.carn__imatge p {
+  margin: 0.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.carn__imatge:hover h5,
+.carn__imatge:hover p {
+  transform: scale(1.1);
 }
 
 .selector__ordre {
-  width: 100px;
+  width: auto;
+  max-width: 150px;
 }
 
-.carn__imatge:hover p {
-  font-weight: bold;
-  font-size: 30px;
+.enllaç-producte {
+  color: #000; /* Marrón, o el color que prefieras */
+  text-decoration: none; /* Quita el subrayado */
 }
 
+.enllaç-producte:hover {
+  color: #8b7355; /* Un tono más claro al pasar el ratón */
+  text-decoration: none; /* opcional */
+}
 /*--------------------------------------------CATEGORIES---------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------*/
 
@@ -695,3 +699,100 @@ h2 {
 
 /*-------------------------------------------------------------RESULTAT RECERCA--------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------BUTTON----------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+button {
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button:hover {
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+}
+button:active {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+button[disabled] {
+  background: #dddddd;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  border-width: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  color: #666666;
+}
+button.primary {
+  background: #5c5444;
+  border-color: #5c5444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.primary:hover {
+  background: #224811;
+  border-color: #224811;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+button.primary:active {
+  background: #489c23;
+  border-color: #489c23;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.primary[enabled] {
+  background: rgba(53, 114, 26, 0.25);
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  color: #333333;
+}
+button.secondary {
+  background: #fcf2d8;
+  border-color: #fcf2d8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.secondary:hover {
+  background: #f8e2a9;
+  border-color: #f8e2a9;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+button.secondary:active {
+  background: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.secondary[disabled] {
+  background: rgba(252, 242, 216, 0.25);
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  color: #333333;
+}
+button.accent {
+  background: #ffaf4b;
+  border-color: #ffaf4b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.accent:hover {
+  background: #675d2f;
+  border-color: #675d2f;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+button.accent:active {
+  background: #ad9b4f;
+  border-color: #ad9b4f;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.accent[disabled] {
+  background: rgba(138, 124, 63, 0.25);
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  color: #333333;
+}
