@@ -1,0 +1,25 @@
+# Fitxers de construcció
+target/
+*.jar
+*.war
+
+# Logs
+*.log
+logs/
+
+# Dependencies
+node_modules/
+.m2/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Temporal
+*.tmp
+*.temp

@@ -1,0 +1,44 @@
+# Build artifacts
+backend/target/
+*.jar
+*.war
+*.class
+
+# Logs
+*.log
+backend.log
+frontend.log
+
+# Process IDs
+*.pid
+backend.pid
+frontend.pid
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Node modules (si hi ha frontend JS en el futur)
+node_modules/
+npm-debug.log*
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# Spring Boot
+/backend/nohup.out
+
+# Database
+*.db
+*.sqlite
