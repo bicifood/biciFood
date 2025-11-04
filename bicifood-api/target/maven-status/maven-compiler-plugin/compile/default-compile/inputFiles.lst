@@ -1,0 +1,11 @@
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/BicifoodApiApplication.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/config/CorsConfig.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/config/SecurityConfig.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/config/VirtualThreadsConfig.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/controller/CategoriaController.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/controller/ProducteController.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/dto/CategoriaDTO.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/model/Categoria.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/model/Producte.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/repository/CategoriaRepository.java
+/Users/dadiazpr/Documents/github_repos/biciFood/bicifood-api/src/main/java/com/bicifood/api/repository/ProducteRepository.java

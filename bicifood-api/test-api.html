@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚴‍♂️ Test BiciFood API</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #229954;
+        }
+        
+        .result {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            border-left: 4px solid #27ae60;
+            font-family: monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        
+        .error {
+            border-left-color: #e74c3c;
+            background-color: #fdf2f2;
+        }
+        
+        .endpoint-info {
+            background-color: #e8f4fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚴‍♂️ BiciFood API Tester</h1>
+        
+        <div class="test-section">
+            <h2>🏷️ Categories</h2>
+            <div class="endpoint-info">GET /api/v1/categories</div>
+            <button onclick="testGetCategories()">Obtenir Categories</button>
+            <button onclick="testCreateCategory()">Crear Categoria Test</button>
+            <div id="categories-result" class="result" style="display:none;"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>🍽️ Productes</h2>
+            <div class="endpoint-info">GET /api/v1/productes</div>
+            <button onclick="testGetProductes()">Obtenir Productes</button>
+            <button onclick="testGetProductesByCategory()">Productes per Categoria 1</button>
+            <button onclick="testSearchProductes()">Buscar "vedella"</button>
+            <button onclick="testGetAvailableProductes()">Productes Disponibles</button>
+            <div id="productes-result" class="result" style="display:none;"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>📚 Documentació</h2>
+            <p>Per accedir a la documentació completa de l'API:</p>
+            <button onclick="openSwagger()">Obrir Swagger UI</button>
+            <button onclick="openApiDocs()">API Docs JSON</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>ℹ️ Informació</h2>
+            <p><strong>API Base URL:</strong> http://localhost:8080/api/v1</p>
+            <p><strong>Documentació:</strong> http://localhost:8080/swagger-ui.html</p>
+            <p><strong>Estat:</strong> <span id="api-status">Comprovant...</span></p>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8080/api/v1';
+        
+        // Comprovar estat de l'API al carregar
+        window.addEventListener('load', checkApiStatus);
+        
+        async function checkApiStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/categories`);
+                document.getElementById('api-status').textContent = 
+                    response.ok ? '✅ API Activa' : '❌ API amb errors';
+                document.getElementById('api-status').style.color = 
+                    response.ok ? 'green' : 'red';
+            } catch (error) {
+                document.getElementById('api-status').textContent = '❌ API no disponible';
+                document.getElementById('api-status').style.color = 'red';
+            }
+        }
+        
+        async function testGetCategories() {
+            try {
+                const response = await fetch(`${API_BASE}/categories`);
+                const data = await response.json();
+                showResult('categories-result', data, response.ok);
+            } catch (error) {
+                showResult('categories-result', `Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testCreateCategory() {
+            try {
+                const newCategory = {
+                    nomCat: 'CATEGORIA_TEST_' + Date.now()
+                };
+                
+                const response = await fetch(`${API_BASE}/categories`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(newCategory)
+                });
+                
+                const data = await response.json();
+                showResult('categories-result', 
+                    `Categoria creada: ${JSON.stringify(data, null, 2)}`, 
+                    response.ok);
+            } catch (error) {
+                showResult('categories-result', `Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testGetProductes() {
+            try {
+                const response = await fetch(`${API_BASE}/productes`);
+                const data = await response.json();
+                showResult('productes-result', data, response.ok);
+            } catch (error) {
+                showResult('productes-result', `Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testGetProductesByCategory() {
+            try {
+                const response = await fetch(`${API_BASE}/productes/categoria/1`);
+                const data = await response.json();
+                showResult('productes-result', data, response.ok);
+            } catch (error) {
+                showResult('productes-result', `Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testSearchProductes() {
+            try {
+                const response = await fetch(`${API_BASE}/productes/cerca?nom=vedella`);
+                const data = await response.json();
+                showResult('productes-result', data, response.ok);
+            } catch (error) {
+                showResult('productes-result', `Error: ${error.message}`, false);
+            }
+        }
+        
+        async function testGetAvailableProductes() {
+            try {
+                const response = await fetch(`${API_BASE}/productes/disponibles`);
+                const data = await response.json();
+                showResult('productes-result', data, response.ok);
+            } catch (error) {
+                showResult('productes-result', `Error: ${error.message}`, false);
+            }
+        }
+        
+        function showResult(elementId, data, isSuccess) {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            element.className = isSuccess ? 'result' : 'result error';
+            element.textContent = typeof data === 'object' ? 
+                JSON.stringify(data, null, 2) : data;
+        }
+        
+        function openSwagger() {
+            window.open('http://localhost:8080/swagger-ui.html', '_blank');
+        }
+        
+        function openApiDocs() {
+            window.open('http://localhost:8080/api-docs', '_blank');
+        }
+    </script>
+</body>
+</html>
