@@ -29,13 +29,8 @@
             aria-expanded="false">
             <i class="bi bi-list"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="carns.html">Carns</a></li>
-            <li><a class="dropdown-item" href="peixos.html">Peixos</a></li>
-            <li><a class="dropdown-item" href="amanides.html">Amanides</a></li>
-            <li><a class="dropdown-item" href="arros_pasta.html">Arròs i pasta</a></li>
-            <li><a class="dropdown-item" href="postres.html">Postres</a></li>
-            <li><a class="dropdown-item" href="begudes.html">Begudes</a></li>
+          <ul class="dropdown-menu" id="categoriesDropdown" aria-labelledby="dropdownMenuButton">
+            <!-- Categories carregades dinàmicament -->
           </ul>
         </div>
 
@@ -89,89 +84,12 @@
           <div class="card-header bg-brown text-white">
             <h5 class="mb-0">Articles seleccionats</h5>
           </div>
-          <div class="card-body">
-            <!-- Article 1 -->
-            <div class="cistella-item border-bottom pb-3 mb-3">
-              <div class="row align-items-center">
-                <div class="col-md-2">
-                  <img src="../images/Vedella Arròs.png" alt="Vedella amb arròs de l'hort" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4">
-                  <h6 class="mb-1">Vedella amb arròs de l'hort</h6>
-                  <small class="text-muted">Carn de vedella, arròs, verdures fresques</small>
-                </div>
-                <div class="col-md-2">
-                  <div class="input-group input-group-sm">
-                    <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity(1)">-</button>
-                    <input type="text" class="form-control text-center" id="quantity-1" value="1" readonly>
-                    <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity(1)">+</button>
-                  </div>
-                </div>
-                <div class="col-md-2 text-end">
-                  <strong>13,95 €</strong>
-                </div>
-                <div class="col-md-2 text-end">
-                  <button class="btn btn-outline-danger btn-sm" onclick="removeItem(1)">
-                    <i class="bi bi-trash"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Article 2 -->
-            <div class="cistella-item border-bottom pb-3 mb-3">
-              <div class="row align-items-center">
-                <div class="col-md-2">
-                  <img src="../images/Paella.png" alt="Paella Valenciana" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4">
-                  <h6 class="mb-1">Paella Valenciana</h6>
-                  <small class="text-muted">Arròs, pollastre, verdures, safrà</small>
-                </div>
-                <div class="col-md-2">
-                  <div class="input-group input-group-sm">
-                    <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity(2)">-</button>
-                    <input type="text" class="form-control text-center" id="quantity-2" value="2" readonly>
-                    <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity(2)">+</button>
-                  </div>
-                </div>
-                <div class="col-md-2 text-end">
-                  <strong>16,50 €</strong>
-                </div>
-                <div class="col-md-2 text-end">
-                  <button class="btn btn-outline-danger btn-sm" onclick="removeItem(2)">
-                    <i class="bi bi-trash"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Article 3 -->
-            <div class="cistella-item">
-              <div class="row align-items-center">
-                <div class="col-md-2">
-                  <img src="../images/Amanida Gourmet.png" alt="Amanida Gourmet" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4">
-                  <h6 class="mb-1">Amanida Gourmet</h6>
-                  <small class="text-muted">Mix de fulles verdes, fruits secs, vinagreta</small>
-                </div>
-                <div class="col-md-2">
-                  <div class="input-group input-group-sm">
-                    <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity(3)">-</button>
-                    <input type="text" class="form-control text-center" id="quantity-3" value="1" readonly>
-                    <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity(3)">+</button>
-                  </div>
-                </div>
-                <div class="col-md-2 text-end">
-                  <strong>9,75 €</strong>
-                </div>
-                <div class="col-md-2 text-end">
-                  <button class="btn btn-outline-danger btn-sm" onclick="removeItem(3)">
-                    <i class="bi bi-trash"></i>
-                  </button>
-                </div>
-              </div>
+          <div class="card-body" id="cart-items">
+            <!-- Els articles es carregaran dinàmicament aquí -->
+            <div class="text-center py-4" id="empty-cart-message">
+              <i class="bi bi-cart-x display-4 text-muted mb-3"></i>
+              <p class="text-muted">La teva cistella està buida</p>
+              <a href="index.html" class="btn btn-brown">Començar a comprar</a>
             </div>
           </div>
         </div>
@@ -272,45 +190,105 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/api.js"></script>
   <script>
-    // Funcions per gestionar la cistella
-    function incrementQuantity(itemId) {
-      const quantityInput = document.getElementById(`quantity-${itemId}`);
-      let quantity = parseInt(quantityInput.value);
-      quantityInput.value = quantity + 1;
-      updatePrices();
-    }
-
-    function decrementQuantity(itemId) {
-      const quantityInput = document.getElementById(`quantity-${itemId}`);
-      let quantity = parseInt(quantityInput.value);
-      if (quantity > 1) {
-        quantityInput.value = quantity - 1;
-        updatePrices();
-      }
-    }
-
-    function removeItem(itemId) {
-      const item = document.querySelector(`.cistella-item:nth-child(${itemId})`);
-      if (confirm('Estàs segur que vols eliminar aquest article de la cistella?')) {
-        item.remove();
-        updatePrices();
-        checkEmptyCart();
-      }
-    }
-
-    function updatePrices() {
-      // Aquí aniria la lògica per actualitzar els preus
-      // Per ara és només un exemple estàtic
-    }
-
-    function checkEmptyCart() {
-      const items = document.querySelectorAll('.cistella-item');
+    // Carrega el contingut de la cistella
+    function loadCart() {
+      const items = Cart.getItems();
+      const container = document.getElementById('cart-items');
+      const emptyCartMessage = document.getElementById('empty-cart-message');
+      const totalElement = document.getElementById('total');
+      
       if (items.length === 0) {
-        document.querySelector('.card').style.display = 'none';
-        document.getElementById('cistella-buida').style.display = 'block';
+        if (emptyCartMessage) emptyCartMessage.style.display = 'block';
+        if (totalElement) totalElement.textContent = '0,00€';
+        return;
+      }
+      
+      if (emptyCartMessage) emptyCartMessage.style.display = 'none';
+      
+      let total = 0;
+      if (container) container.innerHTML = '';
+      
+      items.forEach(item => {
+        total += item.price * item.quantity;
+        
+        // Generar la ruta correcta de la imatge
+        const imagePath = item.imagePath ? 
+          `../../images/${item.imagePath.replace('images/', '')}` : 
+          '../../images/placeholder-product.jpg';
+        
+        const itemHTML = `
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <img src="${imagePath}" 
+                       alt="${item.name}" 
+                       class="img-fluid rounded" 
+                       style="width: 80px; height: 60px; object-fit: cover;"
+                       onerror="this.src='../../images/placeholder-product.jpg'">
+                </div>
+                <div class="col-md-3">
+                  <h6 class="card-title mb-0">${item.name}</h6>
+                </div>
+                <div class="col-md-2">
+                  <span class="text-success fw-bold">${item.price.toFixed(2)}€</span>
+                </div>
+                <div class="col-md-2">
+                  <div class="input-group" style="width: 120px;">
+                    <button class="btn btn-outline-secondary btn-sm" onclick="updateQuantity(${item.id}, -1)">-</button>
+                    <input type="text" class="form-control text-center" value="${item.quantity}" readonly>
+                    <button class="btn btn-outline-secondary btn-sm" onclick="updateQuantity(${item.id}, 1)">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <span class="fw-bold">${(item.price * item.quantity).toFixed(2)}€</span>
+                </div>
+                <div class="col-md-1 text-end">
+                  <button class="btn btn-danger btn-sm" onclick="removeFromCart(${item.id})" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        if (container) container.innerHTML += itemHTML;
+      });
+      
+      if (totalElement) {
+        totalElement.textContent = `${total.toFixed(2)}€`;
       }
     }
+    
+    function updateQuantity(id, change) {
+      const items = Cart.getItems();
+      const item = items.find(i => i.id === id);
+      
+      if (item) {
+        item.quantity += change;
+        if (item.quantity <= 0) {
+          Cart.removeItem(id);
+        } else {
+          Cart.saveItems(items);
+        }
+        Cart.updateCartCounter();
+        loadCart();
+      }
+    }
+    
+    function removeFromCart(id) {
+      if (confirm('Estàs segur que vols eliminar aquest producte de la cistella?')) {
+        Cart.removeItem(id);
+        Cart.updateCartCounter();
+        loadCart();
+      }
+    }
+    
+    // Carrega la cistella quan es carrega la pàgina
+    document.addEventListener('DOMContentLoaded', loadCart);
   </script>
 </body>
 

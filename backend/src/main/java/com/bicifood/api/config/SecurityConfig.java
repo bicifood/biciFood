@@ -40,7 +40,13 @@ public class SecurityConfig {
                 .requestMatchers("/swagger-ui.html").permitAll()
                 .requestMatchers("/v3/api-docs/**").permitAll()
                 .requestMatchers("/actuator/**").permitAll()
+                .requestMatchers("/h2-console/**").permitAll()
                 .anyRequest().permitAll()
+            )
+            
+            // Configurar headers per a H2 Console
+            .headers(headers -> headers
+                .frameOptions(frameOptionsConfig -> frameOptionsConfig.sameOrigin())
             )
             
             // Deshabilitar creació de sessions (API REST stateless)

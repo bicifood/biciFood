@@ -125,11 +125,12 @@ public interface LliuramentRepository extends JpaRepository<Lliurament, Integer>
      * Calcula el temps mitjà de lliurament (des de l'assignació fins al lliurament)
      * @param repartidorId l'ID del repartidor (opcional)
      * @return temps mitjà en minuts
+     * NOTA: Temporalment deshabilitada per compatibilitat amb H2
      */
-    @Query("SELECT AVG(EXTRACT(EPOCH FROM (l.dataHoraLliuramentReal - l.dataHoraAssignacio))/60) " +
-           "FROM Lliurament l WHERE l.dataHoraLliuramentReal IS NOT NULL " +
-           "AND (:repartidorId IS NULL OR l.repartidor.id = :repartidorId)")
-    Double calculateAverageDeliveryTime(@Param("repartidorId") Integer repartidorId);
+    // @Query("SELECT AVG(CAST((EXTRACT(EPOCH FROM l.dataHoraLliuramentReal) - EXTRACT(EPOCH FROM l.dataHoraAssignacio))/60 AS DOUBLE)) " +
+    //        "FROM Lliurament l WHERE l.dataHoraLliuramentReal IS NOT NULL " +
+    //        "AND (:repartidorId IS NULL OR l.repartidor.id = :repartidorId)")
+    // Double calculateAverageDeliveryTime(@Param("repartidorId") Integer repartidorId);
 
     /**
      * Troba lliuraments per codi postal
