@@ -1,53 +1,134 @@
-# 🚴‍♂️ BiciFood API - Backend
+# 🚴‍♂️ BiciFood API - Backend Tècnic
 
 [![Java](https://img.shields.io/badge/Java-21%20LTS-orange.svg)](https://openjdk.org/projects/jdk/21/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.5-green.svg)](https://spring.io/projects/spring-boot)
+[![H2 Database](https://img.shields.io/badge/H2-Database-blue.svg)](https://www.h2database.com/)
 [![Maven](https://img.shields.io/badge/Maven-3.8.9-blue.svg)](https://maven.apache.org/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0-blue.svg)](https://www.mysql.com/)
 
-API REST per l'aplicació BiciFood - Plataforma de lliurament de menjar amb bicicletes a Catalunya.
+**Documentació tècnica del backend** - API REST per la plataforma BiciFood amb Spring Boot i base de dades H2.
 
-## 📋 Taula de Continguts
+## ⚡ Inici Ràpid
 
-- [Arquitectura del Projecte](#arquitectura-del-projecte)
-- [Prerequisits](#prerequisits)
-- [Instal·lació i Configuració](#installació-i-configuració)
-- [Executar l'Aplicació](#executar-laplicació)
-- [Estructura del Projecte](#estructura-del-projecte)
-- [Entitats de la Base de Dades](#entitats-de-la-base-de-dades)
-- [API Endpoints](#api-endpoints)
-- [Configuració de la Base de Dades](#configuració-de-la-base-de-dades)
-- [Testing](#testing)
-- [Documentació API](#documentació-api)
-- [Roadmap - Què falta implementar](#roadmap---què-falta-implementar)
+### 🚀 Executar Aplicació Completa (Recomanat)
+```bash
+# Des de l'arrel del projecte
+./start-bicifood.sh
+```
+**Això inicia:** Backend (8080) + Frontend (3000) + Navegador
+
+### 🛑 Aturar Aplicació
+```bash
+./stop-bicifood.sh
+```
+
+## 📋 Contingut Tècnic
+
+- [🔧 Configuració Actual](#configuració-actual)
+- [🛠️ Tecnologies Utilitzades](#tecnologies-utilitzades)
+- [💾 Base de Dades](#base-de-dades)
+- [🔗 API Endpoints](#api-endpoints)
+- [⚙️ Configuració Avançada](#configuració-avançada)
+- [🔄 Migració MySQL](#migració-mysql)
+- [🧪 Testing i Debug](#testing-i-debug)
 
 ---
 
-## 🏗️ Arquitectura del Projecte
+## 🔧 Configuració Actual
 
-```
-Backend (Spring Boot 3.3.5)
-├── API REST Controllers
-├── Business Logic Services  
-├── JPA Repositories
-├── MySQL Database
-└── Spring Security (JWT)
+### ⚡ Base de Dades: H2 (En Memòria)
+
+**Configuració activa:**
+```properties
+# H2 Database (Desenvolupament)
+spring.datasource.url=jdbc:h2:mem:bicifood_db
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=create-drop
 ```
 
-**Stack Tecnològic:**
-- **Java 21 LTS** - Llenguatge de programació
-- **Spring Boot 3.3.5** - Framework d'aplicacions
-- **Spring Data JPA** - ORM per a base de dades
-- **Spring Security** - Seguretat i autenticació
-- **MySQL 8.0+** - Base de dades relacional
-- **Maven 3.8.9** - Gestió de dependències
-- **Swagger/OpenAPI** - Documentació d'API
-- **JWT** - Autenticació amb tokens
-- **ModelMapper** - Mapejat entitats-DTOs
+**Avantatges H2:**
+- ✅ **Zero configuració** - No cal instal·lar res
+- ✅ **Inici ràpid** - Base de dades en memòria
+- ✅ **Dades de prova** - Poblada automàticament
+- ✅ **Console H2** - http://localhost:8080/api/v1/h2-console
+
+**Limitacions:**
+- ❌ **No persistent** - Dades es perden en reiniciar
+- ❌ **Només desenvolupament** - No adequada per producció
+
+### 🔄 Migració MySQL (Planificada)
+
+**Configuració MySQL preparada:**
+```properties
+# MySQL (Producció) - Configuració futura
+spring.datasource.url=jdbc:mysql://localhost:3306/bicifood_db
+spring.jpa.hibernate.ddl-auto=validate
+```
+
+**Recursos disponibles per migració:**
+- ✅ `docker-compose.yml` - MySQL + phpMyAdmin
+- ✅ `application.properties.example` - Configuració MySQL
+- ✅ `bicifood_db_v5.0/bicifood_db_v5.0.sql` - Esquema i dades completes
+
+**Per activar MySQL (futur):**
+1. `docker-compose up -d` - Iniciar MySQL
+2. Copiar `application.properties.example` → `application.properties`
+3. Importar `bicifood_db_v5.0.sql` a MySQL
 
 ---
 
-## � Prerequisits
+## 🛠️ Tecnologies Utilitzades
+
+### 🏗️ Arquitectura Backend
+
+```
+Spring Boot 3.3.5
+├── 🎯 Controllers (REST API)
+├── 🔧 Services (Business Logic)  
+├── 🗄️ Repositories (JPA/Hibernate)
+├── 💾 H2 Database (Development)
+└── 🔐 Spring Security (JWT)
+```
+
+### 📚 Stack Tecnològic Complet
+
+| Component | Versió | Propòsit |
+|-----------|--------|----------|
+| **Java** | 21 LTS | Llenguatge de programació |
+| **Spring Boot** | 3.3.5 | Framework principal |
+| **Spring Data JPA** | 3.3.5 | ORM i repositoris |
+| **Spring Security** | 6.3.5 | Seguretat i JWT |
+| **H2 Database** | 2.2.224 | Base de dades (dev) |
+| **Maven** | 3.8.9+ | Gestió dependències |
+| **Hibernate** | 6.5.3 | ORM mapping |
+| **Jackson** | 2.17.2 | Serialització JSON |
+
+### 🔌 Dependencies Maven
+
+```xml
+<!-- Core Spring Boot -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+<!-- JPA + H2 Database -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>runtime</scope>
+</dependency>
+
+<!-- Security + JWT -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+```
 
 Abans de començar, assegureu-vos de tenir instal·lat:
 

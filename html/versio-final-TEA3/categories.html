@@ -24,13 +24,8 @@
             aria-expanded="false">
             <i class="bi bi-list"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="carns.html">Carns</a></li>
-            <li><a class="dropdown-item" href="peixos.html">Peixos</a></li>
-            <li><a class="dropdown-item" href="amanides.html">Amanides</a></li>
-            <li><a class="dropdown-item" href="arros_pasta.html">Arròs i pasta</a></li>
-            <li><a class="dropdown-item" href="postres.html">Postres</a></li>
-            <li><a class="dropdown-item" href="begudes.html">Begudes</a></li>
+          <ul class="dropdown-menu" id="categoriesDropdown" aria-labelledby="dropdownMenuButton">
+            <!-- Categories carregades dinàmicament -->
           </ul>
         </div>
 
@@ -69,81 +64,31 @@
     <section>
       <!-- TÍTOL CENTRAL -->
       <div class="text-center mb-5">
-        <h1 class="section-title">Les nostres categories</h1>
-        <p class="text-muted">Descobreix els nostres plats organitzats per tipus d’aliment.</p>
+        <h1 class="section-title">Els nostres productes</h1>
+        <p class="text-muted">Descobreix la nostra selecció de productes frescos i ecològics.</p>
       </div>
 
-      <!-- GRAELLA DE CATEGORIES -->
-      <div class="row g-4 justify-content-center">
-
-        <!-- FILERA 1 -->
-        <div class="col-md-3 col-6">
-          <a href="carns.html" class="text-decoration-none">
-            <div class="card h-100 border-0 shadow-sm category-card bg-carns">
-              <div class="card-body text-center p-4">
-                <div class="bg-green rounded-circle d-inline-block mb-3 p-4"></div>
-                <h5 class="card-title fw-bold text-brown mb-0">Carns</h5>
-              </div>
-            </div>
-          </a>
+      <!-- FILTRES DE CATEGORIES -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="btn-group" role="group" aria-label="Filtres de categoria" id="category-filters">
+            <button type="button" class="btn btn-outline-primary active" onclick="Utils.filterAllProducts()">
+              Tots
+            </button>
+            <!-- Botons de categoria carregats dinàmicament -->
+          </div>
         </div>
+      </div>
 
-        <div class="col-md-3 col-6">
-          <a href="peixos.html" class="text-decoration-none">
-            <div class="card h-100 border-0 shadow-sm category-card bg-peixos">
-              <div class="card-body text-center p-4">
-                <div class="bg-green rounded-circle d-inline-block mb-3 p-4"></div>
-                <h5 class="card-title fw-bold text-brown mb-0">Peixos</h5>
-              </div>
-            </div>
-          </a>
+      <!-- GRAELLA DE PRODUCTES -->
+      <div class="row" id="products-container">
+
+        <!-- Productes carregats dinàmicament -->
+        <div class="col-12 text-center">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Carregant productes...</span>
+          </div>
         </div>
-
-        <div class="col-md-3 col-6">
-          <a href="amanides.html" class="text-decoration-none">
-            <div class="card h-100 border-0 shadow-sm category-card bg-amanides">
-              <div class="card-body text-center p-4">
-                <div class="bg-green rounded-circle d-inline-block mb-3 p-4"></div>
-                <h5 class="card-title fw-bold text-brown mb-0">Amanides i<br>vegetarian</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- FILERA 2 -->
-        <div class="col-md-3 col-6">
-          <a href="arros_pasta.html" class="text-decoration-none">
-            <div class="card h-100 border-0 shadow-sm category-card bg-arrossos">
-              <div class="card-body text-center p-4">
-                <div class="bg-green rounded-circle d-inline-block mb-3 p-4"></div>
-                <h5 class="card-title fw-bold text-brown mb-0">Arrossos<br>i pasta</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <a href="begudes.html" class="text-decoration-none">
-            <div class="card h-100 border-0 shadow-sm category-card bg-begudes">
-              <div class="card-body text-center p-4">
-                <div class="bg-green rounded-circle d-inline-block mb-3 p-4"></div>
-                <h5 class="card-title fw-bold text-brown mb-0">Begudes</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <a href="postres.html" class="text-decoration-none">
-            <div class="card h-100 border-0 shadow-sm category-card bg-postres">
-              <div class="card-body text-center p-4">
-                <div class="bg-green rounded-circle d-inline-block mb-3 p-4"></div>
-                <h5 class="card-title fw-bold text-brown mb-0">Postres</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-
       </div>
     </section>
   </main>
@@ -165,6 +110,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
 </body>
 
 </html>

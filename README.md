@@ -1,57 +1,116 @@
 # 🚴‍♂️ BiciFood - Plataforma de Menjar a Domicili Sostenible
 
-<b>El directori a on es troba la plantilla de l'HTML i les imatges, es la carpeta html a GitHub.</b>
-
 ## 📖 Descripció del Projecte
 
-**BiciFood** és una plataforma web de comanda de menjar a domicili que es diferencia per la seva aposta per la **sostenibilitat** i el **respecte al medi ambient**. El projecte combina una experiència d'usuari moderna amb valors ecològics, oferint repartiment exclusivament amb **bicicletes** per reduir la petjada de carboni.
+**BiciFood** és una plataforma web innovadora de comanda de menjar a domicili que revoluciona el sector amb la seva aposta ferma per la **sostenibilitat** i el **respecte al medi ambient**. 
+
+Combinem tecnologia moderna amb valors ecològics per oferir una experiència única: menjar fresc, de qualitat i lliurat exclusivament amb **bicicletes** per reduir la petjada de carboni.
 
 ### 🌱 Missió i Valors
-- **Sostenibilitat**: Productes ecològics i de proximitat
-- **Repartiment ECO**: Exclusivament amb bicicletes
-- **Qualitat**: Menjar fresc i de qualitat
-- **Comunitat**: Suport als productors locals
+
+- **🌍 Sostenibilitat**: Productes ecològics i de proximitat
+- **🚴‍♂️ Repartiment ECO**: Exclusivament amb bicicletes elèctriques
+- **🍽️ Qualitat Premium**: Menjar fresc i de alta qualitat
+- **🏘️ Comunitat Local**: Suport als productors i restaurants locals
+- **💚 Medi Ambient**: Zero emissions en el transport
+
+### ✨ Característiques Principals
+
+- **🛒 Cistella Intel·ligent**: Sistema de carret amb persistència local
+- **🎨 Disseny Responsive**: Optimitzat per a mòbils, tablets i desktop
+- **⚡ Rendiment**: Interfície ràpida i fluida
+- **🔄 Temps Real**: Actualitzacions instantànies de stock i preus
+- **📱 PWA Ready**: Preparada per convertir-se en aplicació mòbil
+
+---
+
+## 🚀 Inici Ràpid
+
+### ⚡ Executar l'Aplicació (1 Comanda)
+
+```bash
+# Clonar el repositori
+git clone https://github.com/bicifood/biciFood.git
+cd biciFood
+
+# Iniciar tota l'aplicació (backend + frontend)
+./start-bicifood.sh
+```
+
+**Això farà:**
+1. 📦 Compilar el backend automàticament
+2. 🚀 Iniciar Spring Boot API (port 8080)
+3. 🌐 Iniciar servidor web (port 3000)
+4. 🌍 Obrir l'aplicació al navegador
+
+### 🛑 Aturar l'Aplicació
+
+```bash
+./stop-bicifood.sh
+```
 
 ---
 
 ## 🏗️ Arquitectura del Projecte
 
-### 📁 Estructura de Carpetes
+### 🎯 Stack Tecnològic
+
+**Frontend:**
+- HTML5 + CSS3 + JavaScript ES6
+- Bootstrap 5.3.3 per al disseny responsive
+- LocalStorage per persistència del carret
+- Fetch API per comunicació amb backend
+
+**Backend:**
+- Spring Boot 3.3.5 (Java 21)
+- H2 Database (desenvolupament)
+- Spring Data JPA + Hibernate
+- Spring Security + JWT
+- Maven per gestió de dependències
+
+### 📁 Estructura del Projecte
 
 ```
 biciFood/
+├── � start-bicifood.sh              # Script principal per iniciar
+├── 🛑 stop-bicifood.sh               # Script per aturar aplicació
 │
-├── 📂 html/                           # Frontend del projecte
-│   ├── 📂 Plantilla V2/              # Plantilla inicial (Bootstrap)
-│   ├── 📂 Plantilla V3/              # Plantilla intermèdia
-│   ├── 📂 versio-final-TEA3/         # ✅ VERSIÓ PRINCIPAL
-│   └── 📂 images/                     # Galeria d'imatges de productes
+├── 📂 backend/                        # API Spring Boot
+│   ├── src/main/java/                 # Codi Java
+│   ├── src/main/resources/            # Configuració
+│   └── README.md                      # Documentació tècnica
 │
-├── 📂 bicifood_db_v4.0/              # Base de dades
-│   └── bicifood_dbV4.0.sql          # Script SQL complet
+├── 📂 html/versio-final-TEA3/        # Frontend principal
+│   ├── index.html                     # Pàgina principal
+│   ├── categories.html                # Catàleg de productes
+│   ├── cistella.html                  # Carret de compra
+│   ├── js/api.js                      # Lògica JavaScript
+│   └── style.css                      # Estils personalitzats
 │
-├── 📂 images/                         # Logos i recursos gràfics
-├── 📂 Recursos/                       # Documentació i wireframes
-└── README.md                          # Aquest fitxer
+└── 📂 images/                         # Imatges de productes
 ```
 
 ---
 
-## 🎨 Frontend - Interfície Web
+## � Funcionalitats Implementades
 
-### 🌟 Pàgines Implementades
+### 🎨 Interfície d'Usuari
 
-| Pàgina | Fitxer | Descripció | Estat |
-|--------|--------|------------|-------|
-| **🏠 Inici** | `index.html` | Pàgina principal amb categories | ✅ Complet |
-| **🛒 Cistella** | `cistella.html` | Carret de compra interactiu | ✅ Complet |
-| **🍽️ Detall Producte** | `detall_product.html` | Vista detallada d'un plat | ✅ Complet |
-| **📋 Categories** | `categories.html` | Llistat de categories de menjar | ✅ Complet |
-| **🥩 Carns** | `carns.html` | Categoria específica de carns | ✅ Complet |
-| **👥 Nosaltres** | `nosaltres.html` | Informació de l'empresa | ✅ Complet |
-| **📞 Contacte** | `contacte.html` | Formulari de contacte | ✅ Complet |
-| **💳 Pagament** | `pagament.html` | Procés de pagament + mapa | ✅ Complet |
-| **🔍 Resultats Cerca** | `resultats_cerca.html` | Resultats de cerques | ✅ Complet |
+| Component | Descripció | Característiques |
+|-----------|------------|------------------|
+| **🏠 Pàgina Principal** | Portal d'entrada | Productes destacats, navegació intuïtiva |
+| **📋 Catàleg** | Exploració de productes | Filtres per categoria, cerca en temps real |
+| **🛒 Cistella Intel·ligent** | Carret de compra | Persistència local, càlcul automàtic de preus |
+| **📱 Disseny Responsive** | Adaptació multiplataforma | Optimitzat per mòbil, tablet i desktop |
+| **⚡ Experiència Fluida** | Interfície moderna | Animacions CSS, transicions suaus |
+
+### 🔧 Funcionalitats Tècniques
+
+- **🔄 Comunicació API** - Integració completa amb backend
+- **� Persistència Local** - Cistella guardada en localStorage
+- **🎨 Disseny Modular** - Components reutilitzables
+- **🌐 PWA Ready** - Preparada per aplicació mòbil
+- **� Gestió d'Estat** - Control eficient de dades
 
 ### 🎨 Tecnologies Frontend
 
