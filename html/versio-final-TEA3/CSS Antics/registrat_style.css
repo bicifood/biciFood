@@ -1,0 +1,135 @@
+/* Colors personalitzats */
+.bg-brown {
+  background-color: #6b5a3e;
+}
+
+.bg-lightbrown {
+  background-color: #f0e0b2;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+}
+
+.logo-navbar {
+  height: 60px;
+  margin-top: -5px;
+}
+
+/* Enllaços del navbar */
+.navbar .nav-link {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Barra de cerca */
+.navbar .form-control {
+  height: 30px;
+  font-size: 0.9rem;
+}
+
+.navbar .btn {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+.navbar .dropdown .btn {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.footer img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Layout per footer a baix */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  flex: 1;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #333;
+}
+/*                           /\                                */
+/*---------------------------||------------------------------------------------------------------------------------------------------
+----------------------------ESTRUCTURA---------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*.........................NUEVO CODIGO...........................................................................................*/
+/*                           ||                               
+                             \/                                            */
+
+.form-box {
+  border: 2px solid #333;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control {
+  height: 35px;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.text-center input[type="checkbox"] {
+  transform: scale(1.1);
+}
+
+.text-center button {
+  width: 60%;
+  font-weight: 500;
+}

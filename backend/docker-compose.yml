@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # MySQL Database per BiciFood
+  mysql:
+    image: mysql:8.0
+    container_name: bicifood-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: bicifood_root_2024
+      MYSQL_DATABASE: bicifood_db
+      MYSQL_USER: bicifood_user
+      MYSQL_PASSWORD: bicifood_password
+      MYSQL_CHARACTER_SET_SERVER: utf8mb4
+      MYSQL_COLLATION_SERVER: utf8mb4_unicode_ci
+    ports:
+      - "3306:3306"
+    volumes:
+      # Persistir dades de MySQL
+      - mysql_data:/var/lib/mysql
+      # Importar automàticament l'schema inicial
+      - ../bicifood_db_v5.0/bicifood_db_v5.0.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      # Configuració personalitzada de MySQL
+      - ./docker/mysql/conf.d:/etc/mysql/conf.d:ro
+    networks:
+      - bicifood-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p$$MYSQL_ROOT_PASSWORD"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  # PhpMyAdmin (opcional) per gestió visual de la BD
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: bicifood-phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: bicifood_root_2024
+      MYSQL_ROOT_PASSWORD: bicifood_root_2024
+      UPLOAD_LIMIT: 64M
+    ports:
+      - "8081:80"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - bicifood-network
+
+volumes:
+  # Volum persistent per les dades de MySQL
+  mysql_data:
+    driver: local
+    name: bicifood_mysql_data
+
+networks:
+  # Xarxa interna per comunicació entre serveis
+  bicifood-network:
+    driver: bridge
+    name: bicifood-network

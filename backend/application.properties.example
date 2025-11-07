@@ -1,0 +1,177 @@
+# 🚴‍♂️ BiciFood API - Configuració d'Exemple
+# Copia aquest fitxer a application.properties i personalitza les configuracions
+
+# =============================================================================
+# CONFIGURACIÓ DE LA BASE DE DADES
+# =============================================================================
+
+# Connexió a MySQL (amb Docker Compose)
+spring.datasource.url=jdbc:mysql://localhost:3306/bicifood_db?useSSL=false&serverTimezone=Europe/Madrid&allowPublicKeyRetrieval=true&characterEncoding=utf8&useUnicode=true
+spring.datasource.username=bicifood_user
+spring.datasource.password=bicifood_password
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# Pool de connexions HikariCP
+spring.datasource.hikari.maximum-pool-size=20
+spring.datasource.hikari.minimum-idle=5
+spring.datasource.hikari.idle-timeout=300000
+spring.datasource.hikari.max-lifetime=600000
+spring.datasource.hikari.connection-test-query=SELECT 1
+
+# =============================================================================
+# CONFIGURACIÓ JPA/HIBERNATE  
+# =============================================================================
+
+# Configuració Hibernate per desenvolupament
+spring.jpa.hibernate.ddl-auto=validate
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.use_sql_comments=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+
+# Configuració de l'engine de persistència
+spring.jpa.properties.hibernate.connection.CharSet=utf8mb4
+spring.jpa.properties.hibernate.connection.characterEncoding=utf8
+spring.jpa.properties.hibernate.connection.useUnicode=true
+
+# =============================================================================
+# CONFIGURACIÓ DEL SERVIDOR
+# =============================================================================
+
+# Port i context path
+server.port=8080
+server.servlet.context-path=/api
+
+# Configuració d'encoding
+server.servlet.encoding.charset=UTF-8
+server.servlet.encoding.enabled=true
+server.servlet.encoding.force=true
+
+# =============================================================================
+# CONFIGURACIÓ DE LOGGING
+# =============================================================================
+
+# Nivells de logging per desenvolupament
+logging.level.com.bicifood=DEBUG
+logging.level.org.springframework.security=DEBUG
+logging.level.org.springframework.web=DEBUG
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+
+# Configuració dels logs
+logging.file.name=logs/bicifood-api.log
+logging.logback.rollingpolicy.file-name-pattern=logs/bicifood-api-%d{yyyy-MM-dd}.%i.log
+logging.logback.rollingpolicy.max-file-size=10MB
+logging.logback.rollingpolicy.total-size-cap=1GB
+logging.logback.rollingpolicy.max-history=30
+
+# =============================================================================
+# CONFIGURACIÓ JWT (per implementar)
+# =============================================================================
+
+# Clau secreta per signar tokens JWT (canvia-la per producció!)
+jwt.secret=bicifood-secret-key-change-this-in-production-2024
+jwt.expiration=86400000
+jwt.refresh.expiration=604800000
+
+# =============================================================================
+# CONFIGURACIÓ DE CORS
+# =============================================================================
+
+# URLs permeses per CORS (frontend applications)
+cors.allowed-origins=http://localhost:3000,http://localhost:4200,http://localhost:5173
+cors.allowed-methods=GET,POST,PUT,DELETE,OPTIONS,PATCH
+cors.allowed-headers=*
+cors.allow-credentials=true
+
+# =============================================================================
+# CONFIGURACIÓ SPRING SECURITY
+# =============================================================================
+
+# Configuració per desenvolupament (més permissiva)
+security.debug=true
+spring.security.user.name=admin
+spring.security.user.password=admin123
+
+# =============================================================================
+# CONFIGURACIÓ DE SPRING ACTUATOR
+# =============================================================================
+
+# Endpoints de monitorització
+management.endpoints.web.exposure.include=health,info,metrics,env
+management.endpoint.health.show-details=always
+management.info.env.enabled=true
+
+# =============================================================================
+# CONFIGURACIÓ D'APLICACIÓ PERSONALITZADA
+# =============================================================================
+
+# Informació de l'aplicació
+info.app.name=BiciFood API
+info.app.description=API REST per la plataforma de lliurament sostenible BiciFood
+info.app.version=1.0.0
+info.app.encoding=UTF-8
+info.app.java.version=${java.version}
+
+# Configuració de l'aplicació
+bicifood.app.default-language=ca
+bicifood.app.timezone=Europe/Madrid
+bicifood.app.currency=EUR
+
+# Configuració de fitxers
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
+
+# =============================================================================
+# CONFIGURACIÓ ESPECÍFICA PER ENTORNS
+# =============================================================================
+
+# Per activar perfils específics descomenta la línia següent:
+# spring.profiles.active=dev
+
+# PERFIL DE DESENVOLUPAMENT
+---
+spring.config.activate.on-profile=dev
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+logging.level.org.hibernate.SQL=DEBUG
+security.debug=true
+
+# PERFIL DE TEST  
+---
+spring.config.activate.on-profile=test
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.jpa.hibernate.ddl-auto=create-drop
+logging.level.org.hibernate.SQL=WARN
+
+# PERFIL DE PRODUCCIÓ
+---
+spring.config.activate.on-profile=prod
+spring.jpa.hibernate.ddl-auto=validate
+spring.jpa.show-sql=false
+logging.level.org.hibernate.SQL=WARN
+security.debug=false
+
+# =============================================================================
+# NOTES IMPORTANTS
+# =============================================================================
+
+# 1. CANVIA la contrasenya de MySQL per producció
+# 2. CANVIA la clau JWT per producció  
+# 3. CONFIGURA les URLs de CORS per al teu frontend
+# 4. AJUSTA els nivells de logging per producció
+# 5. USA variables d'entorn per dades sensibles en producció:
+#    Exemple: spring.datasource.password=${DB_PASSWORD}
+
+# =============================================================================
+# VARIABLES D'ENTORN RECOMANADES PER PRODUCCIÓ
+# =============================================================================
+
+# DB_HOST=localhost
+# DB_PORT=3306  
+# DB_NAME=bicifood_db
+# DB_USERNAME=bicifood_user
+# DB_PASSWORD=secure_password_here
+# JWT_SECRET=very_secure_jwt_secret_here
+# FRONTEND_URL=https://bicifood.cat
