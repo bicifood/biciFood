@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiciFood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="detall_product_style.css">
+  <link rel="stylesheet" href="../cistella_style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header bg-brown shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brown py-3">
+      <div class="container d-flex align-items-center">
+
+        <!-- Botó Categories a l'esquerra -->
+        <div class="dropdown me-3">
+          <button class="btn btn-outline-light btn-sm" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-list"></i>
+          </button>
+          <ul class="dropdown-menu" id="categoriesDropdown" aria-labelledby="dropdownMenuButton">
+            <!-- Categories carregades dinàmicament -->
+          </ul>
+        </div>
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center me-auto" href="index.html">
+          <img src="../../images/logoTransparentTextless.png" alt="BiciFood logo" class="logo-navbar me-2">
+          <span class="fw-semibold">BiciFood</span>
+        </a>
+
+        <!-- Links centrats -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="nosaltres.html">Nosaltres</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Icones dreta -->
+        <div class="d-flex align-items-center">
+
+          <form class="d-flex me-3" role="search">
+            <input class="form-control form-control-sm" type="search" placeholder="Cerca..." aria-label="Cerca">
+            <button class="btn btn-outline-light btn-sm ms-2" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <a href="#" class="text-white me-3"><i class="bi bi-cart-fill"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-person-fill"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTINGUT CENTRAL - CISTELLA -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-4">
+          <i class="bi bi-cart-fill me-2"></i>La meva cistella
+        </h1>
+      </div>
+    </div>
+
+    <!-- Contingut de la cistella -->
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Articles de la cistella -->
+        <div class="card mb-4">
+          <div class="card-header bg-brown text-white">
+            <h5 class="mb-0">Articles seleccionats</h5>
+          </div>
+          <div class="card-body" id="cart-items">
+            <!-- Els articles es carregaran dinàmicament aquí -->
+            <div class="text-center py-4" id="empty-cart-message">
+              <i class="bi bi-cart-x display-4 text-muted mb-3"></i>
+              <p class="text-muted">La teva cistella està buida</p>
+              <a href="index.html" class="btn btn-brown">Començar a comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botó continuar comprant -->
+        <div class="text-center mb-4">
+          <a href="index.html" class="btn btn-outline-brown">
+            <i class="bi bi-arrow-left me-2"></i>Continuar comprant
+          </a>
+        </div>
+      </div>
+
+      <!-- Resum de la comanda -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-header bg-brown text-white">
+            <h5 class="mb-0">Resum de la comanda</h5>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-2">
+              <span>Subtotal:</span>
+              <span id="subtotal">56,70 €</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Enviament:</span>
+              <span>Gratuït</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>IVA (21%):</span>
+              <span id="iva">11,91 €</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-3">
+              <strong>Total:</strong>
+              <strong id="total">68,61 €</strong>
+            </div>
+            
+            <!-- Codi promocional -->
+            <div class="mb-3">
+              <label for="coupon" class="form-label">Codi promocional:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="coupon" placeholder="Introdueix el codi">
+                <button class="btn btn-outline-brown" type="button">Aplicar</button>
+              </div>
+            </div>
+
+            <a href="pagament.html">
+            <button class="btn btn-brown w-100 mb-2" >
+              <i class="bi bi-credit-card me-2"></i>Procedir al pagament
+            </button>
+            </a>
+            <button class="btn btn-outline-brown w-100">
+              <i class="bi bi-whatsapp me-2"></i>Encarregar per WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <!-- Informació d'enviament -->
+        <div class="card mt-3">
+          <div class="card-body">
+            <h6><i class="bi bi-truck me-2"></i>Informació d'enviament</h6>
+            <small class="text-muted">
+              Enviament gratuït per comandes superiors a 50€.<br>
+              Temps d'enviament: 30-45 minuts.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cistella buida (hidden per defecte) -->
+    <div class="row" id="cistella-buida" style="display: none;">
+      <div class="col-12 text-center">
+        <div class="empty-cart py-5">
+          <i class="bi bi-cart-x display-1 text-muted mb-3"></i>
+          <h3 class="text-muted">La teva cistella està buida</h3>
+          <p class="text-muted">Afegeix alguns productes per començar la teva comanda!</p>
+          <a href="index.html" class="btn btn-brown">Descobrir productes</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-lightbrown text-dark py-3 mt-auto">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex align-items-center">
+        <strong>BiciFood</strong>
+      </div>
+      <div class="footer-text">
+        <span>&copy; 2025 BiciFood. Tots els drets reservats.</span>
+      </div>
+      <div>
+        <a href="politica.html" class="text-decoration-none text-dark">Política de privadesa</a>
+        <a href="contacte.html" class="text-decoration-none text-dark">Contacte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/api.js"></script>
+  <script>
+    // Carrega el contingut de la cistella
+    function loadCart() {
+      const items = Cart.getItems();
+      const container = document.getElementById('cart-items');
+      const emptyCartMessage = document.getElementById('empty-cart-message');
+      const totalElement = document.getElementById('total');
+      
+      if (items.length === 0) {
+        if (emptyCartMessage) emptyCartMessage.style.display = 'block';
+        if (totalElement) totalElement.textContent = '0,00€';
+        return;
+      }
+      
+      if (emptyCartMessage) emptyCartMessage.style.display = 'none';
+      
+      let total = 0;
+      if (container) container.innerHTML = '';
+      
+      items.forEach(item => {
+        total += item.price * item.quantity;
+        
+        // Generar la ruta correcta de la imatge
+        const imagePath = item.imagePath ? 
+          `../../images/${item.imagePath.replace('images/', '')}` : 
+          '../../images/placeholder-product.jpg';
+        
+        const itemHTML = `
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <img src="${imagePath}" 
+                       alt="${item.name}" 
+                       class="img-fluid rounded" 
+                       style="width: 80px; height: 60px; object-fit: cover;"
+                       onerror="this.src='../../images/placeholder-product.jpg'">
+                </div>
+                <div class="col-md-3">
+                  <h6 class="card-title mb-0">${item.name}</h6>
+                </div>
+                <div class="col-md-2">
+                  <span class="text-success fw-bold">${item.price.toFixed(2)}€</span>
+                </div>
+                <div class="col-md-2">
+                  <div class="input-group" style="width: 120px;">
+                    <button class="btn btn-outline-secondary btn-sm" onclick="updateQuantity(${item.id}, -1)">-</button>
+                    <input type="text" class="form-control text-center" value="${item.quantity}" readonly>
+                    <button class="btn btn-outline-secondary btn-sm" onclick="updateQuantity(${item.id}, 1)">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <span class="fw-bold">${(item.price * item.quantity).toFixed(2)}€</span>
+                </div>
+                <div class="col-md-1 text-end">
+                  <button class="btn btn-danger btn-sm" onclick="removeFromCart(${item.id})" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        if (container) container.innerHTML += itemHTML;
+      });
+      
+      if (totalElement) {
+        totalElement.textContent = `${total.toFixed(2)}€`;
+      }
+    }
+    
+    function updateQuantity(id, change) {
+      const items = Cart.getItems();
+      const item = items.find(i => i.id === id);
+      
+      if (item) {
+        item.quantity += change;
+        if (item.quantity <= 0) {
+          Cart.removeItem(id);
+        } else {
+          Cart.saveItems(items);
+        }
+        Cart.updateCartCounter();
+        loadCart();
+      }
+    }
+    
+    function removeFromCart(id) {
+      if (confirm('Estàs segur que vols eliminar aquest producte de la cistella?')) {
+        Cart.removeItem(id);
+        Cart.updateCartCounter();
+        loadCart();
+      }
+    }
+    
+    // Carrega la cistella quan es carrega la pàgina
+    document.addEventListener('DOMContentLoaded', loadCart);
+  </script>
+</body>
+
+</html>
