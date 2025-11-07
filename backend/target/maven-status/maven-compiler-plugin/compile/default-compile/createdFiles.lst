@@ -21,6 +21,9 @@ com/bicifood/api/entity/EstatComanda.class
 com/bicifood/api/service/ComandaService.class
 com/bicifood/api/BiciFoodApiApplication.class
 com/bicifood/api/config/AppConfig.class
+com/bicifood/api/controller/CategoriaController.class
 com/bicifood/api/repository/ProducteRepository.class
+com/bicifood/api/dto/CategoriaDto.class
 com/bicifood/api/entity/Usuari.class
+com/bicifood/api/service/CategoriaService.class
 com/bicifood/api/repository/LiniaComandaRepository.class

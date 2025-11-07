@@ -2,6 +2,8 @@
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/repository/RolRepository.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/service/ComandaService.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/entity/Rol.java
+/Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/service/CategoriaService.java
+/Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/dto/CategoriaDto.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/entity/Lliurament.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/entity/Usuari.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/controller/ProducteController.java
@@ -17,6 +19,7 @@
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/repository/EstatComandaRepository.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/entity/Comanda.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/entity/Producte.java
+/Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/controller/CategoriaController.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/dto/ProducteDto.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/dto/LoginResponseDto.java
 /Users/dadiazpr/Documents/github_repos/biciFood/backend/src/main/java/com/bicifood/api/repository/LiniaComandaRepository.java
