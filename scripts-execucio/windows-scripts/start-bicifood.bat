@@ -37,11 +37,10 @@ if errorlevel 1 (
 )
 
 echo [1/3] Starting Backend (Spring Boot)...
-cd "%PROJECT_DIR%\backend"
 
 REM Check if Maven Wrapper exists, otherwise use Maven
-if exist "mvnw.cmd" (
-    start "BiciFood Backend" cmd /k "mvnw.cmd spring-boot:run"
+if exist "%PROJECT_DIR%\backend\mvnw.cmd" (
+    start "BiciFood Backend" cmd /k "cd /d "%PROJECT_DIR%\backend" && mvnw.cmd spring-boot:run"
 ) else (
     where mvn >nul 2>&1
     if errorlevel 1 (
@@ -50,7 +49,7 @@ if exist "mvnw.cmd" (
         pause
         exit /b 1
     ) else (
-        start "BiciFood Backend" cmd /k "mvn spring-boot:run"
+        start "BiciFood Backend" cmd /k "cd /d "%PROJECT_DIR%\backend" && mvn spring-boot:run"
     )
 )
 
