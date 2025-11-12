@@ -1,0 +1,110 @@
+{
+  "header": {
+    "categories": "Categorías",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "search": "Buscar...",
+    "cart": "Cesta",
+    "profile": "Perfil"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de privacidad",
+    "contact": "Contacto"
+  },
+  "search": {
+    "title": "Resultados que contienen",
+    "noResults": "No se han encontrado resultados",
+    "tryAgain": "Prueba con otros términos de búsqueda",
+    "viewDetails": "Ver detalles"
+  },
+  "product": {
+    "addToCart": "Añadir a la cesta",
+    "quantity": "Cantidad",
+    "price": "Precio",
+    "description": "Descripción",
+    "relatedProducts": "Productos relacionados",
+    "noDescription": "Sin descripción disponible",
+    "stock": "Stock",
+    "loadingDescription": "Cargando descripción...",
+    "outOfStock": "Agotado",
+    "viewDetails": "Ver detalles"
+  },
+  "cart": {
+    "title": "Mi cesta",
+    "empty": "Tu cesta está vacía",
+    "emptyMessage": "¡Añade algunos productos para comenzar tu pedido!",
+    "continueShopping": "Continuar comprando",
+    "discoverProducts": "Descubrir productos",
+    "checkout": "Tramitar pedido",
+    "total": "Total",
+    "remove": "Eliminar",
+    "selectedItems": "Artículos seleccionados",
+    "orderSummary": "Resumen del pedido",
+    "subtotal": "Subtotal",
+    "shipping": "Envío",
+    "free": "Gratuito",
+    "iva": "IVA (21%)",
+    "promoCode": "Código promocional",
+    "enterCode": "Introduce el código",
+    "apply": "Aplicar",
+    "proceedPayment": "Proceder al pago",
+    "orderWhatsapp": "Pedir por WhatsApp",
+    "shippingInfo": "Información de envío",
+    "freeShippingOver": "Envío gratuito para pedidos superiores a 50€.",
+    "deliveryTime": "Tiempo de envío: 30-45 minutos."
+  },
+  "categories": {
+    "meats": "Carnes",
+    "fish": "Pescados",
+    "salads": "Ensaladas",
+    "ricePasta": "Arroz y pasta",
+    "desserts": "Postres",
+    "drinks": "Bebidas",
+    "all": "Todos",
+    "loadingProducts": "Cargando productos..."
+  },
+  "home": {
+    "welcome": "Bienvenido a BiciFood",
+    "subtitle": "Comida casera entregada en bicicleta",
+    "featuredProducts": "Productos Destacados",
+    "loading": "Cargando...",
+    "viewAllProducts": "Ver todos los productos",
+    "categoriesCard": "¡Nuestros productos te esperan! ¡De las granjas y huertos a la mesa!",
+    "aboutCard": "Cocinamos el cambio, paso a paso. Conoce nuestro objetivo y el equipo que lo conforma.",
+    "contactCard": "¡Contáctanos y dinos cuánto te ha gustado o qué podríamos mejorar!"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "whereToFind": "Dónde encontrarnos",
+    "subject": "Asunto",
+    "fullName": "Nombre y apellidos",
+    "emailAddress": "Dirección de correo electrónico",
+    "messagePlaceholder": "Escribe tu mensaje aquí...",
+    "send": "Enviar",
+    "required": "*"
+  },
+  "about": {
+    "whoWeAre": "¿Quiénes somos?",
+    "missionValues": "Misión y valores",
+    "missionText": "En Bicifood creemos que comer bien no debería dañar el planeta. Por eso trabajamos con productos ecológicos y de proximidad, y hacemos nuestros repartos exclusivamente en bicicleta para reducir la huella de carbono.",
+    "ourTeam": "Nuestro equipo",
+    "frontendTeam": "Berta y Sergi: Front-end",
+    "frontendDesc": "Especialistas en diseño de interfaces y experiencia de usuario (UX).",
+    "backendTeam": "Jaime y Daniel: Back-end",
+    "backendDesc": "Arquitectos de sistemas y expertos en gestión de bases de datos.",
+    "environmentCommitment": "Compromiso con el medio ambiente",
+    "renewableEnergy": "Uso de energía renovable.",
+    "biodegradablePackaging": "Envases 100% biodegradables.",
+    "localProducers": "Colaboración con productores locales.",
+    "bikeDelivery": "Reparto 100% en bicicleta."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "accept": "Aceptar",
+    "close": "Cerrar"
+  }
+}

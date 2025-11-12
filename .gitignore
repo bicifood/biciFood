@@ -1,0 +1,102 @@
+# ====================================
+# BiciFood - Git Ignore
+# ====================================
+
+# ====================================
+# Backend (Java/Maven)
+# ====================================
+
+# Maven
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+backend/.metadata/
+
+# IDE - VS Code
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+backend/logs/
+backend/spring.log
+
+# ====================================
+# Frontend
+# ====================================
+
+# Node modules (si s'usa npm/yarn en el futur)
+node_modules/
+frontend/node_modules/
+
+# Builds
+frontend/dist/
+frontend/build/
+
+# ====================================
+# Sistema Operatiu
+# ====================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# ====================================
+# Fitxers del Projecte
+# ====================================
+
+# Scripts - PIDs
+.frontend.pid
+*.pid
+
+# Base de dades local (si s'usa MySQL local en el futur)
+*.sql.backup
+backend/data/
+
+# Fitxers de configuració amb secrets
+backend/src/main/resources/application-prod.properties
+backend/src/main/resources/application-secret.properties
+*.env
+.env.local
+
+# ====================================
+# Altres
+# ====================================
+
+# Backups
+*.bak
+*.swp
+*.tmp
+*~
+
+# Compressions
+*.zip
+*.tar.gz
+*.rar
+
+# Fitxers de sistema
+.Spotlight-V100
+.Trashes

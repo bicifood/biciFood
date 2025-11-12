@@ -1,0 +1,110 @@
+{
+  "header": {
+    "categories": "Categories",
+    "about": "About Us",
+    "contact": "Contact",
+    "search": "Search...",
+    "cart": "Cart",
+    "profile": "Profile"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
+  },
+  "search": {
+    "title": "Results containing",
+    "noResults": "No results found",
+    "tryAgain": "Try with other search terms",
+    "viewDetails": "View details"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "quantity": "Quantity",
+    "price": "Price",
+    "description": "Description",
+    "relatedProducts": "Related Products",
+    "noDescription": "No description available",
+    "stock": "Stock",
+    "loadingDescription": "Loading description...",
+    "outOfStock": "Out of Stock",
+    "viewDetails": "View Details"
+  },
+  "cart": {
+    "title": "My Cart",
+    "empty": "Your cart is empty",
+    "emptyMessage": "Add some products to start your order!",
+    "continueShopping": "Continue Shopping",
+    "discoverProducts": "Discover Products",
+    "checkout": "Checkout",
+    "total": "Total",
+    "remove": "Remove",
+    "selectedItems": "Selected Items",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "iva": "VAT (21%)",
+    "promoCode": "Promo Code",
+    "enterCode": "Enter code",
+    "apply": "Apply",
+    "proceedPayment": "Proceed to Payment",
+    "orderWhatsapp": "Order via WhatsApp",
+    "shippingInfo": "Shipping Information",
+    "freeShippingOver": "Free shipping for orders over €50.",
+    "deliveryTime": "Delivery time: 30-45 minutes."
+  },
+  "categories": {
+    "meats": "Meats",
+    "fish": "Fish",
+    "salads": "Salads",
+    "ricePasta": "Rice & Pasta",
+    "desserts": "Desserts",
+    "drinks": "Drinks",
+    "all": "All",
+    "loadingProducts": "Loading products..."
+  },
+  "home": {
+    "welcome": "Welcome to BiciFood",
+    "subtitle": "Homemade food delivered by bicycle",
+    "featuredProducts": "Featured Products",
+    "loading": "Loading...",
+    "viewAllProducts": "View all products",
+    "categoriesCard": "Our products are waiting for you! From farms and gardens to table!",
+    "aboutCard": "We cook change, step by step. Learn about our goal and the team behind it.",
+    "contactCard": "Contact us and tell us how much you liked it or what we could improve!"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "whereToFind": "Where to Find Us",
+    "subject": "Subject",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "messagePlaceholder": "Write your message here...",
+    "send": "Send",
+    "required": "*"
+  },
+  "about": {
+    "whoWeAre": "Who We Are?",
+    "missionValues": "Mission and Values",
+    "missionText": "At Bicifood we believe that eating well shouldn't harm the planet. That's why we work with organic and local products, and we make our deliveries exclusively by bicycle to reduce our carbon footprint.",
+    "ourTeam": "Our Team",
+    "frontendTeam": "Berta and Sergi: Front-end",
+    "frontendDesc": "Specialists in interface design and user experience (UX).",
+    "backendTeam": "Jaime and Daniel: Back-end",
+    "backendDesc": "System architects and database management experts.",
+    "environmentCommitment": "Environmental Commitment",
+    "renewableEnergy": "Use of renewable energy.",
+    "biodegradablePackaging": "100% biodegradable packaging.",
+    "localProducers": "Collaboration with local producers.",
+    "bikeDelivery": "100% bicycle delivery."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "accept": "Accept",
+    "close": "Close"
+  }
+}
