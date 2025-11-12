@@ -160,7 +160,6 @@ const Utils = {
                      onerror="this.src='../../images/placeholder-product.jpg'; this.alt='Imatge no disponible'">
                 <div class="card-body d-flex flex-column">
                     <h6 class="card-title">${product.nom}</h6>
-                    <p class="card-text text-muted small">${product.descripcio}</p>
                     <div class="mt-auto">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="fw-bold text-success">${product.preu}€</span>

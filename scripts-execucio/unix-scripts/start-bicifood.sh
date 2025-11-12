@@ -1,98 +1,178 @@
+// ...existing code...
 #!/bin/bash
+set -e
 
-# Script per iniciar l'aplicació BiciFood completa
+# Script per iniciar l'aplicació BiciFood completa (adaptat a Linux)
 echo "🚴‍♂️ INICIANT BICIFOOD - Aplicació completa"
 echo "========================================"
-echo "Aquest script farà el següent:"
-echo "  1. 📦 Compilar el backend (si cal)"
-echo "  2. 🚀 Iniciar el backend Spring Boot"
-echo "  3. 🌐 Iniciar el servidor web del frontend"
-echo "  4. 🌍 Obrir l'aplicació al navegador"
-echo ""
 
-# Canviar al directori del projecte
-PROJECT_DIR="/Users/dadiazpr/Documents/github_repos/biciFood"
-cd "$PROJECT_DIR"
+# Ruta del projecte (ajusta si cal)
+PROJECT_DIR="/home/isard/Documentos/github_repos/biciFood"
+cd "$PROJECT_DIR" || { echo "No existeix $PROJECT_DIR"; exit 1; }
 
-# Verificar que el JAR existeix
-JAR_FILE="backend/target/bicifood-api-1.0.0.jar"
-if [ ! -f "$JAR_FILE" ]; then
-    echo "📦 No s'ha trobat el fitxer JAR. Compilant el projecte..."
-    echo "   Executant: mvn clean package -DskipTests"
-    
-    cd "$PROJECT_DIR/backend"
-    if mvn clean package -DskipTests; then
-        echo "✅ Compilació exitosa!"
-        cd "$PROJECT_DIR"
-    else
-        echo "❌ Error en la compilació del projecte"
-        exit 1
-    fi
-else
-    echo "✅ JAR trobat: $JAR_FILE"
-fi
-
-# Iniciar el backend
-echo "🚀 Iniciant el backend de BiciFood..."
-echo "   Port: 8080"
-echo "   Swagger UI: http://localhost:8080/api/v1/swagger-ui.html"
-echo ""
-
-# Esperar una mica abans d'obrir el navegador
-echo "⏳ Esperant que el backend s'inicialitzi..."
-
-# Executar el backend en background
-java -jar "$JAR_FILE" &
-BACKEND_PID=$!
-
-# Esperar que el backend estigui llest
-sleep 8
-
-# Verificar que el backend està funcionant
-echo "🔍 Verificant que el backend està funcionant..."
-if curl -s http://localhost:8080/api/v1/actuator/health > /dev/null; then
-    echo "✅ Backend funcionant correctament!"
-    
-    # Iniciar servidor HTTP per servir el frontend des de l'arrel del projecte
-    echo ""
-    echo "🌐 Iniciant servidor web per al frontend..."
-    cd "$PROJECT_DIR"
-    python3 -m http.server 3000 > /dev/null 2>&1 &
-    FRONTEND_PID=$!
-    
-    # Esperar un moment per què el servidor s'iniciï
-    sleep 2
-    
-    # Obrir l'aplicació web al navegador
-    WEB_URL="http://localhost:3000/frontend/html/TEA4/"
-    echo "   Frontend servidor: http://localhost:3000/frontend/html/TEA4/"
-    echo "   Backend API: http://localhost:8080/api/v1"
-    echo ""
-    echo "🌐 Obrint l'aplicació web al navegador..."
-    
-    # Obrir en el navegador per defecte
-    open "$WEB_URL"
-    
-    echo ""
-    echo "🎉 BICIFOOD ESTÀ LLEST!"
-    echo "========================================"
-    echo "✅ Frontend: http://localhost:3000/frontend/html/TEA4/"
-    echo "✅ Backend: http://localhost:8080/api/v1"
-    echo "✅ API Docs: http://localhost:8080/api/v1/swagger-ui.html"
-    echo ""
-    echo "📝 Per aturar els serveis:"
-    echo "   • Backend: Ctrl+C al terminal del backend"
-    echo "   • Frontend: pkill -f 'python3.*http.server.*3000'"
-    echo ""
-    
-    # Guardar el PID del servidor frontend per facilitar l'aturada
-    echo $FRONTEND_PID > "$PROJECT_DIR/.frontend.pid"
-    
-    # Mantenir el backend funcionant
-    wait $BACKEND_PID
-    
-else
-    echo "❌ Error: El backend no s'ha iniciat correctament"
-    kill $BACKEND_PID 2>/dev/null
+# Comprovar eines requerides
+for cmd in java mvn python3 curl xdg-open; do
+  if ! command -v "$cmd" >/dev/null 2>&1; then
+    echo "⚠️  Falta la comanda: $cmd. Instal·la-la abans d'executar."
     exit 1
+  fi
+done
+
+# Cercar JAR (flexible amb comodí)
+JAR_FILE=$(find backend/target -maxdepth 1 -type f -name "*bicifood*.jar" -print -quit || true)
+if [ -z "$JAR_FILE" ]; then
+  echo "📦 No s'ha trobat el fitxer JAR. Compilant el projecte..."
+  cd "$PROJECT_DIR/backend"
+  if mvn clean package -DskipTests; then
+    echo "✅ Compilació exitosa!"
+    JAR_FILE=$(find target -maxdepth 1 -type f -name "*bicifood*.jar" -print -quit)
+    if [ -z "$JAR_FILE" ]; then
+      echo "❌ No s'ha produït el JAR esperat"
+      exit 1
+    fi
+    cd "$PROJECT_DIR"
+  else
+    echo "❌ Error en la compilació del projecte"
+    exit 1
+  fi
+else
+  echo "✅ JAR trobat: $JAR_FILE"
 fi
+
+# Iniciar backend en background
+echo "🚀 Iniciant el backend (java -jar)..."
+java -jar "$JAR_FILE" >"$PROJECT_DIR/.backend.log" 2>&1 &
+BACKEND_PID=$!
+echo $BACKEND_PID > "$PROJECT_DIR/.backend.pid"
+
+# Esperar que estigui ready (timeout)
+echo "⏳ Esperant que el backend estigui llest (timeout 60s)..."
+READY=0
+for i in $(seq 1 30); do
+  if curl -s -f http://localhost:8080/api/v1/actuator/health >/dev/null 2>&1; then
+    READY=1
+    break
+  fi
+  sleep 2
+done
+
+if [ "$READY" -ne 1 ]; then
+  echo "❌ El backend no ha respost a /actuator/health. Mira $PROJECT_DIR/.backend.log"
+  kill "$BACKEND_PID" 2>/dev/null || true
+  exit 1
+fi
+echo "✅ Backend funcionant correctament!"
+
+# Iniciar servidor per al frontend (port 3000)
+echo "🌐 Iniciant servidor web per al frontend..."
+python3 -m http.server 3000 >"$PROJECT_DIR/.frontend.log" 2>&1 &
+FRONTEND_PID=$!
+echo $FRONTEND_PID > "$PROJECT_DIR/.frontend.pid"
+sleep 1
+
+WEB_URL="http://localhost:3000/frontend/html/TEA4/"
+echo "   Frontend: $WEB_URL"
+echo "   Backend API: http://localhost:8080/api/v1"
+
+# Obrir navegador (xdg-open a Linux, fallback a open)
+if command -v xdg-open >/dev/null 2>&1; then
+  xdg-open "$WEB_URL" >/dev/null 2>&1 || true
+elif command -v open >/dev/null 2>&1; then
+  open "$WEB_URL" >/dev/null 2>&1 || true
+else
+  echo "🔗 Obre manualment: $WEB_URL"
+fi
+
+echo "🎉 BICIFOOD ESTÀ LLEST!"
+echo "Logs: .backend.log  .frontend.log"
+echo "Per aturar serveis: kill \$(cat .backend.pid) ; kill \$(cat .frontend.pid)"
+# ...existing code...#!/bin/bash
+// ...existing code...
+#!/bin/bash
+set -e
+
+# Script per iniciar l'aplicació BiciFood completa (adaptat a Linux)
+echo "🚴‍♂️ INICIANT BICIFOOD - Aplicació completa"
+echo "========================================"
+
+# Ruta del projecte (ajusta si cal)
+PROJECT_DIR="/home/sergi/Documentos/github_repos/biciFood"
+cd "$PROJECT_DIR" || { echo "No existeix $PROJECT_DIR"; exit 1; }
+
+# Comprovar eines requerides
+for cmd in java mvn python3 curl xdg-open; do
+  if ! command -v "$cmd" >/dev/null 2>&1; then
+    echo "⚠️  Falta la comanda: $cmd. Instal·la-la abans d'executar."
+    exit 1
+  fi
+done
+
+# Cercar JAR (flexible amb comodí)
+JAR_FILE=$(find backend/target -maxdepth 1 -type f -name "*bicifood*.jar" -print -quit || true)
+if [ -z "$JAR_FILE" ]; then
+  echo "📦 No s'ha trobat el fitxer JAR. Compilant el projecte..."
+  cd "$PROJECT_DIR/backend"
+  if mvn clean package -DskipTests; then
+    echo "✅ Compilació exitosa!"
+    JAR_FILE=$(find target -maxdepth 1 -type f -name "*bicifood*.jar" -print -quit)
+    if [ -z "$JAR_FILE" ]; then
+      echo "❌ No s'ha produït el JAR esperat"
+      exit 1
+    fi
+    cd "$PROJECT_DIR"
+  else
+    echo "❌ Error en la compilació del projecte"
+    exit 1
+  fi
+else
+  echo "✅ JAR trobat: $JAR_FILE"
+fi
+
+# Iniciar backend en background
+echo "🚀 Iniciant el backend (java -jar)..."
+java -jar "$JAR_FILE" >"$PROJECT_DIR/.backend.log" 2>&1 &
+BACKEND_PID=$!
+echo $BACKEND_PID > "$PROJECT_DIR/.backend.pid"
+
+# Esperar que estigui ready (timeout)
+echo "⏳ Esperant que el backend estigui llest (timeout 60s)..."
+READY=0
+for i in $(seq 1 30); do
+  if curl -s -f http://localhost:8080/api/v1/actuator/health >/dev/null 2>&1; then
+    READY=1
+    break
+  fi
+  sleep 2
+done
+
+if [ "$READY" -ne 1 ]; then
+  echo "❌ El backend no ha respost a /actuator/health. Mira $PROJECT_DIR/.backend.log"
+  kill "$BACKEND_PID" 2>/dev/null || true
+  exit 1
+fi
+echo "✅ Backend funcionant correctament!"
+
+# Iniciar servidor per al frontend (port 3000)
+echo "🌐 Iniciant servidor web per al frontend..."
+python3 -m http.server 3000 >"$PROJECT_DIR/.frontend.log" 2>&1 &
+FRONTEND_PID=$!
+echo $FRONTEND_PID > "$PROJECT_DIR/.frontend.pid"
+sleep 1
+
+WEB_URL="http://localhost:3000/frontend/html/TEA4/"
+echo "   Frontend: $WEB_URL"
+echo "   Backend API: http://localhost:8080/api/v1"
+
+# Obrir navegador (xdg-open a Linux, fallback a open)
+if command -v xdg-open >/dev/null 2>&1; then
+  xdg-open "$WEB_URL" >/dev/null 2>&1 || true
+elif command -v open >/dev/null 2>&1; then
+  open "$WEB_URL" >/dev/null 2>&1 || true
+else
+  echo "🔗 Obre manualment: $WEB_URL"
+fi
+
+echo "🎉 BICIFOOD ESTÀ LLEST!"
+echo "Logs: .backend.log  .frontend.log"
+echo "Per aturar serveis: kill \$(cat .backend.pid) ; kill \$(cat .frontend.pid)"
+# ...existing code...#!/bin/bash
