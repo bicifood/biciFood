@@ -72,7 +72,7 @@
                       <i class="bi bi-cart-fill"></i>
                       <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-counter" style="display: none;">0</span>
                     </a>
-                    <a href="perfil.html" class="text-white" data-i18n-title="header.profile"><i class="bi bi-person-fill"></i></a>
+                    <a href="userConfig.html" class="text-white" data-i18n-title="header.profile"><i class="bi bi-person-fill"></i></a>
                 </div>
             </div>
         </nav>
@@ -119,6 +119,15 @@
   
  <script>
     var map = L.map('map').setView([41.3748105,2.1682657], 20);
+
+    var iconaBicicleta = L.divIcon({
+    html:'<i class="bi bi-bicycle" style="font-size: 30px; color: #38761d;">',
+    className: 'bicicleta-icon',
+    iconSize:     [28, 28], // size of the icon
+    iconAnchor:   [14, 14], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -14] // point from which the popup should open relative to the iconAnchor
+    });
+
     const simulacioSeguiment =[
             [41.3748, 2.1682], // 0. Restaurant (Punt de partida)
             [41.3880, 2.1800], // 1. Carrer 1
@@ -133,12 +142,34 @@
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
 
-            /*La idea seria que aquest marker s'anés actualitzant cada... 10 minuts?
-            es podria simular amb una colecció d'arrays amb ubicacions ficticies i anar amb un setInterval canviant aquest L.marker*/
-            const restaurantMarker = L.marker([41.3748105,2.1682657]).addTo(map)
-                .bindPopup('Restaurant BiciFood')
+            
+            const restaurantMarker = L.marker(simulacioSeguiment[0]).addTo(map)
+                .bindPopup('Sortint del restaurant 🍽️')
                 .openPopup();
+                
+// Marcador del repartidor i moviment simple amb setInterval
+            const deliveryMarker = L.marker(simulacioSeguiment[0], { title: 'Repartidor', icon: iconaBicicleta })
+                .addTo(map)
 
+            let index = 0;
+            const cadaXmicrosegons = 5000;
+
+            const simInterval = setInterval(() => {
+              index++;
+              const last = simulacioSeguiment[simulacioSeguiment.length - 1];
+              if (index >= simulacioSeguiment.length) {
+                clearInterval(simInterval);
+                deliveryMarker.setLatLng(simulacioSeguiment[simulacioSeguiment.length - 1]);
+                deliveryMarker.getPopup().setContent('Entregat! ✅');
+                deliveryMarker.openPopup();
+                  return;
+              }
+              const pos = simulacioSeguiment[index];
+              deliveryMarker.setLatLng(pos);
+              map.panTo(pos, {animate: true, duration: 1});
+              /*Control de missatge del popup segons l'índex
+              deliveryMarker.getPopup().setContent(`Repartidor: punt ${index}`);*/
+            }, cadaXmicrosegons);
 
   </script>
 </body>
