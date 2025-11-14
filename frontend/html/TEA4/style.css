@@ -57,6 +57,11 @@
   justify-content: center;
 }
 
+/* Eliminar la fletxeta del dropdown */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
 /* Footer */
 .footer img {
   filter: grayscale(100%);
@@ -302,6 +307,35 @@ a.text-decoration-none {
 .section-title::after {
   right: -60px;
 }
+
+
+/* Botons marrons personalitzats */
+.btn-brown {
+  color: #6b5a3e;
+  border: 1px solid #6b5a3e;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-brown {
+  background-color: #6b5a3e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+.btn-brown:hover {
+  background-color: #47352d;
+}
+
+.btn-brown.active {
+  background-color: #6b5a3e;
+}
+
+
+
 
 /*--------------------------------------------------CISTELLA-------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -866,5 +900,58 @@ button.accent[disabled] {
   to {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+/*--------------------------------------------PÀGINA PERFIL-----------------------------------------------------*/
+
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-container h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.profile-container hr {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-top: 2px solid #ddd;
+}
+
+.profile-container .row {
+  font-size: 1rem;
+}
+
+.profile-container .text-muted {
+  font-weight: 500;
+}
+
+.profile-container .btn {
+  font-weight: 500;
+  color: #000;
+  padding: 4px 14px;
+  background-color: #efe6cc;
+}
+
+.profile-container .btn:hover {
+  background-color: #6b5a3e;
+  color: #fff;
+  border-color: #6b5a3e;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+  }
+
+  .profile-container .row {
+    text-align: left;
   }
 }
