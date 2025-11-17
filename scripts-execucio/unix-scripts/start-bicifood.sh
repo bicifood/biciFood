@@ -7,7 +7,7 @@ echo "🚴‍♂️ INICIANT BICIFOOD - Aplicació completa"
 echo "========================================"
 
 # Ruta del projecte (ajusta si cal)
-PROJECT_DIR="/home/isard/Documentos/github_repos/biciFood"
+PROJECT_DIR="/home/isard/Documents/github_repos/biciFood"
 cd "$PROJECT_DIR" || { echo "No existeix $PROJECT_DIR"; exit 1; }
 
 # Comprovar eines requerides
@@ -96,7 +96,7 @@ echo "🚴‍♂️ INICIANT BICIFOOD - Aplicació completa"
 echo "========================================"
 
 # Ruta del projecte (ajusta si cal)
-PROJECT_DIR="/home/sergi/Documentos/github_repos/biciFood"
+PROJECT_DIR="/home/isard/Documents/github_repos/biciFood"
 cd "$PROJECT_DIR" || { echo "No existeix $PROJECT_DIR"; exit 1; }
 
 # Comprovar eines requerides
