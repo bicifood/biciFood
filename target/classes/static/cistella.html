@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiciFood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="detall_product_style.css">
+  <link rel="stylesheet" href="../cistella_style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="/js/i18n.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header bg-brown shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brown py-3">
+      <div class="container d-flex align-items-center">
+
+        <!-- Botó Categories a l'esquerra -->
+        <div class="dropdown me-3">
+          <button class="btn btn-outline-light btn-sm" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-list"></i>
+          </button>
+          <ul class="dropdown-menu" id="categoriesDropdown" aria-labelledby="dropdownMenuButton">
+            <!-- Categories carregades dinàmicament -->
+          </ul>
+        </div>
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center me-auto" href="index.html">
+          <img src="../../images/logoTransparentTextless.png" alt="BiciFood logo" class="logo-navbar me-2">
+          <span class="fw-semibold">BiciFood</span>
+        </a>
+
+        <!-- Links centrats -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="nosaltres.html" data-i18n="header.about">Nosaltres</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacte.html" data-i18n="header.contact">Contacte</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html" data-i18n="header.categories">Categories</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Icones dreta -->
+        <div class="d-flex align-items-center">
+          <!-- Selector d'idioma -->
+          <select id="lang-selector" class="form-select form-select-sm me-3" style="width: auto;">
+            <option value="ca">🇪🇸 CA</option>
+            <option value="es">🇪🇸 ES</option>
+            <option value="en">🇬🇧 EN</option>
+          </select>
+
+          <form class="d-flex me-3" role="search" onsubmit="searchProducts(event)">
+            <input class="form-control form-control-sm" type="search" placeholder="Cerca..." aria-label="Cerca"
+              id="search-input" data-i18n-placeholder="header.search">
+            <button class="btn btn-outline-light btn-sm ms-2" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <a href="#" class="text-white me-3 position-relative" data-i18n-title="header.cart">
+            <i class="bi bi-cart-fill"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              id="cart-counter" style="display: none;">0</span>
+          </a>
+          <a href="userConfig.html" class="text-white" data-i18n-title="header.profile"><i
+              class="bi bi-person-fill"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTINGUT CENTRAL - CISTELLA -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-4">
+          <i class="bi bi-cart-fill me-2"></i><span data-i18n="cart.title">La meva cistella</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Contingut de la cistella -->
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Articles de la cistella -->
+        <div class="card mb-4">
+          <div class="card-header bg-brown text-white">
+            <h5 class="mb-0" data-i18n="cart.selectedItems">Articles seleccionats</h5>
+          </div>
+          <div class="card-body" id="cart-items">
+            <!-- Els articles es carregaran dinàmicament aquí -->
+          </div>
+        </div>
+
+        <!-- Botó continuar comprant -->
+        <div class="text-center mb-4">
+          <a href="index.html" class="btn btn-outline-brown">
+            <i class="bi bi-arrow-left me-2"></i><span data-i18n="cart.continueShopping">Continuar comprant</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Resum de la comanda -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-header bg-brown text-white">
+            <h5 class="mb-0" data-i18n="cart.orderSummary">Resum de la comanda</h5>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-2">
+              <span data-i18n="cart.subtotal">Subtotal:</span>
+              <span id="subtotal">0,00 €</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span data-i18n="cart.shipping">Enviament:</span>
+              <span data-i18n="cart.free">Gratuït</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span data-i18n="cart.iva">IVA (21%):</span>
+              <span id="iva">0,00 €</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-3">
+              <strong data-i18n="cart.total">Total:</strong>
+              <strong id="total">0,00€</strong>
+            </div>
+
+            <!-- Codi promocional -->
+            <div class="mb-3">
+              <label for="coupon" class="form-label" data-i18n="cart.promoCode">Codi promocional:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="coupon" data-i18n-placeholder="cart.enterCode"
+                  placeholder="Introdueix el codi" onkeypress="if(event.key==='Enter') applyPromoCode()">
+                <button class="btn btn-outline-brown" type="button" onclick="applyPromoCode()"
+                  data-i18n="cart.apply">Aplicar</button>
+              </div>
+            </div>
+
+            <a href="pagament.html">
+              <button class="btn btn-brown w-100 mb-2">
+                <i class="bi bi-credit-card me-2"></i><span data-i18n="cart.proceedPayment">Procedir al pagament</span>
+              </button>
+            </a>
+            <button class="btn btn-outline-brown w-100">
+              <i class="bi bi-whatsapp me-2"></i><span data-i18n="cart.orderWhatsapp">Encarregar per WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Informació d'enviament -->
+        <div class="card mt-3">
+          <div class="card-body">
+            <h6><i class="bi bi-truck me-2"></i><span data-i18n="cart.shippingInfo">Informació d'enviament</span></h6>
+            <small class="text-muted">
+              <span data-i18n="cart.freeShippingOver">Enviament gratuït per comandes superiors a 50€.</span><br>
+              <span data-i18n="cart.deliveryTime">Temps d'enviament: 30-45 minuts.</span>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cistella buida (hidden per defecte) -->
+    <div class="row" id="cistella-buida" style="display: none;">
+      <div class="col-12 text-center">
+        <div class="empty-cart py-5">
+          <i class="bi bi-cart-x display-1 text-muted mb-3"></i>
+          <h3 class="text-muted" data-i18n="cart.empty">La teva cistella està buida</h3>
+          <p class="text-muted" data-i18n="cart.emptyMessage">Afegeix alguns productes per començar la teva comanda!</p>
+          <a href="index.html" class="btn btn-brown" data-i18n="cart.discoverProducts">Descobrir productes</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-lightbrown text-dark py-3 mt-auto">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex align-items-center">
+        <strong>BiciFood</strong>
+      </div>
+      <div class="footer-text">
+        <span>&copy; 2025 BiciFood. <span data-i18n="footer.rights">Tots els drets reservats</span>.</span>
+      </div>
+      <div>
+        <a href="politica.html" class="text-decoration-none text-dark" data-i18n="footer.privacy">Política de
+          privadesa</a>
+        <a href="contacte.html" class="text-decoration-none text-dark ms-3" data-i18n="footer.contact">Contacte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/api.js?v=20251122"></script>
+  <script>
+    // Codis promocionals disponibles
+    const PROMO_CODES = {
+      'BICI25': { discount: 0.25, description: '25% de descompte' },
+      'BICI10': { discount: 0.10, description: '10% de descompte' },
+      'BICI50': { discount: 0.50, description: '50% de descompte' },
+      'WELCOME': { discount: 0.15, description: '15% de descompte - Benvinguda' }
+    };
+
+    // Variable global per al codi aplicat
+    let appliedPromoCode = null;
+
+    // Carrega el contingut de la cistella
+    function loadCart() {
+      const items = Cart.getItems();
+      const container = document.getElementById('cart-items');
+      const emptyCartMessage = document.getElementById('empty-cart-message');
+      const totalElement = document.getElementById('total');
+      const subtotalElement = document.getElementById('subtotal');
+      const ivaElement = document.getElementById('iva');
+
+      // Neteja sempre el contenidor primer
+      if (container) container.innerHTML = '';
+
+      if (items.length === 0) {
+        // Mostra missatge de cistella buida
+        if (container) {
+          container.innerHTML = `
+            <div class="text-center py-4" id="empty-cart-message">
+              <i class="bi bi-cart-x display-4 text-muted mb-3"></i>
+              <p class="text-muted">La teva cistella està buida</p>
+              <a href="index.html" class="btn btn-brown">Començar a comprar</a>
+            </div>
+          `;
+        }
+        // Actualitza els totals a zero
+        if (totalElement) totalElement.textContent = '0,00€';
+        if (subtotalElement) subtotalElement.textContent = '0,00€';
+        if (ivaElement) ivaElement.textContent = '0,00€';
+        return;
+      }
+
+      let total = 0;
+
+      items.forEach(item => {
+        total += item.price * item.quantity;
+
+        // Generar la ruta correcta de la imatge
+        const imagePath = item.imagePath ?
+          `../../images/${item.imagePath.replace('images/', '')}` :
+          '../../images/placeholder-product.jpg';
+
+        const itemHTML = `
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <img src="${imagePath}" 
+                       alt="${item.name}" 
+                       class="img-fluid rounded" 
+                       style="width: 80px; height: 60px; object-fit: cover;"
+                       onerror="this.src='../../images/placeholder-product.jpg'">
+                </div>
+                <div class="col-md-3">
+                  <h6 class="card-title mb-0">${item.name}</h6>
+                </div>
+                <div class="col-md-2">
+                  <span class="text-success fw-bold">${item.price.toFixed(2)}€</span>
+                </div>
+                <div class="col-md-2">
+                  <div class="input-group" style="width: 120px;">
+                    <button class="btn btn-outline-secondary btn-sm" onclick="updateQuantity(${item.id}, -1)">-</button>
+                    <input type="text" class="form-control text-center" value="${item.quantity}" readonly>
+                    <button class="btn btn-outline-secondary btn-sm" onclick="updateQuantity(${item.id}, 1)">+</button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <span class="fw-bold">${(item.price * item.quantity).toFixed(2)}€</span>
+                </div>
+                <div class="col-md-1 text-end">
+                  <button class="btn btn-danger btn-sm" onclick="removeFromCart(${item.id})" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        if (container) container.innerHTML += itemHTML;
+      });
+
+      // Calcula subtotal amb descompte si hi ha
+      let subtotal = total;
+      let discount = 0;
+
+      if (appliedPromoCode && PROMO_CODES[appliedPromoCode]) {
+        discount = subtotal * PROMO_CODES[appliedPromoCode].discount;
+        subtotal = subtotal - discount;
+      }
+
+      const iva = subtotal * 0.21;
+      const totalWithIva = subtotal + iva;
+
+      if (subtotalElement) subtotalElement.textContent = `${total.toFixed(2)} €`;
+      if (ivaElement) ivaElement.textContent = `${iva.toFixed(2)} €`;
+      if (totalElement) totalElement.textContent = `${totalWithIva.toFixed(2)}€`;
+
+      // Mostra descompte si hi ha
+      updateDiscountDisplay(discount);
+    }
+
+    function updateQuantity(id, change) {
+      const items = Cart.getItems();
+      const item = items.find(i => i.id === id);
+
+      if (item) {
+        item.quantity += change;
+        if (item.quantity <= 0) {
+          Cart.removeItem(id);
+        } else {
+          Cart.saveItems(items);
+        }
+        Cart.updateCartCounter();
+        loadCart();
+      }
+    }
+
+    function removeFromCart(id) {
+      if (confirm('Estàs segur que vols eliminar aquest producte de la cistella?')) {
+        Cart.removeItem(id);
+        Cart.updateCartCounter();
+        loadCart();
+      }
+    }
+
+    // Aplica el codi promocional
+    function applyPromoCode() {
+      const input = document.getElementById('coupon');
+      const code = input.value.trim().toUpperCase();
+
+      if (!code) {
+        Utils.showAlert('Introdueix un codi promocional', 'warning');
+        return;
+      }
+
+      if (PROMO_CODES[code]) {
+        appliedPromoCode = code;
+        Utils.showAlert(`Codi "${code}" aplicat! ${PROMO_CODES[code].description}`, 'success');
+        input.value = '';
+        input.disabled = true;
+        loadCart();
+      } else {
+        Utils.showAlert('Codi promocional no vàlid', 'error');
+      }
+    }
+
+    // Elimina el codi promocional
+    function removePromoCode() {
+      appliedPromoCode = null;
+      const input = document.getElementById('coupon');
+      input.disabled = false;
+      input.value = '';
+      Utils.showAlert('Codi promocional eliminat', 'info');
+      loadCart();
+    }
+
+    // Actualitza la visualització del descompte
+    function updateDiscountDisplay(discount) {
+      const ivaElement = document.getElementById('iva');
+
+      // Busca si ja existeix la línia de descompte
+      let discountLine = document.querySelector('.discount-line');
+
+      if (discount > 0) {
+        if (!discountLine) {
+          // Crea la línia de descompte
+          discountLine = document.createElement('div');
+          discountLine.className = 'd-flex justify-content-between mb-2 discount-line text-success';
+          ivaElement.parentElement.parentElement.insertBefore(discountLine, ivaElement.parentElement);
+        }
+        discountLine.innerHTML = `
+          <span>Descompte (${PROMO_CODES[appliedPromoCode].description}):</span>
+          <span>-${discount.toFixed(2)} €</span>
+        `;
+
+        // Mostra botó per eliminar el codi després de "Articles seleccionats"
+        let removeBtn = document.querySelector('.remove-promo-btn');
+        if (!removeBtn) {
+          const cartItemsContainer = document.getElementById('cart-items');
+          const alertDiv = document.createElement('div');
+          alertDiv.className = 'alert alert-success alert-dismissible fade show mb-3 remove-promo-btn';
+          alertDiv.innerHTML = `
+            <i class="bi bi-check-circle-fill me-2"></i>
+            <strong>Codi "${appliedPromoCode}" aplicat!</strong> ${PROMO_CODES[appliedPromoCode].description}
+            <button type="button" class="btn-close" onclick="removePromoCode()"></button>
+          `;
+          cartItemsContainer.insertBefore(alertDiv, cartItemsContainer.firstChild);
+        }
+      } else {
+        // Elimina la línia de descompte si existeix
+        if (discountLine) {
+          discountLine.remove();
+        }
+        const removeBtn = document.querySelector('.remove-promo-btn');
+        if (removeBtn) {
+          removeBtn.remove();
+        }
+      }
+    }
+
+    // Funció de cerca
+    function searchProducts(event) {
+      event.preventDefault();
+      const query = document.getElementById('search-input')?.value.trim();
+      if (query) {
+        window.location.href = `resultats_cerca.html?q=${encodeURIComponent(query)}`;
+      }
+    }
+
+    // Carrega la cistella quan es carrega la pàgina
+    document.addEventListener('DOMContentLoaded', loadCart);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+{
+  "header": {
+    "categories": "Categories",
+    "about": "Nosaltres",
+    "contact": "Contacte",
+    "search": "Cerca...",
+    "cart": "Cistella",
+    "profile": "Perfil"
+  },
+  "footer": {
+    "rights": "Tots els drets reservats",
+    "privacy": "Política de privadesa",
+    "contact": "Contacte"
+  },
+  "search": {
+    "title": "Resultats que contenen",
+    "noResults": "No s'han trobat resultats",
+    "tryAgain": "Prova amb altres termes de cerca",
+    "viewDetails": "Veure detalls"
+  },
+  "product": {
+    "addToCart": "Afegir a la cistella",
+    "quantity": "Quantitat",
+    "price": "Preu",
+    "description": "Descripció",
+    "relatedProducts": "Productes relacionats",
+    "noDescription": "Sense descripció disponible",
+    "stock": "Stock",
+    "loadingDescription": "Carregant descripció...",
+    "outOfStock": "Esgotat",
+    "viewDetails": "Veure detalls"
+  },
+  "cart": {
+    "title": "La meva cistella",
+    "empty": "La teva cistella està buida",
+    "emptyMessage": "Afegeix alguns productes per començar la teva comanda!",
+    "continueShopping": "Continuar comprant",
+    "discoverProducts": "Descobrir productes",
+    "checkout": "Tramitar comanda",
+    "total": "Total",
+    "remove": "Eliminar",
+    "selectedItems": "Articles seleccionats",
+    "orderSummary": "Resum de la comanda",
+    "subtotal": "Subtotal",
+    "shipping": "Enviament",
+    "free": "Gratuït",
+    "iva": "IVA (21%)",
+    "promoCode": "Codi promocional",
+    "enterCode": "Introdueix el codi",
+    "apply": "Aplicar",
+    "proceedPayment": "Procedir al pagament",
+    "orderWhatsapp": "Encarregar per WhatsApp",
+    "shippingInfo": "Informació d'enviament",
+    "freeShippingOver": "Enviament gratuït per comandes superiors a 50€.",
+    "deliveryTime": "Temps d'enviament: 30-45 minuts."
+  },
+  "categories": {
+    "meats": "Carns",
+    "fish": "Peixos",
+    "salads": "Amanides",
+    "ricePasta": "Arròs i pasta",
+    "desserts": "Postres",
+    "drinks": "Begudes",
+    "all": "Tots",
+    "loadingProducts": "Carregant productes..."
+  },
+  "home": {
+    "welcome": "Benvingut a BiciFood",
+    "subtitle": "Menjar casolà entregat en bicicleta",
+    "featuredProducts": "Productes Destacats",
+    "loading": "Carregant...",
+    "viewAllProducts": "Veure tots els productes",
+    "categoriesCard": "Els nostres productes t'esperen! De les granjes i horts a taula!",
+    "aboutCard": "Cuinem el canvi, pas a pas. Coneix el nostre objectiu i l'equip que el conforme.",
+    "contactCard": "Contacta amb nosaltres i diga'ns quant t'ha agradat o que podriem millorar!"
+  },
+  "contact": {
+    "title": "Contacta amb nosaltres",
+    "whereToFind": "On ens trobem",
+    "subject": "Assumpte",
+    "fullName": "Nom i cognoms",
+    "emailAddress": "Adreça electrònica",
+    "messagePlaceholder": "Escriu el teu missatge aquí...",
+    "send": "Enviar",
+    "required": "*"
+  },
+  "about": {
+    "whoWeAre": "Qui som?",
+    "missionValues": "Missió i valors",
+    "missionText": "A Bicifood creiem que menjar bé no hauria de danyar el planeta. Per això treballem amb productes ecològics i de proximitat, i fem els nostres repartiments exclusivament en bicicleta per reduir la petjada de carboni.",
+    "ourTeam": "El nostre equip",
+    "frontendTeam": "Berta i Sergi: Front-end",
+    "frontendDesc": "Especialistes en disseny d'interfícies i experiència d'usuari (UX).",
+    "backendTeam": "Jaime i Daniel: Back-end",
+    "backendDesc": "Arquitectes de sistemes i experts en gestió de bases de dades.",
+    "environmentCommitment": "Compromís amb el medi ambient",
+    "renewableEnergy": "Ús d'energia renovable.",
+    "biodegradablePackaging": "Envasos 100% biodegradables.",
+    "localProducers": "Col·laboració amb productors locals.",
+    "bikeDelivery": "Repartiment 100% amb bicicleta."
+  },
+  "common": {
+    "loading": "Carregant...",
+    "error": "Error",
+    "success": "Èxit",
+    "cancel": "Cancel·lar",
+    "accept": "Acceptar",
+    "close": "Tancar"
+  }
+}
