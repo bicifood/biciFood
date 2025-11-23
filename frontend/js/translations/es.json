@@ -106,5 +106,164 @@
     "cancel": "Cancelar",
     "accept": "Aceptar",
     "close": "Cerrar"
+  },
+  "privacy": {
+    "title": "Política de Privacidad de BiciFood",
+    "lastUpdate": "Última actualización: 15 de noviembre de 2024",
+    "section1": {
+      "title": "Introducción",
+      "text": "En BiciFood, nos comprometemos a proteger tu privacidad y garantizar la seguridad de tus datos personales. Esta política de privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos tu información cuando utilizas nuestros servicios de entrega de comida sostenible."
+    },
+    "section2": {
+      "title": "Responsable del Tratamiento de Datos",
+      "identity": "Identidad:",
+      "identityValue": "BiciFood S.L.",
+      "address": "Dirección:",
+      "addressValue": "Calle de la Sostenibilidad, 123, 08001 Barcelona",
+      "email": "Email:",
+      "phone": "Teléfono:"
+    },
+    "section3": {
+      "title": "Datos que Recopilamos",
+      "subtitle1": "Datos de Registro",
+      "subtitle2": "Datos de Pedidos",
+      "subtitle3": "Datos Técnicos",
+      "item1": "Nombre y apellidos",
+      "item2": "Dirección de correo electrónico",
+      "item3": "Teléfono de contacto",
+      "item4": "Dirección de entrega",
+      "item5": "Contraseña (cifrada)",
+      "item6": "Historial de pedidos",
+      "item7": "Preferencias de productos",
+      "item8": "Método de pago (solo los últimos 4 dígitos)",
+      "item9": "Instrucciones especiales de entrega",
+      "item10": "Dirección IP",
+      "item11": "Tipo de navegador",
+      "item12": "Sistema operativo",
+      "item13": "Cookies y tecnologías similares",
+      "identification": "Datos de identificación:",
+      "identificationText": "Nombre, apellidos, DNI/NIE (solo si es necesario para validación de pago)",
+      "contact": "Datos de contacto:",
+      "contactText": "Dirección de correo electrónico, número de teléfono, dirección de entrega",
+      "navigation": "Datos de navegación:",
+      "navigationText": "Dirección IP, tipo de navegador, tiempo de visita, páginas visitadas",
+      "transaction": "Datos de transacción:",
+      "transactionText": "Historial de pedidos, método de pago (sin guardar datos bancarios completos)",
+      "preferences": "Preferencias:",
+      "preferencesText": "Idioma, categorías de productos preferidas, restricciones alimentarias"
+    },
+    "section4": {
+      "title": "Finalidad del Tratamiento",
+      "intro": "Tus datos personales se tratan con las siguientes finalidades:",
+      "item1": "Gestión y procesamiento de pedidos y entregas",
+      "item2": "Comunicación sobre el estado de tus pedidos",
+      "item3": "Atención al cliente y resolución de incidencias",
+      "item4": "Envío de comunicaciones comerciales (solo con tu consentimiento)",
+      "item5": "Mejora de nuestros servicios y personalización de la experiencia de usuario",
+      "item6": "Cumplimiento de obligaciones legales y fiscales",
+      "item7": "Prevención de fraude y seguridad de la plataforma"
+    },
+    "section5": {
+      "title": "Base Legal del Tratamiento",
+      "intro": "El tratamiento de tus datos se basa en:",
+      "contract": "Ejecución del contrato:",
+      "contractText": "Para procesar tus pedidos y proporcionar nuestros servicios",
+      "consent": "Consentimiento:",
+      "consentText": "Para el envío de comunicaciones comerciales y el uso de cookies no esenciales",
+      "legal": "Obligación legal:",
+      "legalText": "Para cumplir con las normativas fiscales y contables",
+      "legitimate": "Interés legítimo:",
+      "legitimateText": "Para mejorar nuestros servicios y garantizar la seguridad de la plataforma"
+    },
+    "section6": {
+      "title": "Compartición de Datos",
+      "intro": "No vendemos tus datos personales a terceros.",
+      "introText": "Solo compartimos información con:",
+      "payment": "Proveedores de servicios de pago:",
+      "paymentText": "Para procesar transacciones de forma segura",
+      "logistics": "Socios logísticos:",
+      "logisticsText": "Nuestros ciclistas de entrega (solo reciben la dirección de entrega necesaria)",
+      "tech": "Proveedores tecnológicos:",
+      "techText": "Hosting, email y servicios de análisis (con acuerdos de confidencialidad)",
+      "authorities": "Autoridades competentes:",
+      "authoritiesText": "Cuando sea requerido por ley"
+    },
+    "section7": {
+      "title": "Período de Conservación",
+      "intro": "Conservamos tus datos personales durante:",
+      "active": "Cuentas activas:",
+      "activeText": "Mientras mantengas la cuenta abierta",
+      "orders": "Historial de pedidos:",
+      "ordersText": "5 años para cumplir con obligaciones fiscales",
+      "navigation": "Datos de navegación:",
+      "navigationText": "Máximo 2 años",
+      "marketing": "Comunicaciones comerciales:",
+      "marketingText": "Hasta que retires el consentimiento",
+      "footer": "Una vez transcurridos estos períodos, los datos serán eliminados o anonimizados."
+    },
+    "section8": {
+      "title": "Tus Derechos",
+      "intro": "Según el RGPD, tienes los siguientes derechos:",
+      "access": "Acceso",
+      "accessText": "Obtener información sobre los datos que tratamos sobre ti",
+      "rectification": "Rectificación",
+      "rectificationText": "Corregir datos inexactos o incompletos",
+      "deletion": "Supresión",
+      "deletionText": "Solicitar la eliminación de tus datos (\"derecho al olvido\")",
+      "limitation": "Limitación",
+      "limitationText": "Limitar el tratamiento en determinadas circunstancias",
+      "portability": "Portabilidad",
+      "portabilityText": "Recibir tus datos en formato estructurado y transferirlos a otro responsable",
+      "opposition": "Oposición",
+      "oppositionText": "Oponerte al tratamiento de tus datos",
+      "footer": "Para ejercer estos derechos, envía un correo electrónico a",
+      "footerEnd": "o escríbenos a nuestra dirección postal."
+    },
+    "section9": {
+      "title": "Medidas de Seguridad",
+      "intro": "Implementamos medidas técnicas y organizativas adecuadas para proteger tus datos personales:",
+      "item1": "Cifrado SSL/TLS para todas las comunicaciones",
+      "item2": "Sistemas de detección y prevención de intrusiones",
+      "item3": "Copias de seguridad regulares",
+      "item4": "Acceso restringido a los datos solo por personal autorizado",
+      "item5": "Formación continua de nuestro equipo en protección de datos",
+      "item6": "Auditorías de seguridad periódicas"
+    },
+    "section10": {
+      "title": "Uso de Cookies",
+      "text": "Utilizamos cookies para mejorar tu experiencia de navegación. Puedes gestionar tus preferencias de cookies en cualquier momento mediante nuestro gestor de cookies o la configuración de tu navegador.",
+      "link": "Para más información, consulta nuestra",
+      "linkText": "Política de Cookies"
+    },
+    "section11": {
+      "title": "Transferencias Internacionales",
+      "text": "Tus datos se procesan principalmente dentro del Espacio Económico Europeo (EEE). En caso de transferencias fuera del EEE, garantizamos que estas se realizan con las garantías adecuadas según el RGPD."
+    },
+    "section12": {
+      "title": "Menores de Edad",
+      "text1": "Nuestros servicios están dirigidos a personas mayores de 18 años.",
+      "text2": "No recopilamos intencionadamente datos de menores de 14 años sin el consentimiento de los padres o tutores legales."
+    },
+    "section13": {
+      "title": "Reclamaciones",
+      "intro": "Si consideras que no hemos tratado tus datos de manera adecuada, puedes presentar una reclamación ante:",
+      "agency": "Agencia Española de Protección de Datos (AEPD)",
+      "address": "C/ Jorge Juan, 6, 28001 Madrid",
+      "web": "Web:"
+    },
+    "section14": {
+      "title": "Cambios en Esta Política",
+      "text": "Nos reservamos el derecho de modificar esta política de privacidad para adaptarla a cambios legislativos o en nuestros servicios. Te notificaremos cualquier cambio significativo por correo electrónico o mediante un aviso destacado en nuestro sitio web."
+    },
+    "section15": {
+      "title": "Contacto",
+      "intro": "Si tienes cualquier pregunta sobre esta política de privacidad o sobre el tratamiento de tus datos personales, puedes contactarnos en:",
+      "postalAddress": "Dirección postal:"
+    },
+    "acceptance": {
+      "title": "Al utilizar nuestros servicios, aceptas esta política de privacidad.",
+      "text": "Si no estás de acuerdo con el tratamiento de tus datos tal como se describe en este documento, por favor, abstente de utilizar BiciFood."
+    },
+    "backHome": "Volver al inicio"
   }
 }
