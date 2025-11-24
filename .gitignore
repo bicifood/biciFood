@@ -2,48 +2,7 @@
 # BiciFood - Git Ignore
 # ====================================
 
-# ====================================
-# Backend (Java/Maven)
-# ====================================
 
-# Maven
-backend/target/
-backend/.mvn/
-backend/mvnw
-backend/mvnw.cmd
-
-# IDE - IntelliJ IDEA
-.idea/
-*.iml
-*.iws
-*.ipr
-
-# IDE - Eclipse
-.classpath
-.project
-.settings/
-backend/.metadata/
-
-# IDE - VS Code
-.vscode/
-*.code-workspace
-
-# Logs
-*.log
-backend/logs/
-backend/spring.log
-
-# ====================================
-# Frontend
-# ====================================
-
-# Node modules (si s'usa npm/yarn en el futur)
-node_modules/
-frontend/node_modules/
-
-# Builds
-frontend/dist/
-frontend/build/
 
 # ====================================
 # Sistema Operatiu
@@ -68,9 +27,7 @@ Desktop.ini
 # Fitxers del Projecte
 # ====================================
 
-# Scripts - PIDs
-.frontend.pid
-*.pid
+
 
 # Base de dades local (si s'usa MySQL local en el futur)
 *.sql.backup

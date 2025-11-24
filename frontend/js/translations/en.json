@@ -106,5 +106,164 @@
     "cancel": "Cancel",
     "accept": "Accept",
     "close": "Close"
+  },
+  "privacy": {
+    "title": "BiciFood Privacy Policy",
+    "lastUpdate": "Last update: November 15, 2024",
+    "section1": {
+      "title": "Introduction",
+      "text": "At BiciFood, we are committed to protecting your privacy and ensuring the security of your personal data. This privacy policy explains how we collect, use, store and protect your information when you use our sustainable food delivery services."
+    },
+    "section2": {
+      "title": "Data Controller",
+      "identity": "Identity:",
+      "identityValue": "BiciFood S.L.",
+      "address": "Address:",
+      "addressValue": "Sustainability Street, 123, 08001 Barcelona",
+      "email": "Email:",
+      "phone": "Phone:"
+    },
+    "section3": {
+      "title": "Data We Collect",
+      "subtitle1": "Registration Data",
+      "subtitle2": "Order Data",
+      "subtitle3": "Technical Data",
+      "item1": "Name and surname",
+      "item2": "Email address",
+      "item3": "Contact phone",
+      "item4": "Delivery address",
+      "item5": "Password (encrypted)",
+      "item6": "Order history",
+      "item7": "Product preferences",
+      "item8": "Payment method (only last 4 digits)",
+      "item9": "Special delivery instructions",
+      "item10": "IP address",
+      "item11": "Browser type",
+      "item12": "Operating system",
+      "item13": "Cookies and similar technologies",
+      "identification": "Identification data:",
+      "identificationText": "Name, surname, ID (only if necessary for payment validation)",
+      "contact": "Contact data:",
+      "contactText": "Email address, phone number, delivery address",
+      "navigation": "Navigation data:",
+      "navigationText": "IP address, browser type, visit time, pages visited",
+      "transaction": "Transaction data:",
+      "transactionText": "Order history, payment method (without storing complete banking data)",
+      "preferences": "Preferences:",
+      "preferencesText": "Language, preferred product categories, dietary restrictions"
+    },
+    "section4": {
+      "title": "Purpose of Processing",
+      "intro": "Your personal data is processed for the following purposes:",
+      "item1": "Management and processing of orders and deliveries",
+      "item2": "Communication about the status of your orders",
+      "item3": "Customer service and incident resolution",
+      "item4": "Sending commercial communications (only with your consent)",
+      "item5": "Improvement of our services and personalization of user experience",
+      "item6": "Compliance with legal and fiscal obligations",
+      "item7": "Fraud prevention and platform security"
+    },
+    "section5": {
+      "title": "Legal Basis for Processing",
+      "intro": "The processing of your data is based on:",
+      "contract": "Contract execution:",
+      "contractText": "To process your orders and provide our services",
+      "consent": "Consent:",
+      "consentText": "For sending commercial communications and using non-essential cookies",
+      "legal": "Legal obligation:",
+      "legalText": "To comply with fiscal and accounting regulations",
+      "legitimate": "Legitimate interest:",
+      "legitimateText": "To improve our services and ensure platform security"
+    },
+    "section6": {
+      "title": "Data Sharing",
+      "intro": "We do not sell your personal data to third parties.",
+      "introText": "We only share information with:",
+      "payment": "Payment service providers:",
+      "paymentText": "To process transactions securely",
+      "logistics": "Logistics partners:",
+      "logisticsText": "Our delivery cyclists (they only receive the necessary delivery address)",
+      "tech": "Technology providers:",
+      "techText": "Hosting, email and analytics services (with confidentiality agreements)",
+      "authorities": "Competent authorities:",
+      "authoritiesText": "When required by law"
+    },
+    "section7": {
+      "title": "Retention Period",
+      "intro": "We retain your personal data for:",
+      "active": "Active accounts:",
+      "activeText": "While you keep your account open",
+      "orders": "Order history:",
+      "ordersText": "5 years to comply with fiscal obligations",
+      "navigation": "Navigation data:",
+      "navigationText": "Maximum 2 years",
+      "marketing": "Commercial communications:",
+      "marketingText": "Until you withdraw consent",
+      "footer": "Once these periods have elapsed, the data will be deleted or anonymized."
+    },
+    "section8": {
+      "title": "Your Rights",
+      "intro": "According to GDPR, you have the following rights:",
+      "access": "Access",
+      "accessText": "Obtain information about the data we process about you",
+      "rectification": "Rectification",
+      "rectificationText": "Correct inaccurate or incomplete data",
+      "deletion": "Deletion",
+      "deletionText": "Request the deletion of your data (\"right to be forgotten\")",
+      "limitation": "Limitation",
+      "limitationText": "Limit processing in certain circumstances",
+      "portability": "Portability",
+      "portabilityText": "Receive your data in structured format and transfer it to another controller",
+      "opposition": "Opposition",
+      "oppositionText": "Object to the processing of your data",
+      "footer": "To exercise these rights, send an email to",
+      "footerEnd": "or write to us at our postal address."
+    },
+    "section9": {
+      "title": "Security Measures",
+      "intro": "We implement appropriate technical and organizational measures to protect your personal data:",
+      "item1": "SSL/TLS encryption for all communications",
+      "item2": "Intrusion detection and prevention systems",
+      "item3": "Regular backups",
+      "item4": "Restricted data access only by authorized personnel",
+      "item5": "Continuous training of our team in data protection",
+      "item6": "Periodic security audits"
+    },
+    "section10": {
+      "title": "Use of Cookies",
+      "text": "We use cookies to improve your browsing experience. You can manage your cookie preferences at any time through our cookie manager or your browser settings.",
+      "link": "For more information, see our",
+      "linkText": "Cookie Policy"
+    },
+    "section11": {
+      "title": "International Transfers",
+      "text": "Your data is processed primarily within the European Economic Area (EEA). In case of transfers outside the EEA, we ensure that these are carried out with appropriate guarantees according to GDPR."
+    },
+    "section12": {
+      "title": "Minors",
+      "text1": "Our services are aimed at people over 18 years old.",
+      "text2": "We do not intentionally collect data from minors under 14 years old without parental or legal guardian consent."
+    },
+    "section13": {
+      "title": "Complaints",
+      "intro": "If you consider that we have not treated your data appropriately, you can file a complaint with:",
+      "agency": "Spanish Data Protection Agency (AEPD)",
+      "address": "Jorge Juan St., 6, 28001 Madrid",
+      "web": "Web:"
+    },
+    "section14": {
+      "title": "Changes to This Policy",
+      "text": "We reserve the right to modify this privacy policy to adapt it to legislative changes or changes in our services. We will notify you of any significant changes by email or through a prominent notice on our website."
+    },
+    "section15": {
+      "title": "Contact",
+      "intro": "If you have any questions about this privacy policy or about the processing of your personal data, you can contact us at:",
+      "postalAddress": "Postal address:"
+    },
+    "acceptance": {
+      "title": "By using our services, you accept this privacy policy.",
+      "text": "If you do not agree with the processing of your data as described in this document, please refrain from using BiciFood."
+    },
+    "backHome": "Back to home"
   }
 }

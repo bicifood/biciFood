@@ -106,5 +106,164 @@
     "cancel": "Cancel·lar",
     "accept": "Acceptar",
     "close": "Tancar"
+  },
+  "privacy": {
+    "title": "Política de Privadesa de BiciFood",
+    "lastUpdate": "Última actualització: 15 de novembre de 2024",
+    "section1": {
+      "title": "Introducció",
+      "text": "A BiciFood, ens comprometem a protegir la teva privadesa i garantir la seguretat de les teves dades personals. Aquesta política de privadesa explica com recopilem, utilitzem, emmagatzemem i protegim la teva informació quan utilitzes els nostres serveis de lliurament de menjar sostenible."
+    },
+    "section2": {
+      "title": "Responsable del Tractament de Dades",
+      "identity": "Identitat:",
+      "identityValue": "BiciFood S.L.",
+      "address": "Adreça:",
+      "addressValue": "Carrer de la Sostenibilitat, 123, 08001 Barcelona",
+      "email": "Email:",
+      "phone": "Telèfon:"
+    },
+    "section3": {
+      "title": "Dades que Recopilem",
+      "subtitle1": "Dades de Registre",
+      "subtitle2": "Dades de Comandes",
+      "subtitle3": "Dades Tècniques",
+      "item1": "Nom i cognoms",
+      "item2": "Adreça de correu electrònic",
+      "item3": "Telèfon de contacte",
+      "item4": "Adreça de lliurament",
+      "item5": "Contrasenya (xifrada)",
+      "item6": "Historial de comandes",
+      "item7": "Preferències de productes",
+      "item8": "Mètode de pagament (només els últims 4 dígits)",
+      "item9": "Instruccions especials de lliurament",
+      "item10": "Adreça IP",
+      "item11": "Tipus de navegador",
+      "item12": "Sistema operatiu",
+      "item13": "Cookies i tecnologies similars",
+      "identification": "Dades d'identificació:",
+      "identificationText": "Nom, cognoms, DNI/NIE (només si és necessari per a validació de pagament)",
+      "contact": "Dades de contacte:",
+      "contactText": "Adreça de correu electrònic, número de telèfon, adreça de lliurament",
+      "navigation": "Dades de navegació:",
+      "navigationText": "Adreça IP, tipus de navegador, temps de visita, pàgines visitades",
+      "transaction": "Dades de transacció:",
+      "transactionText": "Historial de comandes, mètode de pagament (sense guardar dades bancàries completes)",
+      "preferences": "Preferències:",
+      "preferencesText": "Idioma, categories de productes preferides, restriccions alimentàries"
+    },
+    "section4": {
+      "title": "Finalitat del Tractament",
+      "intro": "Les teves dades personals es tracten amb les següents finalitats:",
+      "item1": "Gestió i processament de comandes i lliuraments",
+      "item2": "Comunicació sobre l'estat de les teves comandes",
+      "item3": "Atenció al client i resolució d'incidències",
+      "item4": "Enviament de comunicacions comercials (només amb el teu consentiment)",
+      "item5": "Millora dels nostres serveis i personalització de l'experiència d'usuari",
+      "item6": "Compliment d'obligacions legals i fiscals",
+      "item7": "Prevenció de frau i seguretat de la plataforma"
+    },
+    "section5": {
+      "title": "Base Legal del Tractament",
+      "intro": "El tractament de les teves dades es basa en:",
+      "contract": "Execució del contracte:",
+      "contractText": "Per processar les teves comandes i proporcionar els nostres serveis",
+      "consent": "Consentiment:",
+      "consentText": "Per l'enviament de comunicacions comercials i l'ús de cookies no essencials",
+      "legal": "Obligació legal:",
+      "legalText": "Per complir amb les normatives fiscals i comptables",
+      "legitimate": "Interès legítim:",
+      "legitimateText": "Per millorar els nostres serveis i garantir la seguretat de la plataforma"
+    },
+    "section6": {
+      "title": "Compartició de Dades",
+      "intro": "No venem les teves dades personals a tercers.",
+      "introText": "Només compartim informació amb:",
+      "payment": "Proveïdors de serveis de pagament:",
+      "paymentText": "Per processar transaccions de forma segura",
+      "logistics": "Socis logístics:",
+      "logisticsText": "Els nostres ciclistes de lliurament (només reben l'adreça de lliurament necessària)",
+      "tech": "Proveïdors tecnològics:",
+      "techText": "Hosting, email i serveis d'anàlisi (amb acords de confidencialitat)",
+      "authorities": "Autoritats competents:",
+      "authoritiesText": "Quan sigui requerit per llei"
+    },
+    "section7": {
+      "title": "Període de Conservació",
+      "intro": "Conservem les teves dades personals durant:",
+      "active": "Comptes actius:",
+      "activeText": "Mentre mantinguis el compte obert",
+      "orders": "Historial de comandes:",
+      "ordersText": "5 anys per complir amb obligacions fiscals",
+      "navigation": "Dades de navegació:",
+      "navigationText": "Màxim 2 anys",
+      "marketing": "Comunicacions comercials:",
+      "marketingText": "Fins que retires el consentiment",
+      "footer": "Un cop transcorreguts aquests períodes, les dades seran eliminades o anonimitzades."
+    },
+    "section8": {
+      "title": "Els Teus Drets",
+      "intro": "Segons el RGPD, tens els següents drets:",
+      "access": "Accés",
+      "accessText": "Obtenir informació sobre les dades que tractem sobre tu",
+      "rectification": "Rectificació",
+      "rectificationText": "Corregir dades inexactes o incompletes",
+      "deletion": "Supressió",
+      "deletionText": "Sol·licitar l'eliminació de les teves dades (\"dret a l'oblit\")",
+      "limitation": "Limitació",
+      "limitationText": "Limitar el tractament en determinades circumstàncies",
+      "portability": "Portabilitat",
+      "portabilityText": "Rebre les teves dades en format estructurat i transferir-les a un altre responsable",
+      "opposition": "Oposició",
+      "oppositionText": "Oposar-te al tractament de les teves dades",
+      "footer": "Per exercir aquests drets, envia un correu electrònic a",
+      "footerEnd": "o escriu-nos a la nostra adreça postal."
+    },
+    "section9": {
+      "title": "Mesures de Seguretat",
+      "intro": "Implementem mesures tècniques i organitzatives adequades per protegir les teves dades personals:",
+      "item1": "Xifratge SSL/TLS per a totes les comunicacions",
+      "item2": "Sistemes de detecció i prevenció d'intrusions",
+      "item3": "Còpies de seguretat regulars",
+      "item4": "Accés restringit a les dades només per personal autoritzat",
+      "item5": "Formació contínua del nostre equip en protecció de dades",
+      "item6": "Auditories de seguretat periòdiques"
+    },
+    "section10": {
+      "title": "Ús de Cookies",
+      "text": "Utilitzem cookies per millorar la teva experiència de navegació. Pots gestionar les teves preferències de cookies en qualsevol moment mitjançant el nostre gestor de cookies o la configuració del teu navegador.",
+      "link": "Per a més informació, consulta la nostra",
+      "linkText": "Política de Cookies"
+    },
+    "section11": {
+      "title": "Transferències Internacionals",
+      "text": "Les teves dades es processen principalment dins de l'Espai Econòmic Europeu (EEE). En cas de transferències fora de l'EEE, garantim que aquestes es realitzen amb les garanties adequades segons el RGPD."
+    },
+    "section12": {
+      "title": "Menors d'Edat",
+      "text1": "Els nostres serveis estan dirigits a persones majors de 18 anys.",
+      "text2": "No recopilem intencionadament dades de menors de 14 anys sense el consentiment dels pares o tutors legals."
+    },
+    "section13": {
+      "title": "Reclamacions",
+      "intro": "Si consideres que no hem tractat les teves dades de manera adequada, pots presentar una reclamació davant:",
+      "agency": "Agència Espanyola de Protecció de Dades (AEPD)",
+      "address": "C/ Jorge Juan, 6, 28001 Madrid",
+      "web": "Web:"
+    },
+    "section14": {
+      "title": "Canvis a Aquesta Política",
+      "text": "Ens reservem el dret de modificar aquesta política de privadesa per adaptar-la a canvis legislatius o en els nostres serveis. Et notificarem qualsevol canvi significatiu per correu electrònic o mitjançant un avís destacat al nostre web."
+    },
+    "section15": {
+      "title": "Contacte",
+      "intro": "Si tens qualsevol pregunta sobre aquesta política de privadesa o sobre el tractament de les teves dades personals, pots contactar-nos a:",
+      "postalAddress": "Adreça postal:"
+    },
+    "acceptance": {
+      "title": "En utilitzar els nostres serveis, acceptes aquesta política de privadesa.",
+      "text": "Si no estàs d'acord amb el tractament de les teves dades tal com es descriu en aquest document, si us plau, abstén-te d'utilitzar BiciFood."
+    },
+    "backHome": "Tornar a l'inici"
   }
 }
