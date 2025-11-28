@@ -955,3 +955,13 @@ button.accent[disabled] {
     text-align: left;
   }
 }
+
+.bg-pagament {
+  background-image: url("../../images/fons-verd.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
