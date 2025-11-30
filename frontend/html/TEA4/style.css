@@ -587,9 +587,11 @@ form label {
   color: #333;
 }
 
-.btn-primary:hover {
-  background-color: #7da0d8;
-  border-color: #7da0d8;
+.btn-primary {
+  background: #224811;
+  border-color: #224811;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
 }
 
 textarea {
@@ -765,6 +767,7 @@ button:hover {
 button:active {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
+/*
 button[disabled] {
   background: #dddddd;
   border-color: rgba(0, 0, 0, 0);
@@ -772,7 +775,7 @@ button[disabled] {
   border-width: 0px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   color: #666666;
-}
+}*/
 button.primary {
   background: #5c5444;
   border-color: #5c5444;
@@ -955,3 +958,29 @@ button.accent[disabled] {
     text-align: left;
   }
 }
+
+/* Overrides rápidos para asegurar que los "Afegir a la cistella" sigan el estilo del proyecto 
+button,
+button.btn,
+button.btn-primary,
+.btn,
+.btn-primary,
+a.btn,
+a.btn-primary,
+input[type="button"],
+input[type="submit"] {
+  background-color: #5c5444 !important; /* color marró del projecte
+  border-color: #5c5444 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15) !important;
+  border-radius: 8px !important;
+}
+
+/* hover
+button.btn:hover,
+.btn:hover,
+a.btn:hover {
+  background-color: #47352d !important;
+  border-color: #47352d !important;
+}*/
