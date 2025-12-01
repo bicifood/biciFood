@@ -959,28 +959,12 @@ button.accent[disabled] {
   }
 }
 
-/* Overrides rápidos para asegurar que los "Afegir a la cistella" sigan el estilo del proyecto 
-button,
-button.btn,
-button.btn-primary,
-.btn,
-.btn-primary,
-a.btn,
-a.btn-primary,
-input[type="button"],
-input[type="submit"] {
-  background-color: #5c5444 !important; /* color marró del projecte
-  border-color: #5c5444 !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15) !important;
-  border-radius: 8px !important;
+.bg-pagament {
+  background-image: url("../../images/fons-verd.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* hover
-button.btn:hover,
-.btn:hover,
-a.btn:hover {
-  background-color: #47352d !important;
-  border-color: #47352d !important;
-}*/
+
