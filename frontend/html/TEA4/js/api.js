@@ -85,6 +85,7 @@ const api = new BiciFoodAPI();
 const Utils = {
     /**
      * Carrega les categories al dropdown del navbar
+     * (fa que cada opció vagi a categories.html?id=ategory.id>)
      */
     async loadCategoriesDropdown() {
         try {
@@ -95,7 +96,10 @@ const Utils = {
                 dropdown.innerHTML = '';
                 categories.forEach(category => {
                     const li = document.createElement('li');
-                    li.innerHTML = `<a class="dropdown-item" href="categories.html?id=${category.id}">${category.nom}</a>`;
+                    li.innerHTML = `
+                        <a class="dropdown-item" href="categories.html?id=${category.id}">
+                            ${category.nom}
+                        </a>`;
                     dropdown.appendChild(li);
                 });
             }
@@ -211,15 +215,18 @@ const Utils = {
      */
     getURLParameter(name) {
         const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(name);
+        return urlParams.get(name); // retorna string o null [web:10]
     },
 
     /**
      * Carrega els botons de filtres de categoria
+     * i marca com a actiu el que coincideixi amb ?id= de la URL
      */
     async loadCategoryFilters() {
         const filterContainer = document.getElementById('category-filters');
         if (!filterContainer) return;
+
+        const selectedId = this.getURLParameter('id');
 
         try {
             const categories = await api.getCategories();
@@ -229,6 +236,12 @@ const Utils = {
                 button.type = 'button';
                 button.className = 'btn btn-brown';
                 button.textContent = category.nom;
+
+                // Marca actiu si coincideix amb la categoria de la URL
+                if (selectedId && String(category.id) === String(selectedId)) {
+                    button.classList.add('active');
+                }
+
                 button.onclick = () => {
                     // Eliminar classe active de tots els botons
                     filterContainer.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
@@ -264,18 +277,14 @@ const Utils = {
      * Mostra missatges d'alerta personalitzats
      */
     showAlert(message, type = 'info') {
-        // Crear l'alerta personalitzada
         const alertDiv = document.createElement('div');
         alertDiv.className = `custom-alert ${type}`;
         alertDiv.textContent = message;
         
-        // Afegir al body
         document.body.appendChild(alertDiv);
         
-        // Eliminar automàticament després de 2 segons
         setTimeout(() => {
             alertDiv.classList.add('fade-out');
-            // Eliminar del DOM després de l'animació
             setTimeout(() => {
                 if (alertDiv.parentNode) {
                     alertDiv.parentNode.removeChild(alertDiv);
@@ -289,25 +298,16 @@ const Utils = {
  * Gestió de la cistella de compra (localStorage)
  */
 const Cart = {
-    /**
-     * Obté els ítems de la cistella
-     */
     getItems() {
         const items = localStorage.getItem('bicifood_cart');
         return items ? JSON.parse(items) : [];
     },
 
-    /**
-     * Guarda els ítems a la cistella
-     */
     saveItems(items) {
         localStorage.setItem('bicifood_cart', JSON.stringify(items));
         this.updateCartCounter();
     },
 
-    /**
-     * Afegeix un ítem a la cistella des d'un botó amb dades
-     */
     addItemFromButton(button) {
         const id = parseInt(button.dataset.productId);
         const name = button.dataset.productName;
@@ -316,13 +316,9 @@ const Cart = {
         
         this.addItem(id, name, price, 1, imagePath);
         
-        // Mostrem alerta directament aquí també per assegurar-nos
         Utils.showAlert(`${name} afegit a la cistella!`, 'success');
     },
 
-    /**
-     * Afegeix un ítem a la cistella
-     */
     addItem(id, name, price, quantity = 1, imagePath = null) {
         const items = this.getItems();
         const existingItem = items.find(item => item.id === id);
@@ -338,9 +334,6 @@ const Cart = {
         Utils.showAlert(`${name} afegit a la cistella!`, 'success');
     },
 
-    /**
-     * Elimina un ítem de la cistella
-     */
     removeItem(id) {
         const items = this.getItems();
         const filteredItems = items.filter(item => item.id !== id);
@@ -348,9 +341,6 @@ const Cart = {
         this.updateCartCounter();
     },
 
-    /**
-     * Actualitza el comptador de la cistella
-     */
     updateCartCounter() {
         const items = this.getItems();
         const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
@@ -362,9 +352,6 @@ const Cart = {
         }
     },
 
-    /**
-     * Neteja la cistella
-     */
     clear() {
         localStorage.removeItem('bicifood_cart');
         this.updateCartCounter();
@@ -374,7 +361,7 @@ const Cart = {
 /**
  * Inicialització quan es carrega la pàgina
  */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() { // [web:13]
     // Actualitza el comptador de la cistella
     Cart.updateCartCounter();
     
@@ -394,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Carrega productes destacats a la pàgina principal
     if (document.getElementById('featured-products')) {
-        Utils.loadProducts('featured-products', null, 0, 8);
+        Utils.loadProducts('featured-products', null, 0, 4);
     }
 });
 
@@ -423,3 +410,25 @@ document.addEventListener('keypress', function(e) {
         searchProducts();
     }
 });
+
+// Botó que ens porta a d'alt del web
+(function(){
+  const btn = document.getElementById('scrollTop');
+  if (!btn) return;
+
+  const showAfter = 200; // px scrolled
+
+  function update() {
+    if (window.scrollY > showAfter) btn.classList.add('show');
+    else btn.classList.remove('show');
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+
+  btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // inicialitza visibilitat
+  update();
+})();
