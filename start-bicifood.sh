@@ -67,7 +67,7 @@ python3 -m http.server 3000 >/dev/null 2>&1 &
 FRONTEND_PID=$!
 sleep 1
 
-WEB_URL="http://localhost:3000/frontend/html/TEA4/"
+WEB_URL="http://localhost:3000/frontend/html/TEA5/"
 echo "   Frontend: $WEB_URL"
 echo "   Backend API: http://localhost:8080/api/v1"
 
