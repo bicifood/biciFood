@@ -410,3 +410,25 @@ document.addEventListener('keypress', function(e) {
         searchProducts();
     }
 });
+
+// Botó que ens porta a d'alt del web
+(function(){
+  const btn = document.getElementById('scrollTop');
+  if (!btn) return;
+
+  const showAfter = 200; // px scrolled
+
+  function update() {
+    if (window.scrollY > showAfter) btn.classList.add('show');
+    else btn.classList.remove('show');
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+
+  btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // inicialitza visibilitat
+  update();
+})();
