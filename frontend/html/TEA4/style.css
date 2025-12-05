@@ -968,3 +968,35 @@ button.accent[disabled] {
 }
 
 
+/*--------------------------------------------SCROLL TO TOP BUTTON-----------------------------------------------------*/
+
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1.25rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  transition: opacity .2s, transform .2s;
+}
+
+.scroll-top.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-top.hide {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
