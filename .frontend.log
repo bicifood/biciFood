@@ -1,23 +1,250 @@
-127.0.0.1 - - [04/Dec/2025 22:53:18] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:53:19] "GET /frontend/js/translations/ca.json HTTP/1.1" 304 -
-127.0.0.1 - - [04/Dec/2025 22:58:06] "GET /frontend/html/TEA4/ HTTP/1.1" 304 -
-127.0.0.1 - - [04/Dec/2025 22:58:07] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
-127.0.0.1 - - [04/Dec/2025 22:58:07] "GET /frontend/js/translations/ca.json HTTP/1.1" 304 -
-127.0.0.1 - - [04/Dec/2025 22:58:09] "GET /frontend/html/TEA4/detall_product.html?id=2 HTTP/1.1" 304 -
-127.0.0.1 - - [04/Dec/2025 22:58:37] "GET /frontend/html/TEA4/categories.html HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:37] code 404, message File not found
-127.0.0.1 - - [04/Dec/2025 22:58:37] "GET /frontend/html/TEA4/js/Utils.js HTTP/1.1" 404 -
-127.0.0.1 - - [04/Dec/2025 22:58:38] code 404, message File not found
-127.0.0.1 - - [04/Dec/2025 22:58:38] "GET /frontend/html/TEA4/js/Utils.js HTTP/1.1" 404 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Saltejat%20de%20Verdures.png HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Verdures%20Rustides.png HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Risotto.png HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Espaguetis%20Pesto.png HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Espaguetis%20carbonara.png HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Paella.png HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Coca-cola.jpg HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Fanta.jpg HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Aigua.jpg HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Vi%20Torremadrina.jpeg HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Vi%20Vi%C3%B1a%20Esmeralda.jpeg HTTP/1.1" 200 -
-127.0.0.1 - - [04/Dec/2025 22:58:39] "GET /frontend/images/Coulant.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:18] "GET /frontend/html/TEA4/detall_product.html?id=4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:19] "GET /frontend/html/TEA4/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:20] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:20] "GET /frontend/js/i18n.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:20] "GET /frontend/js/translations/ca.json HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:20] "GET /frontend/html/TEA4/components/navbar.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:21] "GET /frontend/js/translations/es.json HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:21] "GET /frontend/images/logoTransparentTextless.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:21] "GET /frontend/js/translations/en.json HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:21] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:14:21] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:14:23] "GET /frontend/images/Pollatre%20amb%20verdures.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:14:24] "GET /frontend/images/placeholder-product.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:15:40] "GET /frontend/html/TEA4/ HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:15:46] "GET /frontend/html/TEA4/detall_product.html?id=4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:15:46] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:16:39] "GET /frontend/html/TEA4/detall_product.html?id=4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:16:40] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:22:26] "GET /frontend/html/TEA4/detall_product.html?id=4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:22:27] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:22:28] "GET /frontend/images/Pollastre%20Xampi.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:22:28] "GET /frontend/images/Vedella%20Verdures.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:22:28] "GET /frontend/images/Vedella%20Arr%C3%B2s.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:24:12] "GET /frontend/html/TEA4/detall_product.html?id=4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:24:12] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:24:22] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:24:22] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:24:22] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:24:22] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:24:22] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:24:22] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:24:23] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:24:23] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:17] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:26:17] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:17] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:17] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:17] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:17] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 16:26:18] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:18] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:26] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:26] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:26] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:26] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:26] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:26:26] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:26] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:38] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:38] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:38] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:38] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:26:38] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:26:39] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:26:39] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:27:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:27:35] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:27:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:27:35] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:27:35] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:30:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:30:48] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:31:11] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 16:31:11] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:31:11] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:31:11] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 16:31:11] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 16:31:11] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 17:51:41] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 17:51:41] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:51:41] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:51:42] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:51:42] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:51:42] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 17:51:43] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:51:43] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:51:43] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:51:43] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:52:03] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:52:03] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:52:03] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:52:03] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:52:03] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 17:52:04] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:52:04] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:52:14] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:52:14] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:52:14] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:52:14] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 17:52:14] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 17:52:15] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 17:52:15] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:11] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:08:12] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:12] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:12] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:12] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:12] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:08:13] "GET /frontend/js/translations/ca.json HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:08:13] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:13] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:22] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:22] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:22] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:22] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:22] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:08:22] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:22] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:31] "GET /frontend/html/TEA4/detall_product.html?id=4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:08:32] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:08:39] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:39] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:39] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:39] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:39] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:08:40] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:40] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:59] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:08:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:59] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:08:59] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:08:59] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:11:11] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:11:11] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:16:10] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:16:10] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:16:10] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:16:10] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:16:10] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:16:10] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:17:39] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:17:40] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:17:40] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:17:40] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:17:40] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:17:40] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:17:40] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:17:40] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:17:51] "GET /frontend/html/TEA4/detall_product.html?id=1 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:17:58] "GET /frontend/html/TEA4/detall_product.html?id=3 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:18:01] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:18:01] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:01] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:01] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:01] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:02] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:02] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:02] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:02] "GET /Vedella%20Arr%C3%B2s.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:02] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:02] "GET /Pollastre%20Xampi.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:23] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:18:24] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:24] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:24] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:24] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:35] "GET /Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:35] "GET /Vedella%20Arr%C3%B2s.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:18:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:18:35] "GET /Pollastre%20Xampi.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:26:36] "GET /frontend/html/TEA4/detall_product.html?id=3 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:26:37] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:27:12] "GET /frontend/html/TEA4/detall_product.html?id=3 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:27:13] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:27:17] "GET /frontend/html/TEA4/detall_product.html?id=3 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:27:17] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:27:46] "GET /frontend/html/TEA4/detall_product.html?id=3 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:27:46] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:33:08] "GET /frontend/html/TEA4/detall_product.html?id=3 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:33:08] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:33:09] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:09] "GET /frontend/images/images/Pollastre%20Xampi.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:09] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:09] "GET /frontend/images/images/Vedella%20Arr%C3%B2s.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:09] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:09] "GET /frontend/images/images/Pollastre%20Xampi.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:09] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:09] "GET /frontend/images/images/Vedella%20Verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:09] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:09] "GET /frontend/images/images/Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:25] "GET /frontend/html/TEA4/detall_product.html?id=3 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:33:25] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:33:31] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:33:31] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:31] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:31] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:31] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:31] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:33:31] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:31] "GET /images/Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:31] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:31] "GET /images/Vedella%20Arr%C3%B2s.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:31] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:31] "GET /images/Pollastre%20Xampi.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:33] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:33:34] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:34] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:34] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:34] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:34] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:33:34] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:34] "GET /images/Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:34] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:34] "GET /images/Vedella%20Arr%C3%B2s.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:34] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:34] "GET /images/Pollastre%20Xampi.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:35] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:33:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:35] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:35] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:35] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:33:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:35] "GET /images/Pollatre%20amb%20verdures.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:35] "GET /images/Pollastre%20Xampi.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:33:35] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:33:35] "GET /images/Vedella%20Arr%C3%B2s.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:34:23] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:34:23] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:34:23] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:34:23] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:34:23] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:34:23] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:39:32] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:39:33] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:39:33] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:39:33] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:39:33] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:39:33] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:39:48] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:39:49] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:39:49] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:39:49] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:39:49] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:45:09] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 18:45:09] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:45:09] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:45:09] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:45:09] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:45:09] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:46:31] "GET /frontend/html/TEA4/cistella.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:46:31] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:46:31] "GET /frontend/html/cistella_style.css HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 18:46:31] "GET /frontend/html/TEA4/js/api.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 18:46:31] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 18:46:31] "GET /frontend/html/TEA4/detall_product_style.css HTTP/1.1" 404 -

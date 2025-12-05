@@ -150,7 +150,7 @@ const Utils = {
         const stockLabel = window.i18n ? window.i18n.translate('product.stock') : 'Stock';
         const addToCartLabel = window.i18n ? window.i18n.translate('product.addToCart') : 'Afegir a la cistella';
         const outOfStockLabel = window.i18n ? window.i18n.translate('product.outOfStock') : 'Esgotat';
-        const imgPath = this.getProductImagePath(product.imatgePath);
+        const imgPath = DetallUtils.getProductImagePath(product);
         console.log('Ruta de imagen (card):', imgPath);
 
         card.innerHTML = `
@@ -329,11 +329,11 @@ const DetallUtils = {
 
     detallContainer.innerHTML = `
   <div class="row g-4 align-items-start">
-  <h4 data-i18n="product.relatedProducts">Productes relacionats</h4>
+   
     <!-- Columna izquierda: imagen -->
     <div class="col-md-6 text-center">
       <img id="product-image" src="${DetallUtils.getProductImagePath(
-        product.imatgePath
+        product
       )}" class="img-fluid imatge" alt="${product.nom}">
     </div>
 
@@ -362,8 +362,7 @@ const DetallUtils = {
 
       <!-- Descripció -->
       <p id="product-description" data-i18n="product.description">${
-        product.descripcio || "Sense descripció disponible"
-      }</p>
+        product.descripcio || "Sense descripció disponible"}</p>
 
       <!-- Botó afegir a la cistella -->
         <button
@@ -377,7 +376,9 @@ const DetallUtils = {
             ${product.stock <= 0 ? "disabled" : ""}>
             ${product.stock <= 0 ? outOfStockLabel : addToCartLabel}
         </button>
+        
     </div>
+    <h4 data-i18n="product.relatedProducts">Productes relacionats</h4>
   </div>
 `;
     addCartEventListeners();
@@ -390,14 +391,11 @@ const DetallUtils = {
     cardRelacionats.style.width = "200px";
 
     cardRelacionats.innerHTML = `
-    <div class="bg-light border border-light-subtle rounded relacionats__box"><a href="detall_product.html?id=${
-      product.id
-    }"><img
-              class="img-thumbnail relacionats__imatge" src="${DetallUtils.getProductImagePath(
-                product
-              )}" alt=""></a>
-        </div>
-    `;
+    <div class="bg-light border border-light-subtle rounded relacionats__box">
+          <a href="detall_product.html?id=${product.id}">
+          <img class="img-thumbnail relacionats__imatge" src="${DetallUtils.getProductImagePath(
+                product)}" alt=""></a>
+    </div>`;
 
     return cardRelacionats;
   },
