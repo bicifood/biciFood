@@ -40,5 +40,5 @@ Per aturar:
 
 ## Accés
 
-- Frontend: http://localhost:3000/frontend/html/TEA4/index.html
+- Frontend: http://localhost:3000/frontend/html/TEA5/index.html
 - Backend API: http://localhost:8080/api/v1
