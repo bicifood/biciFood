@@ -8,7 +8,11 @@ docker build -t bicifood .
 
 # 2. Crear i executar el contenidor (primera vegada)
 docker run -d -p 8080:8080 -p 3000:3000 --name bicifood bicifood
+
+# 3. Accedir a l'aplicació
+# Frontend: http://localhost:3000/frontend/html/TEA5/
 ```
+
 
 ## Gestió del Contenidor
 
