@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiciFood</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="/frontend/js/i18n.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header bg-brown shadow-sm sticky-top">
+    <div id="navbar"></div>
+    <script>
+  fetch("components/navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+
+      // Tornar a aplicar traduccions un cop carregada la navbar
+      if (window.i18n) {
+        i18n.applyTranslations();
+      }
+
+      // Reactivar event del selector d'idioma dins la navbar
+      const langSelector = document.getElementById('lang-selector');
+      if (langSelector) {
+        langSelector.value = i18n.getLanguage();
+        langSelector.addEventListener('change', (e) => {
+          i18n.setLanguage(e.target.value);
+        });
+      }
+    });
+</script>
+
+  </header>
+
+  <!-- CONTINGUT CENTRAL -->
+
+  <main class="container my-5">
+    <div class="row g-5 justify-content-center">
+
+      <!-- Columna esquerra: mapa + adreça -->
+
+      <div class="col-md-5">
+        <h3 class=" fw-semibold text-center mb-4 contact-title" data-i18n="contact.whereToFind">On ens trobem</h3>
+        <div class="map-container">
+          <div class="ratio ratio-4x3 mb-3 shadow-sm rounded overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.660458073774!2d2.1589471763681027!3d41.38612167129957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a28d6f2fdcf9%3A0x6d6cb58dbcf6b2f7!2sCarrer%20d'Aribau%2C%2064%2C%2008011%20Barcelona!5e0!3m2!1sca!2ses!4v1730060000000!5m2!1sca!2ses"
+              width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <p class="mb-1 fw-semibold">Carrer d'Aribau, 64, 08011 Barcelona</p>
+          <p class="mb-4">93 551 29 81</p>
+        </div>
+      </div>
+
+      <!-- Columna dreta: formulari -->
+      <div class="col-md-5">
+        <h3 class="  fw-semibold text-center mb-4 contact-title" data-i18n="contact.title">Contacta amb nosaltres</h3>
+
+        <form class="contact-form">
+          <div class="mb-3">
+            <label for="assumpte" class="form-label"><span data-i18n="contact.subject">Assumpte</span> <span
+                class="text-danger small" data-i18n="contact.required">*</span></label>
+            <input type="text" class="form-control form-control-sm" id="assumpte">
+          </div>
+
+          <div class="mb-3">
+            <label for="nom" class="form-label"><span data-i18n="contact.fullName">Nom i cognoms</span> <span
+                class="text-danger small" data-i18n="contact.required">*</span></label>
+            <input type="text" class="form-control form-control-sm" id="nom" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label"><span data-i18n="contact.emailAddress">Adreça electrònica</span> <span
+                class="text-danger small" data-i18n="contact.required">*</span></label>
+            <input type="email" class="form-control form-control-sm" id="email" required>
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" data-i18n-placeholder="contact.messagePlaceholder"
+              placeholder="Escriu el teu missatge aquí..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-sm px-4" data-i18n="contact.send">Enviar</button>
+        </form>
+      </div>
+
+
+    </div>
+  </main>
+
+  <!-- BOTÓ TORNAR A DALT -->
+<button id="scrollTop" class="scroll-top" aria-label="Tornar a dalt" title="Tornar a dalt">↑</button>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-lightbrown text-dark py-3 mt-auto">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex align-items-center">
+        <strong>BiciFood</strong>
+      </div>
+      <div class="footer-text">
+        <span>&copy; 2025 BiciFood. <span data-i18n="footer.rights">Tots els drets reservats</span>.</span>
+      </div>
+      <div>
+        <a href="politica.html" class="text-decoration-none text-dark" data-i18n="footer.privacy">Política de
+          privadesa</a>
+        <a href="contacte.html" class="text-decoration-none text-dark ms-3" data-i18n="footer.contact">Contacte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
