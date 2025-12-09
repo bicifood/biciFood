@@ -221,11 +221,9 @@
         total += item.price * item.quantity;
 
         // Generar la ruta correcta de la imatge
-        const imagePath = item.imagePath
-          ? ( (/^(https?:|data:)/i.test(item.imagePath) || item.imagePath.startsWith('/') || item.imagePath.startsWith('../') || item.imagePath.includes('/images/'))
-              ? item.imagePath
-              : `../../images/${item.imagePath}` )
-          : '../../images/placeholder-product.jpg';
+        const imagePath = item.imagePath ?
+          `../../images/${item.imagePath.replace('images/', '')}` :
+          '../../images/placeholder-product.jpg';
 
         const itemHTML = `
           <div class="card mb-3">

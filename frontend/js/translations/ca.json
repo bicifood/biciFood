@@ -62,7 +62,7 @@
     "addToCart": "Afegir a la cistella",
     "quantity": "Quantitat",
     "price": "Preu",
-    "descripcio": "Això es una simulació de la descripció del producte, es tradueix donant-li al select de la barra superior de navegació",
+    "description": "Descripció",
     "relatedProducts": "Productes relacionats",
     "noDescription": "Sense descripció disponible",
     "stock": "Stock",
