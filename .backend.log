@@ -8,59 +8,59 @@
 
  :: Spring Boot ::                (v3.3.5)
 
-2025-12-05T16:13:30.312+01:00  INFO 11208 --- [           main] c.bicifood.api.BiciFoodApiApplication    : Starting BiciFoodApiApplication v1.0.0 using Java 21.0.9 with PID 11208 (/home/isard/Documents/github_repos/biciFood/backend/target/bicifood-api-1.0.0.jar started by isard in /home/isard/Documents/github_repos/biciFood)
-2025-12-05T16:13:30.362+01:00 DEBUG 11208 --- [           main] c.bicifood.api.BiciFoodApiApplication    : Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-12-05T16:13:30.374+01:00  INFO 11208 --- [           main] c.bicifood.api.BiciFoodApiApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-12-05T16:13:37.695+01:00  INFO 11208 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-12-05T16:13:37.962+01:00  INFO 11208 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 238 ms. Found 8 JPA repository interfaces.
-2025-12-05T16:13:44.285+01:00  INFO 11208 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-12-05T16:13:44.395+01:00  INFO 11208 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-05T16:13:44.406+01:00  INFO 11208 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2025-12-05T16:13:44.540+01:00  INFO 11208 --- [           main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
-2025-12-05T16:13:44.544+01:00  INFO 11208 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13604 ms
-2025-12-05T16:13:45.355+01:00  INFO 11208 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-05T16:13:46.124+01:00  INFO 11208 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bicifood_db user=SA
-2025-12-05T16:13:46.128+01:00  INFO 11208 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-05T16:13:46.153+01:00  INFO 11208 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bicifood_db'
-2025-12-05T16:13:47.973+01:00  INFO 11208 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-12-05T16:13:48.149+01:00  INFO 11208 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2025-12-05T16:13:48.291+01:00  INFO 11208 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-12-05T16:13:49.673+01:00  INFO 11208 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-12-05T16:13:49.794+01:00  WARN 11208 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-12-05T16:13:56.526+01:00  INFO 11208 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-12-05T16:13:56.671+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:19.218+01:00  INFO 6144 --- [           main] c.bicifood.api.BiciFoodApiApplication    : Starting BiciFoodApiApplication v1.0.0 using Java 21.0.9 with PID 6144 (/home/isard/Documents/github_repos/biciFood/backend/target/bicifood-api-1.0.0.jar started by isard in /home/isard/Documents/github_repos/biciFood)
+2025-12-09T19:57:19.231+01:00 DEBUG 6144 --- [           main] c.bicifood.api.BiciFoodApiApplication    : Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-12-09T19:57:19.240+01:00  INFO 6144 --- [           main] c.bicifood.api.BiciFoodApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T19:57:25.067+01:00  INFO 6144 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-09T19:57:25.345+01:00  INFO 6144 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 248 ms. Found 8 JPA repository interfaces.
+2025-12-09T19:57:31.051+01:00  INFO 6144 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-09T19:57:31.106+01:00  INFO 6144 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T19:57:31.107+01:00  INFO 6144 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-12-09T19:57:31.239+01:00  INFO 6144 --- [           main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2025-12-09T19:57:31.242+01:00  INFO 6144 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11547 ms
+2025-12-09T19:57:31.672+01:00  INFO 6144 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-09T19:57:32.608+01:00  INFO 6144 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bicifood_db user=SA
+2025-12-09T19:57:32.618+01:00  INFO 6144 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-09T19:57:32.650+01:00  INFO 6144 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bicifood_db'
+2025-12-09T19:57:33.462+01:00  INFO 6144 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-09T19:57:33.619+01:00  INFO 6144 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-09T19:57:33.781+01:00  INFO 6144 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-09T19:57:34.874+01:00  INFO 6144 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-09T19:57:35.043+01:00  WARN 6144 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-09T19:57:38.931+01:00  INFO 6144 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-09T19:57:38.967+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     drop table if exists categoria cascade 
 Hibernate: 
     drop table if exists categoria cascade 
-2025-12-05T16:13:56.726+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:38.978+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     drop table if exists comanda cascade 
 Hibernate: 
     drop table if exists comanda cascade 
-2025-12-05T16:13:56.729+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:38.980+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     drop table if exists estat_comanda cascade 
 Hibernate: 
     drop table if exists estat_comanda cascade 
-2025-12-05T16:13:56.731+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:38.981+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     drop table if exists linia_comanda cascade 
 Hibernate: 
     drop table if exists linia_comanda cascade 
-2025-12-05T16:13:56.737+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:38.982+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     drop table if exists lliurament cascade 
 Hibernate: 
     drop table if exists lliurament cascade 
-2025-12-05T16:13:56.739+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:38.983+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     drop table if exists producte cascade 
 Hibernate: 
     drop table if exists producte cascade 
-2025-12-05T16:13:56.744+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:38.986+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     drop table if exists rol cascade 
 Hibernate: 
     drop table if exists rol cascade 
-2025-12-05T16:13:56.746+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:38.987+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     drop table if exists usuari cascade 
 Hibernate: 
     drop table if exists usuari cascade 
-2025-12-05T16:13:56.765+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:38.997+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     create table categoria (
         id_categoria integer generated by default as identity,
         nom_cat varchar(100) not null unique,
@@ -72,7 +72,7 @@ Hibernate:
         nom_cat varchar(100) not null unique,
         primary key (id_categoria)
     )
-2025-12-05T16:13:56.807+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.019+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     create table comanda (
         id_client integer not null,
         id_comanda integer generated by default as identity,
@@ -94,7 +94,7 @@ Hibernate:
         adreca_lliurament varchar(255) not null,
         primary key (id_comanda)
     )
-2025-12-05T16:13:56.812+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.071+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     create table estat_comanda (
         id_estat integer generated by default as identity,
         nom_estat varchar(50) not null unique,
@@ -106,7 +106,7 @@ Hibernate:
         nom_estat varchar(50) not null unique,
         primary key (id_estat)
     )
-2025-12-05T16:13:56.818+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.087+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     create table linia_comanda (
         id_comanda integer not null,
         id_linia integer generated by default as identity,
@@ -126,7 +126,7 @@ Hibernate:
         subtotal numeric(6,2) not null,
         primary key (id_linia)
     )
-2025-12-05T16:13:56.828+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.106+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     create table lliurament (
         id_comanda integer not null unique,
         id_lliurament integer generated by default as identity,
@@ -144,7 +144,7 @@ Hibernate:
         data_hora_lliurament_real timestamp(6),
         primary key (id_lliurament)
     )
-2025-12-05T16:13:56.835+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.115+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     create table producte (
         id_categoria integer not null,
         id_producte integer generated by default as identity,
@@ -166,7 +166,7 @@ Hibernate:
         imatge_path varchar(255),
         primary key (id_producte)
     )
-2025-12-05T16:13:56.839+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.119+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     create table rol (
         id_rol integer generated by default as identity,
         nom_rol varchar(50) not null unique,
@@ -178,7 +178,7 @@ Hibernate:
         nom_rol varchar(50) not null unique,
         primary key (id_rol)
     )
-2025-12-05T16:13:56.844+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.125+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     create table usuari (
         id_rol integer not null,
         id_usuari integer generated by default as identity,
@@ -204,7 +204,7 @@ Hibernate:
         password_hash varchar(255) not null,
         primary key (id_usuari)
     )
-2025-12-05T16:13:56.853+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.136+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     alter table if exists comanda 
        add constraint FKrg2r4q0rwqds44m7eojbc19in 
        foreign key (id_client) 
@@ -214,7 +214,7 @@ Hibernate:
        add constraint FKrg2r4q0rwqds44m7eojbc19in 
        foreign key (id_client) 
        references usuari
-2025-12-05T16:13:56.876+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.160+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     alter table if exists comanda 
        add constraint FK3bsn8w99sy11k4ahec9wdd4oe 
        foreign key (id_estat) 
@@ -224,7 +224,7 @@ Hibernate:
        add constraint FK3bsn8w99sy11k4ahec9wdd4oe 
        foreign key (id_estat) 
        references estat_comanda
-2025-12-05T16:13:56.880+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.164+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     alter table if exists linia_comanda 
        add constraint FKbbkkdw3l5umgx0ag1oa7r5p2h 
        foreign key (id_comanda) 
@@ -234,7 +234,7 @@ Hibernate:
        add constraint FKbbkkdw3l5umgx0ag1oa7r5p2h 
        foreign key (id_comanda) 
        references comanda
-2025-12-05T16:13:56.885+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.170+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     alter table if exists linia_comanda 
        add constraint FKgenquxnmu92m0c7hgu3lkorif 
        foreign key (id_producte) 
@@ -244,7 +244,7 @@ Hibernate:
        add constraint FKgenquxnmu92m0c7hgu3lkorif 
        foreign key (id_producte) 
        references producte
-2025-12-05T16:13:56.890+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.175+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     alter table if exists lliurament 
        add constraint FKebewyham694ot336mattw1k2c 
        foreign key (id_comanda) 
@@ -254,7 +254,7 @@ Hibernate:
        add constraint FKebewyham694ot336mattw1k2c 
        foreign key (id_comanda) 
        references comanda
-2025-12-05T16:13:56.895+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.180+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     alter table if exists lliurament 
        add constraint FKompbj5vovooa99rib4069x2t2 
        foreign key (id_repartidor) 
@@ -264,7 +264,7 @@ Hibernate:
        add constraint FKompbj5vovooa99rib4069x2t2 
        foreign key (id_repartidor) 
        references usuari
-2025-12-05T16:13:56.899+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.183+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     alter table if exists producte 
        add constraint FKncyim64879nyaqoskkjw3fwot 
        foreign key (id_categoria) 
@@ -274,7 +274,7 @@ Hibernate:
        add constraint FKncyim64879nyaqoskkjw3fwot 
        foreign key (id_categoria) 
        references categoria
-2025-12-05T16:13:56.902+01:00 DEBUG 11208 --- [           main] org.hibernate.SQL                        : 
+2025-12-09T19:57:39.188+01:00 DEBUG 6144 --- [           main] org.hibernate.SQL                        : 
     alter table if exists usuari 
        add constraint FKqqwdwcds20ghoxg09bx65t5we 
        foreign key (id_rol) 
@@ -284,74 +284,34 @@ Hibernate:
        add constraint FKqqwdwcds20ghoxg09bx65t5we 
        foreign key (id_rol) 
        references rol
-2025-12-05T16:13:56.922+01:00  INFO 11208 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-12-05T16:13:59.796+01:00  INFO 11208 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-12-05T16:14:07.235+01:00  WARN 11208 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-12-05T16:14:07.417+01:00  WARN 11208 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-12-09T19:57:39.200+01:00  INFO 6144 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-09T19:57:40.157+01:00  INFO 6144 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-09T19:57:44.281+01:00  WARN 6144 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-09T19:57:44.386+01:00  WARN 6144 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: ede04d5b-0a91-4237-a4a5-c1d386db0f7b
+Using generated security password: 421a24d2-84f2-48fc-b072-b9e69e074a31
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-12-05T16:14:07.535+01:00  INFO 11208 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-12-05T16:14:11.009+01:00  INFO 11208 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
-2025-12-05T16:14:11.216+01:00 DEBUG 11208 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
-2025-12-05T16:14:14.981+01:00  INFO 11208 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
-2025-12-05T16:14:15.029+01:00  INFO 11208 --- [           main] c.bicifood.api.BiciFoodApiApplication    : Started BiciFoodApiApplication in 47.379 seconds (process running for 52.109)
+2025-12-09T19:57:44.423+01:00  INFO 6144 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-09T19:57:46.150+01:00  INFO 6144 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-12-09T19:57:46.275+01:00 DEBUG 6144 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-09T19:57:49.320+01:00  INFO 6144 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api/v1'
+2025-12-09T19:57:49.360+01:00  INFO 6144 --- [           main] c.bicifood.api.BiciFoodApiApplication    : Started BiciFoodApiApplication in 33.746 seconds (process running for 37.191)
 🚴‍♂️ BiciFood API is running!
 📖 Swagger UI: http://localhost:8080/api/v1/swagger-ui.html
 🏥 Health Check: http://localhost:8080/api/v1/actuator/health
-2025-12-05T16:14:16.715+01:00  INFO 11208 --- [nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-05T16:14:16.717+01:00  INFO 11208 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-05T16:14:16.722+01:00  INFO 11208 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-12-05T16:14:16.863+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
-2025-12-05T16:14:16.907+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:14:16.926+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
-2025-12-05T16:14:20.800+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/4
-2025-12-05T16:14:20.935+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products/4
-2025-12-05T16:14:20.971+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:14:20.982+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products/4
-2025-12-05T16:14:22.310+01:00 DEBUG 11208 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-Hibernate: 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-2025-12-05T16:14:23.512+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T16:14:23.823+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T16:14:23.848+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:14:23.865+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T16:14:24.444+01:00 DEBUG 11208 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+2025-12-09T19:57:52.264+01:00  INFO 6144 --- [nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T19:57:52.299+01:00  INFO 6144 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T19:57:52.303+01:00  INFO 6144 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-12-09T19:57:52.715+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /actuator/health
+2025-12-09T19:57:52.764+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T19:57:52.803+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /actuator/health
+2025-12-09T19:58:18.458+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T19:58:18.863+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T19:58:18.926+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T19:58:19.016+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T19:58:20.706+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -362,8 +322,8 @@ Hibernate:
         p1_0.stock 
     from
         producte p1_0 
-    where
-        p1_0.id_categoria=? 
+    offset
+        ? rows 
     fetch
         first ? rows only
 Hibernate: 
@@ -377,11 +337,11 @@ Hibernate:
         p1_0.stock 
     from
         producte p1_0 
-    where
-        p1_0.id_categoria=? 
+    offset
+        ? rows 
     fetch
         first ? rows only
-2025-12-05T16:14:24.455+01:00 DEBUG 11208 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+2025-12-09T19:58:20.792+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -397,15 +357,163 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:14:24.563+01:00  WARN 11208 --- [nio-8080-exec-4] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+2025-12-09T19:58:21.019+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T19:58:21.049+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T19:58:21.194+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T19:58:22.339+01:00  WARN 6144 --- [nio-8080-exec-4] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
 	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
 	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
 
-2025-12-05T16:14:25.850+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
-2025-12-05T16:14:25.934+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
-2025-12-05T16:14:25.991+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:14:26.010+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
-2025-12-05T16:14:26.074+01:00 DEBUG 11208 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+2025-12-09T19:58:34.315+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/3
+2025-12-09T19:58:34.423+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products/3
+2025-12-09T19:58:34.445+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T19:58:34.458+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products/3
+2025-12-09T19:58:34.470+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        c1_0.id_categoria,
+        c1_0.nom_cat,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    join
+        categoria c1_0 
+            on c1_0.id_categoria=p1_0.id_categoria 
+    where
+        p1_0.id_producte=?
+Hibernate: 
+    select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        c1_0.id_categoria,
+        c1_0.nom_cat,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    join
+        categoria c1_0 
+            on c1_0.id_categoria=p1_0.id_categoria 
+    where
+        p1_0.id_producte=?
+2025-12-09T19:58:34.974+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
+2025-12-09T19:58:35.069+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
+2025-12-09T19:58:35.073+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T19:58:35.083+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
+2025-12-09T19:58:35.341+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    where
+        p1_0.id_categoria=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    where
+        p1_0.id_categoria=? 
+    fetch
+        first ? rows only
+2025-12-09T19:58:35.383+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:07:16.508+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /categories
+2025-12-09T20:07:16.519+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=20
+2025-12-09T20:07:16.574+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=20
+2025-12-09T20:07:16.579+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-12-09T20:07:16.584+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:07:16.599+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=20
+2025-12-09T20:07:16.599+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:07:16.624+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /categories
+2025-12-09T20:07:16.668+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+Hibernate: 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+2025-12-09T20:07:16.672+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -435,7 +543,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-12-05T16:14:26.108+01:00 DEBUG 11208 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+2025-12-09T20:07:16.709+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -451,7 +559,7 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:14:26.115+01:00 DEBUG 11208 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+2025-12-09T20:07:16.764+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -467,7 +575,7 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:14:26.162+01:00 DEBUG 11208 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+2025-12-09T20:07:16.808+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -483,7 +591,55 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:14:26.257+01:00 DEBUG 11208 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+2025-12-09T20:07:16.843+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:07:16.869+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:07:16.871+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:07:16.899+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
     /* <criteria> */ select
         count(p1_0.id_producte) 
     from
@@ -493,11 +649,15 @@ Hibernate:
         count(p1_0.id_producte) 
     from
         producte p1_0
-2025-12-05T16:15:41.169+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
-2025-12-05T16:15:41.217+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
-2025-12-05T16:15:41.238+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:15:41.246+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
-2025-12-05T16:15:41.284+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+2025-12-09T20:22:41.261+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /categories
+2025-12-09T20:22:41.271+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=20
+2025-12-09T20:22:41.287+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=20
+2025-12-09T20:22:41.290+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:22:41.296+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-12-09T20:22:41.296+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=20
+2025-12-09T20:22:41.308+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:22:41.329+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /categories
+2025-12-09T20:22:41.346+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -527,7 +687,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-12-05T16:15:41.295+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+2025-12-09T20:22:41.361+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -543,7 +703,7 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:15:41.346+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+2025-12-09T20:22:41.364+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -559,7 +719,7 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:15:41.362+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+2025-12-09T20:22:41.371+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -575,7 +735,67 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:15:41.382+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+2025-12-09T20:22:41.397+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+Hibernate: 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+2025-12-09T20:22:41.408+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:22:41.429+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:22:41.471+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:22:41.487+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     /* <criteria> */ select
         count(p1_0.id_producte) 
     from
@@ -585,11 +805,2748 @@ Hibernate:
         count(p1_0.id_producte) 
     from
         producte p1_0
-2025-12-05T16:15:46.675+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/4
-2025-12-05T16:15:46.823+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products/4
-2025-12-05T16:15:46.836+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:15:46.847+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products/4
-2025-12-05T16:15:46.863+01:00 DEBUG 11208 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+2025-12-09T20:23:04.524+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /categories
+2025-12-09T20:23:04.537+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=20
+2025-12-09T20:23:04.629+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-12-09T20:23:04.634+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=20
+2025-12-09T20:23:04.641+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:23:04.641+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:23:04.642+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /categories
+2025-12-09T20:23:04.660+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=20
+2025-12-09T20:23:04.678+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+Hibernate: 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+2025-12-09T20:23:04.695+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:23:04.711+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:23:04.719+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:23:04.722+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:23:04.725+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:23:04.728+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:23:04.734+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:23:04.739+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:28:35.670+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /categories
+2025-12-09T20:28:35.674+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=20
+2025-12-09T20:28:35.708+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=20
+2025-12-09T20:28:35.718+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-12-09T20:28:35.734+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:28:35.739+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:28:35.739+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=20
+2025-12-09T20:28:35.752+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /categories
+2025-12-09T20:28:35.756+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:28:35.760+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:35.769+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:35.771+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+Hibernate: 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+2025-12-09T20:28:35.776+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:35.780+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:35.785+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:35.788+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:35.790+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:28:49.039+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T20:28:49.225+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:28:49.238+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:28:49.255+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:28:49.290+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:28:49.304+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:49.331+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:49.366+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:28:49.408+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:41:25.963+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T20:41:26.048+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:41:26.078+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:41:26.100+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:41:26.175+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:41:26.197+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:26.239+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:26.269+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:26.299+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:41:45.784+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T20:41:45.845+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:41:45.860+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:41:45.884+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:41:45.937+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:41:45.943+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:45.970+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:45.985+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:46.009+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:41:55.153+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T20:41:55.194+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:41:55.221+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:41:55.231+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:41:55.249+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:41:55.259+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:55.269+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:55.279+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:55.283+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:41:56.820+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:41:56.825+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:41:56.830+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:41:56.835+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:41:56.837+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:56.841+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:56.843+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:41:56.845+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:52:38.278+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T20:52:38.306+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:52:38.324+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:52:38.326+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:52:38.338+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:52:38.353+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:52:38.366+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:52:38.386+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:52:38.390+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:53:21.460+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T20:53:21.522+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:53:21.528+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:53:21.540+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:53:21.569+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:53:21.581+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:21.624+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:21.626+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:21.635+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:53:28.314+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T20:53:28.536+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:53:28.556+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:53:28.571+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:53:28.586+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:53:28.604+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:28.614+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:28.707+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:28.741+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-09T20:53:36.220+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-09T20:53:36.290+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-09T20:53:36.306+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-09T20:53:36.349+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-09T20:53:36.392+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-09T20:53:36.427+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:36.441+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:36.461+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-09T20:53:36.469+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:06:54.268+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:06:54.345+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:06:54.382+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:06:54.383+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:06:54.407+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:06:54.411+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:06:54.452+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:06:54.474+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:06:54.488+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:06:56.879+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:06:56.880+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:06:56.881+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:06:56.886+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:06:56.894+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:06:56.897+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:06:56.898+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:06:56.905+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:07:33.572+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:07:33.598+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:07:33.600+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:07:33.601+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:07:33.604+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:07:33.605+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:07:33.606+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:07:33.608+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:07:33.610+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:08:58.582+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:08:58.612+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:08:58.618+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:08:58.618+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:08:58.631+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:08:58.634+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:08:58.651+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:08:58.656+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:08:58.663+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:10:26.446+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:10:26.677+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:10:26.680+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:10:26.686+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:10:26.698+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:10:26.705+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:26.711+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:26.725+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:26.737+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:10:42.474+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:10:42.838+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:10:42.841+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:10:42.842+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:10:42.869+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:10:42.874+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:42.881+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:42.885+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:42.896+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:10:45.536+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:10:45.540+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:10:45.542+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:10:45.623+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:10:45.637+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:45.664+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:45.677+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:10:45.715+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:17:26.991+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:17:27.037+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:17:27.048+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:17:27.055+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:17:27.099+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:17:27.106+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:17:27.145+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:17:27.171+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:17:27.177+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:18:40.078+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:18:40.287+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:18:40.290+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:18:40.293+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:18:40.320+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:18:40.324+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:18:40.332+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:18:40.334+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:18:40.351+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:28:40.570+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:28:40.648+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:28:40.658+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:28:40.668+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:28:40.690+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:28:40.693+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:28:40.699+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:28:40.782+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:28:40.815+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:31:26.081+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:31:26.185+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:31:26.192+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:31:26.200+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:31:26.220+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:31:26.223+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:31:26.236+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:31:26.243+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:31:26.253+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:32:16.289+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:32:16.318+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:32:16.335+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:16.346+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:32:16.368+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:32:16.381+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:16.386+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:16.387+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:16.399+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:32:25.168+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:32:25.273+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:32:25.277+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:25.278+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:32:25.353+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:32:25.359+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:25.365+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:25.379+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:25.382+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:32:26.341+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /categories
+2025-12-10T12:32:26.359+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=20
+2025-12-10T12:32:26.445+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-12-10T12:32:26.450+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=20
+2025-12-10T12:32:26.454+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:26.454+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:26.456+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /categories
+2025-12-10T12:32:26.457+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=20
+2025-12-10T12:32:26.486+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:32:26.495+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:26.500+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+Hibernate: 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+2025-12-10T12:32:26.506+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:26.520+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:26.567+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:26.570+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:26.595+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:26.599+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:32:37.085+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=20
+2025-12-10T12:32:37.091+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /categories
+2025-12-10T12:32:37.121+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-12-10T12:32:37.125+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=20
+2025-12-10T12:32:37.127+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:37.128+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:37.137+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /categories
+2025-12-10T12:32:37.138+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=20
+2025-12-10T12:32:37.156+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+Hibernate: 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+2025-12-10T12:32:37.172+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:32:37.175+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:37.194+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:37.198+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:37.211+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:37.227+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:37.231+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:37.243+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:32:47.683+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:32:47.756+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:32:47.757+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:47.758+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:32:47.761+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:32:47.762+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:47.763+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:47.765+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:32:47.766+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:32:50.758+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/2
+2025-12-10T12:32:50.954+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /products/2
+2025-12-10T12:32:50.956+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:50.958+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /products/2
+2025-12-10T12:32:50.982+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
     select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -625,11 +3582,11 @@ Hibernate:
             on c1_0.id_categoria=p1_0.id_categoria 
     where
         p1_0.id_producte=?
-2025-12-05T16:15:46.951+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T16:15:46.971+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T16:15:46.991+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:15:46.992+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T16:15:47.025+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-12-10T12:32:51.073+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
+2025-12-10T12:32:51.119+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
+2025-12-10T12:32:51.148+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:32:51.157+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
+2025-12-10T12:32:51.255+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -659,7 +3616,7 @@ Hibernate:
         p1_0.id_categoria=? 
     fetch
         first ? rows only
-2025-12-05T16:15:47.029+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-12-10T12:32:51.258+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -675,11 +3632,11 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:16:40.339+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/4
-2025-12-05T16:16:40.396+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /products/4
-2025-12-05T16:16:40.409+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:16:40.416+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /products/4
-2025-12-05T16:16:40.440+01:00 DEBUG 11208 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+2025-12-10T12:33:00.467+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/2
+2025-12-10T12:33:00.493+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /products/2
+2025-12-10T12:33:00.498+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:33:00.502+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /products/2
+2025-12-10T12:33:00.508+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
     select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -715,11 +3672,11 @@ Hibernate:
             on c1_0.id_categoria=p1_0.id_categoria 
     where
         p1_0.id_producte=?
-2025-12-05T16:16:40.547+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T16:16:40.618+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T16:16:40.627+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:16:40.632+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T16:16:40.643+01:00 DEBUG 11208 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+2025-12-10T12:33:00.687+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
+2025-12-10T12:33:00.743+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
+2025-12-10T12:33:00.782+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:33:00.795+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
+2025-12-10T12:33:00.834+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -749,7 +3706,7 @@ Hibernate:
         p1_0.id_categoria=? 
     fetch
         first ? rows only
-2025-12-05T16:16:40.651+01:00 DEBUG 11208 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+2025-12-10T12:33:00.836+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -765,11 +3722,10 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:22:27.908+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/4
-2025-12-05T16:22:28.070+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products/4
-2025-12-05T16:22:28.093+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:22:28.107+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products/4
-2025-12-05T16:22:28.142+01:00 DEBUG 11208 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+2025-12-10T12:33:01.635+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products/2
+2025-12-10T12:33:01.638+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:33:01.642+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products/2
+2025-12-10T12:33:01.656+01:00 DEBUG 6144 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
     select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -805,11 +3761,10 @@ Hibernate:
             on c1_0.id_categoria=p1_0.id_categoria 
     where
         p1_0.id_producte=?
-2025-12-05T16:22:28.502+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T16:22:28.573+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T16:22:28.594+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:22:28.603+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T16:22:28.642+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-12-10T12:33:01.766+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
+2025-12-10T12:33:01.856+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:33:01.867+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
+2025-12-10T12:33:01.912+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -839,7 +3794,7 @@ Hibernate:
         p1_0.id_categoria=? 
     fetch
         first ? rows only
-2025-12-05T16:22:28.647+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-12-10T12:33:01.935+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -855,11 +3810,10 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T16:24:13.796+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/4
-2025-12-05T16:24:13.838+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products/4
-2025-12-05T16:24:13.848+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:24:13.852+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products/4
-2025-12-05T16:24:13.867+01:00 DEBUG 11208 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+2025-12-10T12:33:02.907+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products/2
+2025-12-10T12:33:02.915+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:33:02.940+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products/2
+2025-12-10T12:33:02.945+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
     select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -895,11 +3849,10 @@ Hibernate:
             on c1_0.id_categoria=p1_0.id_categoria 
     where
         p1_0.id_producte=?
-2025-12-05T16:24:13.992+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T16:24:14.162+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T16:24:14.194+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T16:24:14.197+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T16:24:14.223+01:00 DEBUG 11208 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+2025-12-10T12:33:03.143+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
+2025-12-10T12:33:03.148+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:33:03.149+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
+2025-12-10T12:33:03.163+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -929,7 +3882,7 @@ Hibernate:
         p1_0.id_categoria=? 
     fetch
         first ? rows only
-2025-12-05T16:24:14.241+01:00 DEBUG 11208 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+2025-12-10T12:33:03.170+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -945,11 +3898,10 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T17:51:55.427+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/4
-2025-12-05T17:51:55.485+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products/4
-2025-12-05T17:51:55.488+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T17:51:55.496+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products/4
-2025-12-05T17:51:55.498+01:00 DEBUG 11208 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+2025-12-10T12:33:03.878+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /products/2
+2025-12-10T12:33:03.893+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:33:03.894+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /products/2
+2025-12-10T12:33:03.900+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
     select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -985,11 +3937,10 @@ Hibernate:
             on c1_0.id_categoria=p1_0.id_categoria 
     where
         p1_0.id_producte=?
-2025-12-05T17:51:55.754+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T17:51:55.898+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T17:51:55.910+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T17:51:55.915+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T17:51:56.021+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-12-10T12:33:04.008+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
+2025-12-10T12:33:04.028+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:33:04.029+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
+2025-12-10T12:33:04.049+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -1019,7 +3970,7 @@ Hibernate:
         p1_0.id_categoria=? 
     fetch
         first ? rows only
-2025-12-05T17:51:56.044+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-12-10T12:33:04.068+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -1035,11 +3986,351 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T18:08:33.202+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/4
-2025-12-05T18:08:33.355+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products/4
-2025-12-05T18:08:33.356+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:08:33.364+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products/4
-2025-12-05T18:08:33.383+01:00 DEBUG 11208 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+2025-12-10T12:34:28.920+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:34:28.942+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:34:28.943+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:34:28.944+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:34:28.965+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:34:28.993+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:29.008+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:29.015+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:29.025+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:34:51.536+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /categories
+2025-12-10T12:34:51.552+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=20
+2025-12-10T12:34:51.575+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-12-10T12:34:51.576+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:34:51.584+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /categories
+2025-12-10T12:34:51.584+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=20
+2025-12-10T12:34:51.587+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:34:51.595+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=20
+2025-12-10T12:34:51.598+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:34:51.598+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:51.600+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:51.601+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:51.601+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:51.602+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:51.603+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:34:51.648+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+Hibernate: 
+    /* <criteria> */ select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0
+2025-12-10T12:34:51.670+01:00 DEBUG 6144 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:35:08.217+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:35:08.238+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:35:08.244+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:35:08.249+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:35:08.265+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:35:08.267+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:08.273+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:08.284+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:08.288+01:00 DEBUG 6144 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:35:13.143+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/2
+2025-12-10T12:35:13.170+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products/2
+2025-12-10T12:35:13.175+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:35:13.181+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products/2
+2025-12-10T12:35:13.184+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
     select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -1075,11 +4366,11 @@ Hibernate:
             on c1_0.id_categoria=p1_0.id_categoria 
     where
         p1_0.id_producte=?
-2025-12-05T18:08:33.911+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T18:08:34.095+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:08:34.107+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:08:34.112+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:08:34.153+01:00 DEBUG 11208 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+2025-12-10T12:35:13.382+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
+2025-12-10T12:35:13.401+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
+2025-12-10T12:35:13.408+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:35:13.409+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
+2025-12-10T12:35:13.460+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -1109,7 +4400,7 @@ Hibernate:
         p1_0.id_categoria=? 
     fetch
         first ? rows only
-2025-12-05T18:08:34.162+01:00 DEBUG 11208 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+2025-12-10T12:35:13.463+01:00 DEBUG 6144 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -1125,11 +4416,195 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T18:17:51.605+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/1
-2025-12-05T18:17:51.724+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products/1
-2025-12-05T18:17:51.741+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:17:51.749+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products/1
-2025-12-05T18:17:51.793+01:00 DEBUG 11208 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+2025-12-10T12:35:34.467+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:35:34.507+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:35:34.515+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:35:34.521+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:35:34.541+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:35:34.550+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:34.560+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:34.562+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:34.566+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:35:57.150+01:00 DEBUG 6144 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:35:57.192+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:35:57.200+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:35:57.200+01:00 DEBUG 6144 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:35:57.224+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    /* <criteria> */ select
+        p1_0.id_producte,
+        p1_0.id_categoria,
+        p1_0.descripcio,
+        p1_0.imatge_path,
+        p1_0.nom,
+        p1_0.preu,
+        p1_0.stock 
+    from
+        producte p1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-10T12:35:57.243+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:57.281+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:57.354+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:35:57.364+01:00 DEBUG 6144 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:35:59.310+01:00 DEBUG 6144 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/2
+2025-12-10T12:35:59.326+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /products/2
+2025-12-10T12:35:59.330+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:35:59.334+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /products/2
+2025-12-10T12:35:59.353+01:00 DEBUG 6144 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
     select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -1165,11 +4640,11 @@ Hibernate:
             on c1_0.id_categoria=p1_0.id_categoria 
     where
         p1_0.id_producte=?
-2025-12-05T18:17:51.919+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T18:17:51.995+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:17:51.997+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:17:51.999+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:17:52.006+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-12-10T12:35:59.483+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
+2025-12-10T12:35:59.497+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
+2025-12-10T12:35:59.508+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:35:59.508+01:00 DEBUG 6144 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
+2025-12-10T12:35:59.567+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -1199,7 +4674,7 @@ Hibernate:
         p1_0.id_categoria=? 
     fetch
         first ? rows only
-2025-12-05T18:17:52.010+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-12-10T12:35:59.573+01:00 DEBUG 6144 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -1215,50 +4690,27 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T18:17:55.331+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/4
-2025-12-05T18:17:55.406+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /products/4
-2025-12-05T18:17:55.416+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:17:55.431+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /products/4
-2025-12-05T18:17:55.451+01:00 DEBUG 11208 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
+2025-12-10T12:36:20.878+01:00 DEBUG 6144 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /categories
+2025-12-10T12:36:20.918+01:00 DEBUG 6144 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=20
+2025-12-10T12:36:20.922+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /categories
+2025-12-10T12:36:20.934+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:36:20.935+01:00 DEBUG 6144 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /categories
+2025-12-10T12:36:20.937+01:00 DEBUG 6144 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
         c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
+        c1_0.nom_cat 
     from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
+        categoria c1_0
 Hibernate: 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
+    /* <criteria> */ select
         c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
+        c1_0.nom_cat 
     from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-2025-12-05T18:17:55.540+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:17:55.550+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:17:55.561+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:17:55.634+01:00 DEBUG 11208 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+        categoria c1_0
+2025-12-10T12:36:20.982+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=20
+2025-12-10T12:36:20.987+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:36:20.989+01:00 DEBUG 6144 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=20
+2025-12-10T12:36:21.008+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -1269,8 +4721,8 @@ Hibernate:
         p1_0.stock 
     from
         producte p1_0 
-    where
-        p1_0.id_categoria=? 
+    offset
+        ? rows 
     fetch
         first ? rows only
 Hibernate: 
@@ -1284,11 +4736,11 @@ Hibernate:
         p1_0.stock 
     from
         producte p1_0 
-    where
-        p1_0.id_categoria=? 
+    offset
+        ? rows 
     fetch
         first ? rows only
-2025-12-05T18:17:55.680+01:00 DEBUG 11208 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+2025-12-10T12:36:21.010+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -1304,51 +4756,101 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T18:17:58.938+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/3
-2025-12-05T18:17:59.007+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /products/3
-2025-12-05T18:17:59.033+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:17:59.046+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /products/3
-2025-12-05T18:17:59.060+01:00 DEBUG 11208 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+2025-12-10T12:36:21.012+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
     select
-        p1_0.id_producte,
-        p1_0.id_categoria,
         c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
+        c1_0.nom_cat 
     from
-        producte p1_0 
-    join
         categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
     where
-        p1_0.id_producte=?
+        c1_0.id_categoria=?
 Hibernate: 
     select
-        p1_0.id_producte,
-        p1_0.id_categoria,
         c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
+        c1_0.nom_cat 
     from
-        producte p1_0 
-    join
         categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
     where
-        p1_0.id_producte=?
-2025-12-05T18:17:59.276+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T18:17:59.431+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:17:59.440+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:17:59.444+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:17:59.548+01:00 DEBUG 11208 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
+        c1_0.id_categoria=?
+2025-12-10T12:36:21.033+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:36:21.037+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:36:21.039+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:36:21.044+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:36:21.049+01:00 DEBUG 6144 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+Hibernate: 
+    /* <criteria> */ select
+        count(p1_0.id_producte) 
+    from
+        producte p1_0
+2025-12-10T12:40:57.926+01:00 DEBUG 6144 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products?page=0&size=8
+2025-12-10T12:40:57.968+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products?page=0&size=8
+2025-12-10T12:40:57.978+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-10T12:40:57.979+01:00 DEBUG 6144 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products?page=0&size=8
+2025-12-10T12:40:58.006+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
     /* <criteria> */ select
         p1_0.id_producte,
         p1_0.id_categoria,
@@ -1359,98 +4861,8 @@ Hibernate:
         p1_0.stock 
     from
         producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-Hibernate: 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-2025-12-05T18:17:59.557+01:00 DEBUG 11208 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-Hibernate: 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-2025-12-05T18:26:38.534+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/3
-2025-12-05T18:26:38.896+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products/3
-2025-12-05T18:26:38.913+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:26:38.917+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products/3
-2025-12-05T18:26:38.962+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-Hibernate: 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-2025-12-05T18:26:39.305+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T18:26:39.697+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:26:39.706+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:26:39.736+01:00 DEBUG 11208 --- [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:26:39.783+01:00 DEBUG 11208 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
+    offset
+        ? rows 
     fetch
         first ? rows only
 Hibernate: 
@@ -1464,11 +4876,11 @@ Hibernate:
         p1_0.stock 
     from
         producte p1_0 
-    where
-        p1_0.id_categoria=? 
+    offset
+        ? rows 
     fetch
         first ? rows only
-2025-12-05T18:26:39.805+01:00 DEBUG 11208 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
+2025-12-10T12:40:58.029+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
     select
         c1_0.id_categoria,
         c1_0.nom_cat 
@@ -1484,451 +4896,45 @@ Hibernate:
         categoria c1_0 
     where
         c1_0.id_categoria=?
-2025-12-05T18:27:13.297+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/3
-2025-12-05T18:27:13.415+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /products/3
-2025-12-05T18:27:13.428+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:27:13.429+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /products/3
-2025-12-05T18:27:13.435+01:00 DEBUG 11208 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+2025-12-10T12:40:58.039+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
     select
-        p1_0.id_producte,
-        p1_0.id_categoria,
         c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
+        c1_0.nom_cat 
     from
-        producte p1_0 
-    join
         categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
     where
-        p1_0.id_producte=?
+        c1_0.id_categoria=?
 Hibernate: 
     select
-        p1_0.id_producte,
-        p1_0.id_categoria,
         c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
+        c1_0.nom_cat 
     from
-        producte p1_0 
-    join
         categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
     where
-        p1_0.id_producte=?
-2025-12-05T18:27:13.694+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T18:27:13.911+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:27:13.913+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:27:13.914+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:27:13.935+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
+        c1_0.id_categoria=?
+2025-12-10T12:40:58.047+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+Hibernate: 
+    select
+        c1_0.id_categoria,
+        c1_0.nom_cat 
+    from
+        categoria c1_0 
+    where
+        c1_0.id_categoria=?
+2025-12-10T12:40:58.108+01:00 DEBUG 6144 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
     /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
+        count(p1_0.id_producte) 
     from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
+        producte p1_0
 Hibernate: 
     /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
+        count(p1_0.id_producte) 
     from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-2025-12-05T18:27:13.938+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-Hibernate: 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-2025-12-05T18:27:17.654+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products/3
-2025-12-05T18:27:17.657+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:27:17.660+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products/3
-2025-12-05T18:27:17.670+01:00 DEBUG 11208 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-Hibernate: 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-2025-12-05T18:27:17.795+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:27:17.821+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:27:17.835+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:27:17.863+01:00 DEBUG 11208 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-Hibernate: 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-2025-12-05T18:27:17.866+01:00 DEBUG 11208 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-Hibernate: 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-2025-12-05T18:27:46.502+01:00 DEBUG 11208 --- [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/3
-2025-12-05T18:27:46.566+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /products/3
-2025-12-05T18:27:46.579+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:27:46.580+01:00 DEBUG 11208 --- [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /products/3
-2025-12-05T18:27:46.582+01:00 DEBUG 11208 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-Hibernate: 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-2025-12-05T18:27:46.694+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T18:27:46.746+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:27:46.760+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:27:46.766+01:00 DEBUG 11208 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:27:46.831+01:00 DEBUG 11208 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-Hibernate: 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-2025-12-05T18:27:46.838+01:00 DEBUG 11208 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-Hibernate: 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-2025-12-05T18:33:08.776+01:00 DEBUG 11208 --- [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/3
-2025-12-05T18:33:08.824+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /products/3
-2025-12-05T18:33:08.828+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:33:08.834+01:00 DEBUG 11208 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /products/3
-2025-12-05T18:33:08.860+01:00 DEBUG 11208 --- [io-8080-exec-10] org.hibernate.SQL                        : 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-Hibernate: 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-2025-12-05T18:33:09.159+01:00 DEBUG 11208 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T18:33:09.235+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:33:09.265+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:33:09.274+01:00 DEBUG 11208 --- [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:33:09.301+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-Hibernate: 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-2025-12-05T18:33:09.319+01:00 DEBUG 11208 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-Hibernate: 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-2025-12-05T18:33:25.905+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/3
-2025-12-05T18:33:25.960+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /products/3
-2025-12-05T18:33:25.969+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:33:25.974+01:00 DEBUG 11208 --- [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /products/3
-2025-12-05T18:33:25.982+01:00 DEBUG 11208 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-Hibernate: 
-    select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        c1_0.id_categoria,
-        c1_0.nom_cat,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    join
-        categoria c1_0 
-            on c1_0.id_categoria=p1_0.id_categoria 
-    where
-        p1_0.id_producte=?
-2025-12-05T18:33:26.068+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /products/category/1?page=0&size=20
-2025-12-05T18:33:26.090+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /products/category/1?page=0&size=20
-2025-12-05T18:33:26.091+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-12-05T18:33:26.097+01:00 DEBUG 11208 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /products/category/1?page=0&size=20
-2025-12-05T18:33:26.116+01:00 DEBUG 11208 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-Hibernate: 
-    /* <criteria> */ select
-        p1_0.id_producte,
-        p1_0.id_categoria,
-        p1_0.descripcio,
-        p1_0.imatge_path,
-        p1_0.nom,
-        p1_0.preu,
-        p1_0.stock 
-    from
-        producte p1_0 
-    where
-        p1_0.id_categoria=? 
-    fetch
-        first ? rows only
-2025-12-05T18:33:26.129+01:00 DEBUG 11208 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
-Hibernate: 
-    select
-        c1_0.id_categoria,
-        c1_0.nom_cat 
-    from
-        categoria c1_0 
-    where
-        c1_0.id_categoria=?
+        producte p1_0
