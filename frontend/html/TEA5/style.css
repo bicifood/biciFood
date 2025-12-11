@@ -1,0 +1,1315 @@
+/* Colors personalitzats */
+.bg-brown {
+  background-color: #6b5a3e; /* marró fosc del navbar */
+}
+
+.bg-lightbrown {
+  background-color: #f0e0b2; /* beix clar del footer */
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+}
+
+.logo-navbar {
+  height: 60px;
+  margin-top: -5px;
+}
+
+/* Enllaços del navbar */
+.navbar .nav-link {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Barra de cerca al navbar */
+.navbar .form-control {
+  height: 30px;
+  font-size: 0.9rem;
+}
+
+.navbar .btn {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+.navbar .dropdown .btn {
+  width: auto; /* s'adapta al text i icona */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Eliminar la fletxeta del dropdown */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Dropdown del navbar */
+.dropdown-menu {
+  background-color: #f0e0b2;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+  color: #333;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e8d4a0;
+  color: #6b5a3e;
+}
+
+/* ========== PANTALLA MEDIA (1199px - 1024px) - ICONOS EN LUGAR DE TEXTO ========== */
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .navbar {
+    height: auto;
+    min-height: 65px;
+    padding: 0.5rem 0;
+    align-items: center;
+  }
+
+  .logo-navbar {
+    height: 55px;
+    margin-top: 0;
+  }
+
+  /* Convertir enlaces a iconos */
+  .navbar .nav-link {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    padding: 0 !important;
+    margin: 0 0.5rem !important;
+    font-size: 0 !important;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  .navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+  }
+
+  /* Iconos específicos para cada enlace - minimalistas sin color */
+  .navbar .nav-item:nth-child(1) .nav-link::before {
+    content: "≣";
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  .navbar .nav-item:nth-child(2) .nav-link::before {
+    content: "i";
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  .navbar .nav-item:nth-child(3) .nav-link::before {
+    content: "✉";
+    font-size: 1.4rem;
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  .navbar .form-control {
+    display: none !important;
+  }
+
+  /* Categorías como dropdown con icono */
+  .navbar .dropdown .btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 0.75rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar .dropdown .btn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+/* ========== TABLET (1023px - 389px) ========== */
+@media (max-width: 1023px) and (min-width: 389px) {
+  .navbar {
+    height: auto;
+    min-height: 60px;
+    padding: 0.5rem 0;
+  }
+
+  .logo-navbar {
+    height: 50px;
+    margin-top: 0;
+  }
+
+  .navbar .nav-link {
+    display: none !important;
+  }
+
+  .navbar-brand span {
+    display: none;
+  }
+
+  .navbar .form-control {
+    display: none !important;
+  }
+
+  /* Búsqueda con lupa expandible */
+  .navbar .btn-outline-light {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .navbar .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* Categorías como dropdown con icono */
+  .navbar .dropdown .btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar .dropdown .btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* ========== EXTRA PEQUEÑO (menos de 577px) - ESTILOS ADICIONALES ========== */
+@media (max-width: 388px) {
+  .navbar {
+    height: auto;
+    min-height: 60px;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    margin-right: auto !important;
+  }
+
+  .navbar-brand span {
+    display: none;
+  }
+
+  .logo-navbar {
+    height: 45px;
+    margin: 0;
+  }
+
+  /* Convertir enlaces a iconos minimalistas */
+  .navbar .nav-link {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0 !important;
+    margin: 0 0.3rem !important;
+    font-size: 0 !important;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  .navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+
+  /* Iconos minimalistas específicos para cada enlace */
+  .navbar .nav-item:nth-child(1) .nav-link::before {
+    content: "≣";
+    font-size: 1.4rem;
+    display: flex;
+    font-weight: 300;
+  }
+
+  .navbar .nav-item:nth-child(2) .nav-link::before {
+    content: "i";
+    font-size: 1.4rem;
+    display: flex;
+    font-weight: 300;
+  }
+
+  .navbar .nav-item:nth-child(3) .nav-link::before {
+    content: "✉";
+    font-size: 1.2rem;
+    display: flex;
+    font-weight: 300;
+  }
+
+  .navbar .form-control {
+    display: none !important;
+  }
+
+  /* Botones del navbar en móvil */
+  .navbar .btn {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    height: 38px;
+    width: 38px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar .btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar .btn-outline-light {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+  }
+
+  .navbar .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+  }
+
+  /* Categorías como dropdown con icono */
+  .navbar .dropdown .btn {
+    background-color: transparent;
+    border: none;
+    padding: 0.3rem;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar .dropdown .btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar {
+    min-height: 50px;
+    gap: 0.25rem;
+  }
+
+  .navbar-brand span {
+    display: none;
+  }
+
+  .logo-navbar {
+    height: 40px;
+  }
+
+  .form-select-sm {
+    font-size: 0.7rem !important;
+    padding: 0.2rem 0.35rem !important;
+  }
+
+  .navbar .btn {
+    padding: 0.35rem;
+    font-size: 0.9rem;
+  }
+
+  .navbar .form-control {
+    display: none !important;
+  }
+  /* Selector de idioma más pequeño */
+  .form-select-sm {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+  }
+
+  /* Dropdown de categorías */
+  .dropdown-menu {
+    font-size: 0.9rem;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  .dropdown-menu a {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Menú hamburguesa oculto en desktop */
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+/* Footer */
+.footer img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Layout per footer a baix */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*body Sergi inicial {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}*/
+
+main {
+  flex: 1; /* ocupa l'espai restant */
+}
+
+.footer-text {
+  font-size: 0.8rem; /* mida petita */
+  color: #333; /* opcional: canviar color */
+}
+
+/*                           /\                                */
+/*---------------------------||------------------------------------------------------------------------------------------------------
+----------------------------ESTRUCTURA---------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*.........................NUEVO CODIGO...........................................................................................*/
+/*                           ||                               
+                             \/                   
+
+/*------------------------------------------INDEX-------------------------------------------------------------------------------
+------------------------------------------------------------------*/
+
+/* Fixa una mida consistent per a totes les imatges del carrousel */
+.carousel-item img {
+  height: 300px; /* pots ajustar a 300px, 500px, etc. */
+  object-fit: cover; /* manté la imatge centrada i retalla si cal */
+  object-position: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* Mapa leaflet */
+#map {
+  height: 300px;
+}
+
+/* (opcional) fa el carrousel responsive */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
+
+/*-------------------------------------------------CARNS---------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  overflow: visible;
+}
+
+.carn__imatge {
+  position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.carn__imatge img {
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.carn__imatge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.carn__imatge h5,
+.carn__imatge p {
+  margin: 0.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.carn__imatge:hover h5,
+.carn__imatge:hover p {
+  transform: scale(1.1);
+}
+
+.selector__ordre {
+  width: auto;
+  max-width: 150px;
+}
+
+.enllaç-producte {
+  color: #000; /* Marrón, o el color que prefieras */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+.enllaç-producte:hover {
+  color: #8b7355; /* Un tono más claro al pasar el ratón */
+  text-decoration: none; /* opcional */
+}
+/*--------------------------------------------CATEGORIES---------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+
+.category-card {
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Capa blanca semitransparent sobre la imatge */
+.category-card .card-body {
+  border-radius: 1rem;
+  transition: background 0.3s ease;
+}
+
+/* Quan passes el ratolí: desapareix el blanc */
+.category-card:hover .card-body {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* Text sempre blanc, més gran i amb millor contrast */
+.category-card h5 {
+  color: #fff;
+  /* Sempre blanc */
+  font-size: 1.5rem;
+  /* Més gran */
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  /* Millora contrast sobre fons */
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover h5 {
+  transform: scale(1.05);
+}
+
+/* Efecte de clic suau */
+.category-card:active {
+  transform: scale(0.98);
+}
+
+/* Elimina subratllat i hereta colors de text */
+a.text-decoration-none {
+  color: inherit;
+}
+
+/* Imatges específiques per categoria */
+.bg-carns {
+  background-image: url("../../images/Vedella Verdures.png");
+}
+
+.bg-peixos {
+  background-image: url("../../images/Lluç Verdures.png");
+}
+
+.bg-amanides {
+  background-image: url("../../images/Verdures Rustides.png");
+}
+
+.bg-arrossos {
+  background-image: url("../../images/Espaguetis carbonara.png");
+}
+
+.bg-begudes {
+  background-image: url("../../images/Vi Torremadrina.jpeg");
+}
+
+.bg-postres {
+  background-image: url("../../images/Coulant.png");
+}
+
+/* Títol central decoratiu */
+.section-title {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 3px;
+  background-color: #6b5a3e;
+  transform: translateY(-50%);
+}
+
+.section-title::before {
+  left: -60px;
+}
+
+.section-title::after {
+  right: -60px;
+}
+
+
+/* Botons marrons personalitzats */
+.btn-brown {
+  color: #6b5a3e;
+  border: 1px solid #6b5a3e;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-brown {
+  background-color: #6b5a3e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+.btn-brown:hover {
+  background-color: #47352d;
+}
+
+.btn-brown.active {
+  background-color: #6b5a3e;
+}
+
+
+
+
+/*--------------------------------------------------CISTELLA-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Importar estils base del detall_product */
+@import url("./versio-final-TEA3/detall_product_style.css");
+
+/* Colors personalitzats adicionals per la cistella */
+.btn-brown {
+  background-color: #6b5a3e;
+  border-color: #6b5a3e;
+  color: white;
+}
+
+.btn-brown:hover {
+  background-color: #5a4b36;
+  border-color: #5a4b36;
+  color: white;
+}
+
+.btn-outline-brown {
+  color: #6b5a3e;
+  border-color: #6b5a3e;
+}
+
+.btn-outline-brown:hover {
+  background-color: #6b5a3e;
+  border-color: #6b5a3e;
+  color: white;
+}
+
+/* Cistella específics */
+.active-cart {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.cistella-item {
+  transition: all 0.3s ease;
+  padding: 15px 0;
+}
+
+.cistella-item:hover {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 0 -15px;
+}
+
+.cistella-item img {
+  max-height: 80px;
+  object-fit: cover;
+}
+
+/* Quantitat controls */
+.input-group-sm .form-control {
+  max-width: 60px;
+}
+
+.input-group-sm .btn {
+  min-width: 35px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+  border: none;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Resum comanda */
+.card hr {
+  margin: 1rem 0;
+  border-color: #dee2e6;
+}
+
+/* Cistella buida */
+.empty-cart {
+  padding: 4rem 2rem;
+}
+
+.empty-cart i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* Animacions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cistella-item {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cistella-item .row {
+    text-align: center;
+  }
+
+  .cistella-item .col-md-2,
+  .cistella-item .col-md-4 {
+    margin-bottom: 1rem;
+  }
+
+  .cistella-item img {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Efectes hover per botons */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-danger:hover {
+  transform: scale(1.05);
+}
+
+/* Estils per els inputs de quantitat */
+.input-group .form-control {
+  border: 1px solid #ced4da;
+  font-weight: 600;
+}
+
+.input-group .btn {
+  border: 1px solid #ced4da;
+  font-weight: 600;
+}
+
+.input-group .btn:hover {
+  background-color: #e9ecef;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Highlight per preus */
+.text-end strong {
+  color: #6b5a3e;
+  font-size: 1.1rem;
+}
+
+/* Informació adicional */
+.text-muted {
+  font-size: 0.9rem;
+}
+
+/* Millores visuals per la targeta de resum */
+.card .d-flex {
+  font-size: 0.95rem;
+}
+
+.card .d-flex strong {
+  font-size: 1.1rem;
+  color: #6b5a3e;
+}
+
+/* Codi promocional */
+.form-label {
+  font-weight: 600;
+  color: #6b5a3e;
+  margin-bottom: 0.5rem;
+}
+
+/* Icones */
+.bi {
+  vertical-align: -0.125em;
+}
+
+/* Hover effect per les imatges */
+.cistella-item img {
+  transition: transform 0.3s ease;
+}
+
+.cistella-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Estils per la informació d'enviament */
+.card:last-child .card-body {
+  padding: 1rem 1.5rem;
+}
+
+.card:last-child h6 {
+  color: #6b5a3e;
+  margin-bottom: 0.75rem;
+}
+
+/* Loading states (per futures implementacions) */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Alertes personalitzades */
+.alert-custom {
+  background-color: #f0e0b2;
+  border-color: #6b5a3e;
+  color: #6b5a3e;
+  border-radius: 8px;
+}
+
+/* Millores d'accessibilitat */
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(107, 90, 62, 0.25);
+}
+
+.form-control:focus {
+  border-color: #6b5a3e;
+  box-shadow: 0 0 0 0.25rem rgba(107, 90, 62, 0.25);
+}
+
+/*-----------------------------------------------------------CONTACTE-------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* --- Pàgina de contacte --- */
+
+form label {
+  font-weight: 500;
+  color: #333;
+}
+
+.btn-primary {
+  background: #224811;
+  border-color: #224811;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Centrat mapa + text */
+
+.map-container {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Títol contacte més gran */
+
+.contact-title {
+  font-size: 1.6rem;
+}
+
+/* --- Formulari de contacte encerclat --- */
+
+.contact-form {
+  padding: 20px; /* espai intern */
+  border-radius: 8px; /* cantonades arrodonides */
+  background-color: #fff; /* destaca sobre el fons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* opcional: lleugera ombra */
+}
+
+/*--------------------------------------------------------DETALL PRODUCTE---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Section-1 */
+#detall-producte {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.product {
+  /**/
+  margin-top: 100px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product__titol_preu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container__section h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.preu {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.product__divisor {
+  border: 0;
+  height: 1px;
+  background: #999;
+  margin: 5px 0;
+}
+
+.imatge {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.imatge:hover {
+  transform: scale(1.2); /* hace zoom */
+}
+
+/* Section-2 */
+.relacionats__section {
+  margin-top: 20px;
+}
+
+.relacionats__section h4 {
+  font-weight: bold;
+}
+
+.relacionats__box {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.relacionats__imatge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*------------------------------------------------------REGISTRAT_I_LOGIN------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.form-box {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.form-control {
+  height: 35px;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.text-center input[type="checkbox"] {
+  transform: scale(1.1);
+}
+
+.text-center button {
+  width: 60%;
+  font-weight: 500;
+}
+
+/*-------------------------------------------------------------RESULTAT RECERCA--------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------CHECKOUT--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.form__ocult {
+  display: none;
+}
+
+.formulari {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/*-------------------------------------------------------------BUTTON----------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+button {
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button:hover {
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+}
+button:active {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+/*
+button[disabled] {
+  background: #dddddd;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  border-width: 0px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  color: #666666;
+}*/
+button.primary {
+  background: #5c5444;
+  border-color: #5c5444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.primary:hover {
+  background: #224811;
+  border-color: #224811;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+button.primary:active {
+  background: #489c23;
+  border-color: #489c23;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.primary[enabled] {
+  background: rgba(53, 114, 26, 0.25);
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  color: #333333;
+}
+button.secondary {
+  background: #fcf2d8;
+  border-color: #fcf2d8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.secondary:hover {
+  background: #f8e2a9;
+  border-color: #f8e2a9;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+button.secondary:active {
+  background: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.secondary[disabled] {
+  background: rgba(252, 242, 216, 0.25);
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  color: #333333;
+}
+button.accent {
+  background: #ffaf4b;
+  border-color: #ffaf4b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.accent:hover {
+  background: #675d2f;
+  border-color: #675d2f;
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+button.accent:active {
+  background: #ad9b4f;
+  border-color: #ad9b4f;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+button.accent[disabled] {
+  background: rgba(138, 124, 63, 0.25);
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  color: #333333;
+}
+
+/* Estils per als missatges d'alerta personalitzats */
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #6b5a3e, #8b7355);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(107, 90, 62, 0.4);
+  z-index: 9999;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  min-width: 300px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  animation: alertFadeIn 0.3s ease-out;
+}
+
+.custom-alert.success {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  box-shadow: 0 8px 32px rgba(40, 167, 69, 0.4);
+}
+
+.custom-alert.error {
+  background: linear-gradient(135deg, #dc3545, #fd7e14);
+  box-shadow: 0 8px 32px rgba(220, 53, 69, 0.4);
+}
+
+.custom-alert.fade-out {
+  animation: alertFadeOut 0.5s ease-in forwards;
+}
+
+@keyframes alertFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes alertFadeOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+/*--------------------------------------------PÀGINA PERFIL-----------------------------------------------------*/
+
+.profile-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-container h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.profile-container hr {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-top: 2px solid #ddd;
+}
+
+.profile-container .row {
+  font-size: 1rem;
+}
+
+.profile-container .text-muted {
+  font-weight: 500;
+}
+
+.profile-container .btn {
+  font-weight: 500;
+  color: #000;
+  padding: 4px 14px;
+  background-color: #efe6cc;
+}
+
+.profile-container .btn:hover {
+  background-color: #6b5a3e;
+  color: #fff;
+  border-color: #6b5a3e;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+  }
+
+  .profile-container .row {
+    text-align: left;
+  }
+}
+
+.bg-pagament {
+  background-image: url("../../images/fons-verd.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/*--------------------------------------------SCROLL TO TOP BUTTON-----------------------------------------------------*/
+
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1.25rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  transition: opacity .2s, transform .2s;
+}
+
+.scroll-top.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-top.hide {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}

@@ -1,4 +1,44 @@
 {
+  
+  "checkout": {
+    "title": "Checkout",
+    "paymentMethods": {
+      "card": "Credit Card",
+      "bizum": "Bizum",
+      "cashOnDelivery": "Cash on Delivery"
+    },
+    "cardForm": {
+      "legend": "Payment with Credit Card",
+      "cardholderName": "Cardholder Name:",
+      "cardNumber": "Card Number:",
+      "expiryDate": "Expiry Date:",
+      "cvv": "CVV:",
+      "deliveryAddress": "Delivery Address:",
+      "postalCode": "Postal Code:"
+    },
+    "bizumForm": {
+      "legend": "Payment with Bizum",
+      "phoneNumber": "Phone Number:"
+    },
+    "cashForm": {
+      "legend": "Payment on Delivery",
+      "cashOnDeliveryNote": "Cash payment upon product delivery."
+    },
+    "placeholders": {
+      "cardholderName": "Cardholder name",
+      "cardNumber": "XXXX-XXXX-XXXX-XXXX",
+      "expiryDate": "MM/YY",
+      "cvv": "XXX",
+      "phoneNumber": "XXX XXX XXX",
+      "postalCode": "00000",
+      "deliveryAddress": "Delivery address"
+    },
+    "buttons": {
+      "pay": "Pay Now"
+    }
+  },
+
+
   "header": {
     "categories": "Categories",
     "about": "About Us",

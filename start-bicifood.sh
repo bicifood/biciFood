@@ -40,9 +40,8 @@ fi
 
 # Iniciar backend en background
 echo "Iniciant el backend (java -jar)..."
-java -jar "$JAR_FILE" >"$PROJECT_DIR/.backend.log" 2>&1 &
+java -jar "$JAR_FILE" >/dev/null 2>&1 &
 BACKEND_PID=$!
-echo $BACKEND_PID > "$PROJECT_DIR/.backend.pid"
 
 # Esperar que estigui ready (timeout)
 echo "Esperant que el backend estigui llest (timeout 60s)..."
@@ -56,7 +55,7 @@ for i in $(seq 1 30); do
 done
 
 if [ "$READY" -ne 1 ]; then
-  echo "❌ El backend no ha respost a /actuator/health. Mira $PROJECT_DIR/.backend.log"
+  echo "❌ El backend no ha respost a /actuator/health."
   kill "$BACKEND_PID" 2>/dev/null || true
   exit 1
 fi
@@ -64,12 +63,11 @@ echo "✅ Backend funcionant correctament!"
 
 # Iniciar servidor per al frontend (port 3000)
 echo "🌐 Iniciant servidor web per al frontend..."
-python3 -m http.server 3000 >"$PROJECT_DIR/.frontend.log" 2>&1 &
+python3 -m http.server 3000 >/dev/null 2>&1 &
 FRONTEND_PID=$!
-echo $FRONTEND_PID > "$PROJECT_DIR/.frontend.pid"
 sleep 1
 
-WEB_URL="http://localhost:3000/frontend/html/TEA4/"
+WEB_URL="http://localhost:3000/frontend/html/TEA5/"
 echo "   Frontend: $WEB_URL"
 echo "   Backend API: http://localhost:8080/api/v1"
 
@@ -83,5 +81,4 @@ else
 fi
 
 echo "🎉 BICIFOOD ESTÀ LLEST!"
-echo "Logs: .backend.log  .frontend.log"
-echo "Per aturar serveis: kill \$(cat .backend.pid) ; kill \$(cat .frontend.pid)"
+echo "Per aturar serveis executa: ./stop-bicifood.sh"
