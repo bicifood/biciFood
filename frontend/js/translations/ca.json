@@ -1,4 +1,44 @@
 {
+  
+  "checkout": {
+    "title": "Checkout",
+    "paymentMethods": {
+      "card": "Tarjeta",
+      "bizum": "Bizum",
+      "cashOnDelivery": "Contrareemborsament"
+    },
+    "cardForm": {
+      "legend": "Pagament amb tarjeta",
+      "cardholderName": "Nom del titular:",
+      "cardNumber": "Número de tarjeta:",
+      "expiryDate": "Data de caducitat:",
+      "cvv": "CVV:",
+      "deliveryAddress": "Direcció de lliurament:",
+      "postalCode": "Codi postal:"
+    },
+    "bizumForm": {
+      "legend": "Pagament amb Bizum",
+      "phoneNumber": "Número de telèfon:"
+    },
+    "cashForm": {
+      "legend": "Pagament amb contrareemborsament",
+      "cashOnDeliveryNote": "Pagament en efectiu al lliurar el producte."
+    },
+    "placeholders": {
+      "cardholderName": "Nom titular",
+      "cardNumber": "XXXX-XXXX-XXXX-XXXX",
+      "expiryDate": "MM/AA",
+      "cvv": "XXX",
+      "phoneNumber": "XXXX XXX XXX",
+      "postalCode": "00000",
+      "deliveryAddress": "Direcció de lliurament"
+    },
+    "buttons": {
+      "pay": "Pagar"
+    }
+  },
+
+
   "header": {
     "categories": "Categories",
     "about": "Nosaltres",
@@ -22,7 +62,7 @@
     "addToCart": "Afegir a la cistella",
     "quantity": "Quantitat",
     "price": "Preu",
-    "descripcio": "Això es una simulació de la descripció del producte, es tradueix donant-li al select de la barra superior de navegació",
+    "description": "Descripció",
     "relatedProducts": "Productes relacionats",
     "noDescription": "Sense descripció disponible",
     "stock": "Stock",

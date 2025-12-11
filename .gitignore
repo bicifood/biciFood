@@ -39,6 +39,12 @@ backend/src/main/resources/application-secret.properties
 *.env
 .env.local
 
+# Logs i process IDs
+.backend.log
+.backend.pid
+.frontend.log
+.frontend.pid
+
 # ====================================
 # Altres
 # ====================================
@@ -57,3 +63,9 @@ backend/src/main/resources/application-secret.properties
 # Fitxers de sistema
 .Spotlight-V100
 .Trashes
+
+# ====================================
+# Java / Maven
+# ====================================
+*.jar
+target/

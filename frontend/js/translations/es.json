@@ -1,4 +1,44 @@
 {
+  
+  "checkout": {
+    "title": "Checkout",
+    "paymentMethods": {
+      "card": "Tarjeta",
+      "bizum": "Bizum",
+      "cashOnDelivery": "Contra reembolso"
+    },
+    "cardForm": {
+      "legend": "Pago con tarjeta",
+      "cardholderName": "Nombre del titular:",
+      "cardNumber": "Número de tarjeta:",
+      "expiryDate": "Fecha de caducidad:",
+      "cvv": "CVV:",
+      "deliveryAddress": "Dirección de entrega:",
+      "postalCode": "Código postal:"
+    },
+    "bizumForm": {
+      "legend": "Pago con Bizum",
+      "phoneNumber": "Número de teléfono:"
+    },
+    "cashForm": {
+      "legend": "Pago contra reembolso",
+      "cashOnDeliveryNote": "Pago en efectivo al entregar el producto."
+    },
+    "placeholders": {
+      "cardholderName": "Nombre titular",
+      "cardNumber": "XXXX-XXXX-XXXX-XXXX",
+      "expiryDate": "MM/AA",
+      "cvv": "XXX",
+      "phoneNumber": "XXX XXX XXX",
+      "postalCode": "00000",
+      "deliveryAddress": "Dirección de entrega"
+    },
+    "buttons": {
+      "pay": "Pagar"
+    }
+  },
+
+
   "header": {
     "categories": "Categorías",
     "about": "Nosotros",
@@ -22,7 +62,7 @@
     "addToCart": "Añadir a la cesta",
     "quantity": "Cantidad",
     "price": "Precio",
-    "description": "Esta es una simulación de la descripción del producto, se traduce haciendo clic en el botón de selección en la barra de navegación superior",
+    "description": "Descripción",
     "relatedProducts": "Productos relacionados",
     "noDescription": "Sin descripción disponible",
     "stock": "Stock",
