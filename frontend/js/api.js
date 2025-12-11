@@ -170,12 +170,15 @@ const Utils = {
                             <span class="fw-bold text-success">${product.preu}€</span>
                             <span class="small text-muted">${stockLabel}: ${product.stock}</span>
                         </div>
-                        <button class="btn btn-primary btn-sm w-100 add-to-cart-btn" 
-                                data-product-id="${product.id}"
-                                data-product-name="${product.nom.replace(/"/g, '&quot;')}"
-                                data-product-price="${product.preu}"
-                                data-product-image="${(product.imatgePath || '').replace(/"/g, '&quot;')}"
-                                ${product.stock <= 0 ? 'disabled' : ''}>
+                        <button
+                            class="btn btn-primary w-100 add-to-cart-btn" 
+                            data-product-id="${product.id}"
+                            data-product-name="${product.nom.replace(/"/g, "&quot;")}"
+                            data-product-price="${product.preu}"
+                            data-product-image="${DetallUtils.getProductImagePath(
+                              product
+                            ).replace(/"/g, "&quot;")}"
+                            ${product.stock <= 0 ? "disabled" : ""}>
                             ${product.stock <= 0 ? outOfStockLabel : addToCartLabel}
                         </button>
                     </div>
